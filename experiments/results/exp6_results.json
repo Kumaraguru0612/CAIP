@@ -1,0 +1,38 @@
+{
+  "experiment": "exp6_cost_routing",
+  "n_campaigns": 120,
+  "tier_counts": {
+    "monitor": 0,
+    "investigate": 12,
+    "twin": 108
+  },
+  "tier_metrics": {
+    "monitor": {
+      "count": 0
+    },
+    "investigate": {
+      "count": 12,
+      "pct": 10.0,
+      "avg_cpu_ms": 5.79,
+      "avg_ram_mb": 14.37,
+      "accuracy": 0.25
+    },
+    "twin": {
+      "count": 108,
+      "pct": 90.0,
+      "avg_cpu_ms": 16.27,
+      "avg_ram_mb": 52.4,
+      "accuracy": 0.5648
+    }
+  },
+  "comparison": {
+    "caip_total_cpu_ms": 1827.21,
+    "twin_all_cpu_ms": 1976.19,
+    "cpu_savings_pct": 7.54,
+    "caip_accuracy": 0.5333,
+    "twin_all_accuracy": 0.5333,
+    "caip_avg_ram_mb": 48.6,
+    "twin_all_avg_ram_mb": 52.87
+  },
+  "timestamp": "2026-08-15T09:35:02.598091"
+}

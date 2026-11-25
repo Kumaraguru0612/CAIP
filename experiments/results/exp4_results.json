@@ -1,0 +1,639 @@
+{
+  "experiment": "exp4_prediction_validation",
+  "random_seed": 42,
+  "n_campaigns_val": 120,
+  "n_predictions": 571,
+  "model_parameters": {
+    "model_type": "XGBClassifier",
+    "n_estimators": 100,
+    "max_depth": 5,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "sample_weight": "balanced"
+  },
+  "ml_metrics": {
+    "n_predictions": 571,
+    "top1_accuracy": 0.9037,
+    "top3_accuracy": 0.9982,
+    "macro_precision": 0.905,
+    "macro_recall": 0.9044,
+    "macro_f1": 0.9034,
+    "weighted_f1": 0.905,
+    "avg_confidence_correct": 0.9416,
+    "avg_confidence_wrong": 0.5985,
+    "confusion_matrix": {
+      "labels": [
+        "Collection",
+        "Command & Control",
+        "Credential Access",
+        "Defense Evasion",
+        "Discovery",
+        "Execution",
+        "Exfiltration",
+        "Impact",
+        "Lateral Movement",
+        "Persistence",
+        "Privilege Escalation"
+      ],
+      "matrix": [
+        [
+          58,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          42,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          21,
+          0,
+          0,
+          17,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          61,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          66,
+          0,
+          0,
+          0,
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          28,
+          0,
+          0,
+          36,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          58,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          43,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0,
+          0,
+          58,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          43
+        ]
+      ]
+    },
+    "per_stage_accuracy": {
+      "Collection": {
+        "n": 58,
+        "top1_acc": 1.0
+      },
+      "Command & Control": {
+        "n": 42,
+        "top1_acc": 1.0
+      },
+      "Credential Access": {
+        "n": 38,
+        "top1_acc": 0.5526
+      },
+      "Defense Evasion": {
+        "n": 61,
+        "top1_acc": 1.0
+      },
+      "Discovery": {
+        "n": 71,
+        "top1_acc": 0.9296
+      },
+      "Execution": {
+        "n": 64,
+        "top1_acc": 0.5625
+      },
+      "Exfiltration": {
+        "n": 58,
+        "top1_acc": 1.0
+      },
+      "Impact": {
+        "n": 43,
+        "top1_acc": 1.0
+      },
+      "Lateral Movement": {
+        "n": 62,
+        "top1_acc": 0.9355
+      },
+      "Persistence": {
+        "n": 31,
+        "top1_acc": 0.9677
+      },
+      "Privilege Escalation": {
+        "n": 43,
+        "top1_acc": 1.0
+      }
+    }
+  },
+  "rule_metrics": {
+    "n_predictions": 571,
+    "top1_accuracy": 0.2592,
+    "top3_accuracy": 0.4378,
+    "macro_precision": 0.3173,
+    "macro_recall": 0.2319,
+    "macro_f1": 0.2213,
+    "weighted_f1": 0.2368,
+    "avg_confidence_correct": 0.7849,
+    "avg_confidence_wrong": 0.8238,
+    "confusion_matrix": {
+      "labels": [
+        "Collection",
+        "Command & Control",
+        "Credential Access",
+        "Defense Evasion",
+        "Discovery",
+        "Execution",
+        "Exfiltration",
+        "Impact",
+        "Lateral Movement",
+        "Persistence",
+        "Privilege Escalation"
+      ],
+      "matrix": [
+        [
+          21,
+          0,
+          0,
+          0,
+          0,
+          19,
+          0,
+          0,
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          42,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          38,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          43,
+          0,
+          0,
+          0,
+          0,
+          0,
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          32,
+          0,
+          0,
+          39,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          64,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          19,
+          21,
+          0,
+          18,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          22,
+          0,
+          0,
+          0,
+          0,
+          21,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          22,
+          0,
+          0,
+          19,
+          0,
+          0,
+          21,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          31,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          22,
+          0,
+          0,
+          0,
+          0,
+          0,
+          21,
+          0,
+          0
+        ]
+      ]
+    },
+    "per_stage_accuracy": {
+      "Collection": {
+        "n": 58,
+        "top1_acc": 0.3621
+      },
+      "Command & Control": {
+        "n": 42,
+        "top1_acc": 0.0
+      },
+      "Credential Access": {
+        "n": 38,
+        "top1_acc": 0.0
+      },
+      "Defense Evasion": {
+        "n": 61,
+        "top1_acc": 0.0
+      },
+      "Discovery": {
+        "n": 71,
+        "top1_acc": 0.0
+      },
+      "Execution": {
+        "n": 64,
+        "top1_acc": 1.0
+      },
+      "Exfiltration": {
+        "n": 58,
+        "top1_acc": 0.3621
+      },
+      "Impact": {
+        "n": 43,
+        "top1_acc": 0.4884
+      },
+      "Lateral Movement": {
+        "n": 62,
+        "top1_acc": 0.3387
+      },
+      "Persistence": {
+        "n": 31,
+        "top1_acc": 0.0
+      },
+      "Privilege Escalation": {
+        "n": 43,
+        "top1_acc": 0.0
+      }
+    }
+  },
+  "ml_per_stage": {
+    "Credential Access": {
+      "n": 38,
+      "top1_acc": 0.5526,
+      "top3_acc": 0.9737
+    },
+    "Lateral Movement": {
+      "n": 62,
+      "top1_acc": 0.9355,
+      "top3_acc": 1.0
+    },
+    "Discovery": {
+      "n": 71,
+      "top1_acc": 0.9296,
+      "top3_acc": 1.0
+    },
+    "Execution": {
+      "n": 64,
+      "top1_acc": 0.5625,
+      "top3_acc": 1.0
+    },
+    "Persistence": {
+      "n": 31,
+      "top1_acc": 0.9677,
+      "top3_acc": 1.0
+    },
+    "Command & Control": {
+      "n": 42,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0
+    },
+    "Collection": {
+      "n": 58,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0
+    },
+    "Exfiltration": {
+      "n": 58,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0
+    },
+    "Privilege Escalation": {
+      "n": 43,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0
+    },
+    "Defense Evasion": {
+      "n": 61,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0
+    },
+    "Impact": {
+      "n": 43,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0
+    }
+  },
+  "rule_per_stage": {
+    "Credential Access": {
+      "n": 38,
+      "top1_acc": 0.0,
+      "top3_acc": 1.0
+    },
+    "Lateral Movement": {
+      "n": 62,
+      "top1_acc": 0.3387,
+      "top3_acc": 0.3387
+    },
+    "Discovery": {
+      "n": 71,
+      "top1_acc": 0.0,
+      "top3_acc": 0.0
+    },
+    "Execution": {
+      "n": 64,
+      "top1_acc": 1.0,
+      "top3_acc": 1.0
+    },
+    "Persistence": {
+      "n": 31,
+      "top1_acc": 0.0,
+      "top3_acc": 0.0
+    },
+    "Command & Control": {
+      "n": 42,
+      "top1_acc": 0.0,
+      "top3_acc": 1.0
+    },
+    "Collection": {
+      "n": 58,
+      "top1_acc": 0.3621,
+      "top3_acc": 0.3621
+    },
+    "Exfiltration": {
+      "n": 58,
+      "top1_acc": 0.3621,
+      "top3_acc": 0.3621
+    },
+    "Privilege Escalation": {
+      "n": 43,
+      "top1_acc": 0.0,
+      "top3_acc": 0.5116
+    },
+    "Defense Evasion": {
+      "n": 61,
+      "top1_acc": 0.0,
+      "top3_acc": 0.0
+    },
+    "Impact": {
+      "n": 43,
+      "top1_acc": 0.4884,
+      "top3_acc": 0.4884
+    }
+  },
+  "sample_records": [
+    {
+      "campaign_id": "CAM-0007",
+      "at_stage": "Initial Access",
+      "observed_stages": [
+        "Initial Access"
+      ],
+      "predicted_top1": "Credential Access",
+      "predicted_top3": [
+        "Credential Access",
+        "Execution"
+      ],
+      "confidence_top1": 0.5109467506408691,
+      "actual": "Credential Access"
+    },
+    {
+      "campaign_id": "CAM-0007",
+      "at_stage": "Credential Access",
+      "observed_stages": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "predicted_top1": "Discovery",
+      "predicted_top3": [
+        "Discovery",
+        "Lateral Movement"
+      ],
+      "confidence_top1": 0.5369834899902344,
+      "actual": "Lateral Movement"
+    },
+    {
+      "campaign_id": "CAM-0025",
+      "at_stage": "Initial Access",
+      "observed_stages": [
+        "Initial Access"
+      ],
+      "predicted_top1": "Credential Access",
+      "predicted_top3": [
+        "Credential Access",
+        "Execution"
+      ],
+      "confidence_top1": 0.6607059240341187,
+      "actual": "Credential Access"
+    },
+    {
+      "campaign_id": "CAM-0025",
+      "at_stage": "Credential Access",
+      "observed_stages": [
+        "Initial Access",
+        "Credential Access"
+      ],
+      "predicted_top1": "Discovery",
+      "predicted_top3": [
+        "Discovery",
+        "Lateral Movement"
+      ],
+      "confidence_top1": 0.517723798751831,
+      "actual": "Discovery"
+    },
+    {
+      "campaign_id": "CAM-0025",
+      "at_stage": "Discovery",
+      "observed_stages": [
+        "Initial Access",
+        "Credential Access",
+        "Discovery"
+      ],
+      "predicted_top1": "Lateral Movement",
+      "predicted_top3": [
+        "Lateral Movement"
+      ],
+      "confidence_top1": 0.9716631770133972,
+      "actual": "Lateral Movement"
+    }
+  ],
+  "timestamp": "2026-08-15T09:19:46.844435"
+}

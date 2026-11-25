@@ -1,0 +1,27 @@
+{
+  "experiment": "exp7_unseen_generalization",
+  "known_eval": {
+    "name": "Known Sequences (Baseline)",
+    "n_campaigns": 63,
+    "detection_f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fpr": 0.0,
+    "avg_detection_latency_events": 1.0,
+    "top1_prediction_acc": 0.619,
+    "top3_prediction_acc": 0.6984
+  },
+  "unseen_eval": {
+    "name": "Unseen Sequences (Zero-Day)",
+    "n_campaigns": 57,
+    "detection_f1": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "fpr": 0.0,
+    "avg_detection_latency_events": 1.0,
+    "top1_prediction_acc": 0.9649,
+    "top3_prediction_acc": 0.9649
+  },
+  "evaluation_time_ms": 381.99,
+  "timestamp": "2026-08-15T09:35:46.788501"
+}

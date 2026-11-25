@@ -1,0 +1,63 @@
+{
+  "experiment": "exp1_baseline_vs_caip",
+  "baseline": {
+    "precision": 1.0,
+    "recall": 0.768,
+    "f1": 0.8688,
+    "fpr": 0.0,
+    "alerts_generated": 596,
+    "total_events": 1552,
+    "inference_ms": 0.8
+  },
+  "caip": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fpr": 0.0,
+    "fnr": 0.0,
+    "accuracy": 1.0,
+    "tp": 776,
+    "tn": 776,
+    "fp": 0,
+    "fn": 0,
+    "alerts_generated": 120,
+    "campaigns": 120,
+    "inference_ms": 2.13
+  },
+  "alert_reduction": {
+    "baseline_alerts": 596,
+    "caip_campaign_alerts": 120,
+    "total_events": 776,
+    "alert_reduction_pct": 79.87,
+    "avg_events_per_baseline_alert": 1.3,
+    "avg_events_per_caip_campaign": 6.47,
+    "true_campaigns": 120
+  },
+  "campaign_type_breakdown": {
+    "credential_phishing": {
+      "n": 19,
+      "detected": 19
+    },
+    "malware_delivery": {
+      "n": 21,
+      "detected": 21
+    },
+    "data_theft": {
+      "n": 19,
+      "detected": 19
+    },
+    "ransomware": {
+      "n": 22,
+      "detected": 22
+    },
+    "apt_full_chain": {
+      "n": 21,
+      "detected": 21
+    },
+    "insider_threat": {
+      "n": 18,
+      "detected": 18
+    }
+  },
+  "timestamp": "2026-08-15T09:35:58.334841"
+}

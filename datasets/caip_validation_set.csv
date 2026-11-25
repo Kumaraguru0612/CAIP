@@ -1,0 +1,777 @@
+campaign_id,event_id,timestamp,user,source_ip,domain,event_type,mitre_technique,mitre_stage,severity,time_delta_minutes,campaign_type,next_stage_label
+CAM-0007,EVT-0007-01,2026-02-04T07:55:00,rosa08,10.112.3.19,cloud-746.com,phishing_email,T1566,Initial Access,47,0,credential_phishing,Lateral Movement
+CAM-0007,EVT-0007-02,2026-02-04T08:12:00,rosa08,10.112.3.19,cloud-746.com,attachment_download,T1204.002,Initial Access,51,17,credential_phishing,Lateral Movement
+CAM-0007,EVT-0007-03,2026-02-04T08:21:00,rosa08,10.112.3.19,cloud-746.com,credential_login,T1110,Credential Access,63,9,credential_phishing,Lateral Movement
+CAM-0007,EVT-0007-04,2026-02-04T08:37:00,rosa08,10.112.3.19,cloud-746.com,suspicious_login,T1078,Credential Access,59,16,credential_phishing,Lateral Movement
+CAM-0007,EVT-0007-05,2026-02-04T08:56:00,rosa08,10.112.3.19,cloud-746.com,lateral_wmi,T1021.006,Lateral Movement,75,19,credential_phishing,Lateral Movement
+CAM-0025,EVT-0025-01,2026-10-09T16:22:00,julia22,10.188.242.142,portal-452.io,phishing_email,T1566,Initial Access,63,0,credential_phishing,Lateral Movement
+CAM-0025,EVT-0025-02,2026-10-09T16:32:00,julia22,10.188.242.142,portal-452.io,url_visit,T1204.001,Initial Access,68,10,credential_phishing,Lateral Movement
+CAM-0025,EVT-0025-03,2026-10-09T16:40:00,julia22,10.188.242.142,portal-452.io,suspicious_login,T1078,Credential Access,69,8,credential_phishing,Lateral Movement
+CAM-0025,EVT-0025-04,2026-10-09T16:47:00,julia22,10.94.98.56,portal-452.io,credential_login,T1110,Credential Access,78,7,credential_phishing,Lateral Movement
+CAM-0025,EVT-0025-05,2026-10-09T17:03:00,julia22,10.94.98.56,portal-452.io,network_scan,T1046,Discovery,83,16,credential_phishing,Lateral Movement
+CAM-0025,EVT-0025-06,2026-10-09T17:20:00,julia22,10.51.99.76,portal-452.io,lateral_rdp,T1021.001,Lateral Movement,98,17,credential_phishing,Lateral Movement
+CAM-0026,EVT-0026-01,2026-01-28T15:44:00,linda06,10.154.7.182,portal-229.org,phishing_email,T1566,Initial Access,41,0,malware_delivery,Command & Control
+CAM-0026,EVT-0026-02,2026-01-28T16:00:00,linda06,10.154.7.182,portal-229.org,attachment_download,T1204.002,Initial Access,44,16,malware_delivery,Command & Control
+CAM-0026,EVT-0026-03,2026-01-28T16:01:00,linda06,10.154.7.182,portal-229.org,macro_execution,T1204.002,Execution,55,1,malware_delivery,Command & Control
+CAM-0026,EVT-0026-04,2026-01-28T16:11:00,linda06,10.154.7.182,portal-229.org,powershell,T1059.001,Execution,59,10,malware_delivery,Command & Control
+CAM-0026,EVT-0026-05,2026-01-28T16:22:00,linda06,10.154.7.182,portal-229.org,scheduled_task,T1053.005,Persistence,57,11,malware_delivery,Command & Control
+CAM-0026,EVT-0026-06,2026-01-28T16:31:00,linda06,10.33.205.126,portal-229.org,dns_beacon,T1071.004,Command & Control,71,9,malware_delivery,Command & Control
+CAM-0028,EVT-0028-01,2026-03-30T08:10:00,diana25,10.106.108.68,sync-183.net,drive_by,T1189,Initial Access,47,0,data_theft,Exfiltration
+CAM-0028,EVT-0028-02,2026-03-30T08:25:00,diana25,10.106.108.68,sync-183.net,kerberoasting,T1558.003,Credential Access,55,15,data_theft,Exfiltration
+CAM-0028,EVT-0028-03,2026-03-30T08:45:00,diana25,10.106.108.68,sync-183.net,file_search,T1083,Discovery,59,20,data_theft,Exfiltration
+CAM-0028,EVT-0028-04,2026-03-30T08:55:00,diana25,10.144.232.19,sync-183.net,keylogger,T1056.001,Collection,56,10,data_theft,Exfiltration
+CAM-0028,EVT-0028-05,2026-03-30T09:03:00,diana25,10.144.232.19,sync-183.net,dns_exfil,T1048.003,Exfiltration,67,8,data_theft,Exfiltration
+CAM-0031,EVT-0031-01,2026-03-09T15:28:00,quinn12,10.255.226.195,secure-308.org,phishing_email,T1566,Initial Access,57,0,credential_phishing,Lateral Movement
+CAM-0031,EVT-0031-02,2026-03-09T15:29:00,quinn12,10.255.226.195,secure-308.org,url_visit,T1204.001,Initial Access,65,1,credential_phishing,Lateral Movement
+CAM-0031,EVT-0031-03,2026-03-09T15:49:00,quinn12,10.255.226.195,secure-308.org,suspicious_login,T1078,Credential Access,65,20,credential_phishing,Lateral Movement
+CAM-0031,EVT-0031-04,2026-03-09T15:55:00,quinn12,10.255.226.195,secure-308.org,credential_login,T1110,Credential Access,72,6,credential_phishing,Lateral Movement
+CAM-0031,EVT-0031-05,2026-03-09T16:13:00,quinn12,10.58.236.243,secure-308.org,network_scan,T1046,Discovery,81,18,credential_phishing,Lateral Movement
+CAM-0031,EVT-0031-06,2026-03-09T16:17:00,quinn12,10.58.236.243,secure-308.org,lateral_rdp,T1021.001,Lateral Movement,97,4,credential_phishing,Lateral Movement
+CAM-0033,EVT-0033-01,2026-10-06T18:29:00,paula28,10.76.228.138,access-453.org,spear_phishing,T1566.001,Initial Access,57,0,ransomware,Impact
+CAM-0033,EVT-0033-02,2026-10-06T18:37:00,paula28,10.76.228.138,access-453.org,macro_execution,T1204.002,Execution,64,8,ransomware,Impact
+CAM-0033,EVT-0033-03,2026-10-06T18:50:00,paula28,10.76.228.138,access-453.org,token_impersonation,T1134,Privilege Escalation,65,13,ransomware,Impact
+CAM-0033,EVT-0033-04,2026-10-06T19:04:00,paula28,10.242.195.99,access-453.org,masquerading,T1036,Defense Evasion,66,14,ransomware,Impact
+CAM-0033,EVT-0033-05,2026-10-06T19:09:00,paula28,10.242.195.99,access-453.org,lateral_wmi,T1021.006,Lateral Movement,81,5,ransomware,Impact
+CAM-0033,EVT-0033-06,2026-10-06T19:14:00,paula28,10.242.195.99,access-453.org,disk_wipe,T1561,Impact,92,5,ransomware,Impact
+CAM-0045,EVT-0045-01,2026-01-27T15:38:00,rosa02,10.168.62.106,auth-994.io,phishing_email,T1566,Initial Access,67,0,ransomware,Impact
+CAM-0045,EVT-0045-02,2026-01-27T15:42:00,rosa02,10.168.62.106,auth-994.io,powershell,T1059.001,Execution,74,4,ransomware,Impact
+CAM-0045,EVT-0045-03,2026-01-27T15:59:00,rosa02,10.168.62.106,auth-994.io,privilege_escalation,T1068,Privilege Escalation,75,17,ransomware,Impact
+CAM-0045,EVT-0045-04,2026-01-27T16:04:00,rosa02,10.168.62.106,auth-994.io,process_injection,T1055,Defense Evasion,91,5,ransomware,Impact
+CAM-0045,EVT-0045-05,2026-01-27T16:08:00,rosa02,10.168.62.106,auth-994.io,lateral_rdp,T1021.001,Lateral Movement,87,4,ransomware,Impact
+CAM-0045,EVT-0045-06,2026-01-27T16:20:00,rosa02,10.168.62.106,auth-994.io,ransomware_encrypt,T1486,Impact,82,12,ransomware,Impact
+CAM-0047,EVT-0047-01,2026-06-09T16:49:00,charlie24,10.110.192.108,access-449.net,spear_phishing,T1566.001,Initial Access,51,0,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-02,2026-06-09T17:14:00,charlie24,10.110.192.108,access-449.net,url_visit,T1204.001,Initial Access,54,25,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-03,2026-06-09T17:48:00,charlie24,10.110.192.108,access-449.net,powershell,T1059.001,Execution,59,34,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-04,2026-06-09T19:39:00,charlie24,10.41.139.114,access-449.net,process_injection,T1055,Defense Evasion,72,111,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-05,2026-06-09T21:18:00,charlie24,10.41.139.114,access-449.net,scheduled_task,T1053.005,Persistence,75,99,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-06,2026-06-09T22:29:00,charlie24,10.58.176.111,access-449.net,dns_beacon,T1071.004,Command & Control,81,71,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-07,2026-06-09T22:58:00,charlie24,10.58.176.111,access-449.net,privilege_escalation,T1068,Privilege Escalation,81,29,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-08,2026-06-10T00:28:00,charlie24,10.58.176.111,access-449.net,network_scan,T1046,Discovery,93,90,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-09,2026-06-10T01:22:00,charlie24,10.28.3.53,access-449.net,lateral_rdp,T1021.001,Lateral Movement,75,54,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-10,2026-06-10T02:15:00,charlie24,10.28.3.53,access-449.net,data_staged,T1074,Collection,87,53,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-11,2026-06-10T04:07:00,charlie24,10.61.3.128,access-449.net,exfil_https,T1041,Exfiltration,100,112,apt_full_chain,Exfiltration
+CAM-0047,EVT-0047-12,2026-06-10T05:57:00,charlie24,10.194.117.129,access-449.net,service_stop,T1489,Impact,100,110,apt_full_chain,Exfiltration
+CAM-0057,EVT-0057-01,2026-09-21T13:45:00,tina15,10.32.56.215,access-711.com,spear_phishing,T1566.001,Initial Access,60,0,ransomware,Impact
+CAM-0057,EVT-0057-02,2026-09-21T13:59:00,tina15,10.32.56.215,access-711.com,macro_execution,T1204.002,Execution,63,14,ransomware,Impact
+CAM-0057,EVT-0057-03,2026-09-21T14:19:00,tina15,10.32.56.215,access-711.com,token_impersonation,T1134,Privilege Escalation,70,20,ransomware,Impact
+CAM-0057,EVT-0057-04,2026-09-21T14:27:00,tina15,10.32.56.215,access-711.com,masquerading,T1036,Defense Evasion,81,8,ransomware,Impact
+CAM-0057,EVT-0057-05,2026-09-21T14:30:00,tina15,10.32.56.215,access-711.com,lateral_wmi,T1021.006,Lateral Movement,88,3,ransomware,Impact
+CAM-0057,EVT-0057-06,2026-09-21T14:33:00,tina15,10.32.56.215,access-711.com,disk_wipe,T1561,Impact,95,3,ransomware,Impact
+CAM-0058,EVT-0058-01,2026-01-09T17:50:00,rosa01,10.199.240.12,sync-496.org,drive_by,T1189,Initial Access,48,0,data_theft,Exfiltration
+CAM-0058,EVT-0058-02,2026-01-09T17:58:00,rosa01,10.199.240.12,sync-496.org,kerberoasting,T1558.003,Credential Access,56,8,data_theft,Exfiltration
+CAM-0058,EVT-0058-03,2026-01-09T18:02:00,rosa01,10.199.240.12,sync-496.org,file_search,T1083,Discovery,62,4,data_theft,Exfiltration
+CAM-0058,EVT-0058-04,2026-01-09T18:13:00,rosa01,10.173.89.213,sync-496.org,keylogger,T1056.001,Collection,60,11,data_theft,Exfiltration
+CAM-0058,EVT-0058-05,2026-01-09T18:28:00,rosa01,10.173.89.213,sync-496.org,dns_exfil,T1048.003,Exfiltration,80,15,data_theft,Exfiltration
+CAM-0068,EVT-0068-01,2026-05-28T08:24:00,linda02,10.205.26.146,portal-299.org,spear_phishing,T1566.001,Initial Access,57,0,malware_delivery,Command & Control
+CAM-0068,EVT-0068-02,2026-05-28T08:42:00,linda02,10.205.26.146,portal-299.org,attachment_download,T1204.002,Initial Access,62,18,malware_delivery,Command & Control
+CAM-0068,EVT-0068-03,2026-05-28T09:02:00,linda02,10.205.26.146,portal-299.org,script_execution,T1059.005,Execution,73,20,malware_delivery,Command & Control
+CAM-0068,EVT-0068-04,2026-05-28T09:22:00,linda02,10.49.201.96,portal-299.org,registry_run_key,T1547.001,Persistence,66,20,malware_delivery,Command & Control
+CAM-0068,EVT-0068-05,2026-05-28T09:33:00,linda02,10.49.201.96,portal-299.org,http_c2,T1071.001,Command & Control,85,11,malware_delivery,Command & Control
+CAM-0071,EVT-0071-01,2026-06-16T21:33:00,george14,10.241.31.181,update-631.net,phishing_email,T1566,Initial Access,57,0,apt_full_chain,Exfiltration
+CAM-0071,EVT-0071-02,2026-06-16T22:10:00,george14,10.241.31.181,update-631.net,attachment_download,T1204.002,Initial Access,63,37,apt_full_chain,Exfiltration
+CAM-0071,EVT-0071-03,2026-06-16T23:33:00,george14,10.241.31.181,update-631.net,macro_execution,T1204.002,Execution,67,83,apt_full_chain,Exfiltration
+CAM-0071,EVT-0071-04,2026-06-17T00:57:00,george14,10.241.31.181,update-631.net,log_clearing,T1070,Defense Evasion,72,84,apt_full_chain,Exfiltration
+CAM-0071,EVT-0071-05,2026-06-17T02:44:00,george14,10.241.31.181,update-631.net,http_c2,T1071.001,Command & Control,89,107,apt_full_chain,Exfiltration
+CAM-0071,EVT-0071-06,2026-06-17T04:27:00,george14,10.241.31.181,update-631.net,uac_bypass,T1548.002,Privilege Escalation,82,103,apt_full_chain,Exfiltration
+CAM-0071,EVT-0071-07,2026-06-17T05:06:00,george14,10.152.115.242,update-631.net,system_enum,T1082,Discovery,81,39,apt_full_chain,Exfiltration
+CAM-0071,EVT-0071-08,2026-06-17T05:59:00,george14,10.152.115.242,update-631.net,lateral_smb,T1021.002,Lateral Movement,92,53,apt_full_chain,Exfiltration
+CAM-0071,EVT-0071-09,2026-06-17T07:42:00,george14,10.152.115.242,update-631.net,keylogger,T1056.001,Collection,100,103,apt_full_chain,Exfiltration
+CAM-0071,EVT-0071-10,2026-06-17T08:58:00,george14,10.152.115.242,update-631.net,exfil_ftp,T1048,Exfiltration,100,76,apt_full_chain,Exfiltration
+CAM-0071,EVT-0071-11,2026-06-17T10:54:00,george14,10.62.194.230,update-631.net,disk_wipe,T1561,Impact,100,116,apt_full_chain,Exfiltration
+CAM-0072,EVT-0072-01,2026-08-15T14:47:00,linda25,10.74.148.11,api-831.com,credential_login,T1110,Credential Access,51,0,insider_threat,Exfiltration
+CAM-0072,EVT-0072-02,2026-08-15T14:54:00,linda25,10.74.148.11,api-831.com,file_search,T1083,Discovery,58,7,insider_threat,Exfiltration
+CAM-0072,EVT-0072-03,2026-08-15T15:03:00,linda25,10.74.148.11,api-831.com,process_injection,T1055,Defense Evasion,65,9,insider_threat,Exfiltration
+CAM-0072,EVT-0072-04,2026-08-15T15:12:00,linda25,10.122.124.13,api-831.com,screen_capture,T1113,Collection,63,9,insider_threat,Exfiltration
+CAM-0072,EVT-0072-05,2026-08-15T15:29:00,linda25,10.122.124.13,api-831.com,dns_exfil,T1048.003,Exfiltration,67,17,insider_threat,Exfiltration
+CAM-0074,EVT-0074-01,2026-01-20T06:19:00,bob27,10.203.253.48,cloud-993.org,phishing_email,T1566,Initial Access,68,0,malware_delivery,Command & Control
+CAM-0074,EVT-0074-02,2026-01-20T06:23:00,bob27,10.203.253.48,cloud-993.org,attachment_download,T1204.002,Initial Access,73,4,malware_delivery,Command & Control
+CAM-0074,EVT-0074-03,2026-01-20T06:33:00,bob27,10.203.253.48,cloud-993.org,macro_execution,T1204.002,Execution,80,10,malware_delivery,Command & Control
+CAM-0074,EVT-0074-04,2026-01-20T06:51:00,bob27,10.203.253.48,cloud-993.org,powershell,T1059.001,Execution,89,18,malware_delivery,Command & Control
+CAM-0074,EVT-0074-05,2026-01-20T06:56:00,bob27,10.203.253.48,cloud-993.org,scheduled_task,T1053.005,Persistence,96,5,malware_delivery,Command & Control
+CAM-0074,EVT-0074-06,2026-01-20T07:03:00,bob27,10.234.131.184,cloud-993.org,dns_beacon,T1071.004,Command & Control,83,7,malware_delivery,Command & Control
+CAM-0079,EVT-0079-01,2026-06-28T09:11:00,oscar28,10.193.192.21,sync-777.net,spear_phishing,T1566.001,Initial Access,60,0,credential_phishing,Lateral Movement
+CAM-0079,EVT-0079-02,2026-06-28T09:28:00,oscar28,10.193.192.21,sync-777.net,url_visit,T1204.001,Initial Access,64,17,credential_phishing,Lateral Movement
+CAM-0079,EVT-0079-03,2026-06-28T09:36:00,oscar28,10.193.192.21,sync-777.net,credential_login,T1110,Credential Access,66,8,credential_phishing,Lateral Movement
+CAM-0079,EVT-0079-04,2026-06-28T09:37:00,oscar28,10.193.192.21,sync-777.net,system_enum,T1082,Discovery,75,1,credential_phishing,Lateral Movement
+CAM-0079,EVT-0079-05,2026-06-28T09:55:00,oscar28,10.193.192.21,sync-777.net,lateral_smb,T1021.002,Lateral Movement,84,18,credential_phishing,Lateral Movement
+CAM-0081,EVT-0081-01,2026-09-24T13:26:00,julia08,10.163.164.61,api-997.net,spear_phishing,T1566.001,Initial Access,61,0,ransomware,Impact
+CAM-0081,EVT-0081-02,2026-09-24T13:28:00,julia08,10.163.164.61,api-997.net,macro_execution,T1204.002,Execution,68,2,ransomware,Impact
+CAM-0081,EVT-0081-03,2026-09-24T13:47:00,julia08,10.163.164.61,api-997.net,token_impersonation,T1134,Privilege Escalation,77,19,ransomware,Impact
+CAM-0081,EVT-0081-04,2026-09-24T13:53:00,julia08,10.163.164.61,api-997.net,masquerading,T1036,Defense Evasion,85,6,ransomware,Impact
+CAM-0081,EVT-0081-05,2026-09-24T14:11:00,julia08,10.176.195.202,api-997.net,lateral_wmi,T1021.006,Lateral Movement,85,18,ransomware,Impact
+CAM-0081,EVT-0081-06,2026-09-24T14:28:00,julia08,10.176.195.202,api-997.net,disk_wipe,T1561,Impact,86,17,ransomware,Impact
+CAM-0082,EVT-0082-01,2026-04-26T15:54:00,evan10,10.192.94.194,portal-584.net,spear_phishing,T1566.001,Initial Access,67,0,data_theft,Exfiltration
+CAM-0082,EVT-0082-02,2026-04-26T15:56:00,evan10,10.192.94.194,portal-584.net,mimikatz,T1003.001,Credential Access,74,2,data_theft,Exfiltration
+CAM-0082,EVT-0082-03,2026-04-26T16:10:00,evan10,10.192.94.194,portal-584.net,system_enum,T1082,Discovery,79,14,data_theft,Exfiltration
+CAM-0082,EVT-0082-04,2026-04-26T16:28:00,evan10,10.124.130.53,portal-584.net,screen_capture,T1113,Collection,88,18,data_theft,Exfiltration
+CAM-0082,EVT-0082-05,2026-04-26T16:39:00,evan10,10.230.189.24,portal-584.net,exfil_ftp,T1048,Exfiltration,99,11,data_theft,Exfiltration
+CAM-0090,EVT-0090-01,2026-09-10T10:04:00,sam17,10.86.194.44,update-375.org,suspicious_login,T1078,Credential Access,48,0,insider_threat,Exfiltration
+CAM-0090,EVT-0090-02,2026-09-10T10:13:00,sam17,10.86.194.44,update-375.org,system_enum,T1082,Discovery,54,9,insider_threat,Exfiltration
+CAM-0090,EVT-0090-03,2026-09-10T10:23:00,sam17,10.86.194.44,update-375.org,masquerading,T1036,Defense Evasion,60,10,insider_threat,Exfiltration
+CAM-0090,EVT-0090-04,2026-09-10T10:26:00,sam17,10.126.253.153,update-375.org,data_staged,T1074,Collection,63,3,insider_threat,Exfiltration
+CAM-0090,EVT-0090-05,2026-09-10T10:46:00,sam17,10.126.253.153,update-375.org,exfil_ftp,T1048,Exfiltration,64,20,insider_threat,Exfiltration
+CAM-0095,EVT-0095-01,2026-10-14T19:29:00,diana22,10.84.124.133,update-665.net,phishing_email,T1566,Initial Access,50,0,apt_full_chain,Exfiltration
+CAM-0095,EVT-0095-02,2026-10-14T21:04:00,diana22,10.84.124.133,update-665.net,attachment_download,T1204.002,Initial Access,54,95,apt_full_chain,Exfiltration
+CAM-0095,EVT-0095-03,2026-10-14T21:42:00,diana22,10.84.124.133,update-665.net,macro_execution,T1204.002,Execution,66,38,apt_full_chain,Exfiltration
+CAM-0095,EVT-0095-04,2026-10-14T23:21:00,diana22,10.84.124.133,update-665.net,log_clearing,T1070,Defense Evasion,68,99,apt_full_chain,Exfiltration
+CAM-0095,EVT-0095-05,2026-10-15T01:10:00,diana22,10.84.124.133,update-665.net,http_c2,T1071.001,Command & Control,78,109,apt_full_chain,Exfiltration
+CAM-0095,EVT-0095-06,2026-10-15T02:22:00,diana22,10.84.124.133,update-665.net,uac_bypass,T1548.002,Privilege Escalation,85,72,apt_full_chain,Exfiltration
+CAM-0095,EVT-0095-07,2026-10-15T02:37:00,diana22,10.142.32.148,update-665.net,system_enum,T1082,Discovery,98,15,apt_full_chain,Exfiltration
+CAM-0095,EVT-0095-08,2026-10-15T03:05:00,diana22,10.166.100.118,update-665.net,lateral_smb,T1021.002,Lateral Movement,99,28,apt_full_chain,Exfiltration
+CAM-0095,EVT-0095-09,2026-10-15T03:34:00,diana22,10.166.100.118,update-665.net,keylogger,T1056.001,Collection,90,29,apt_full_chain,Exfiltration
+CAM-0095,EVT-0095-10,2026-10-15T04:51:00,diana22,10.166.100.118,update-665.net,exfil_ftp,T1048,Exfiltration,100,77,apt_full_chain,Exfiltration
+CAM-0095,EVT-0095-11,2026-10-15T05:46:00,diana22,10.166.100.118,update-665.net,disk_wipe,T1561,Impact,100,55,apt_full_chain,Exfiltration
+CAM-0096,EVT-0096-01,2026-12-11T15:58:00,sam04,10.178.180.217,access-732.net,credential_login,T1110,Credential Access,66,0,insider_threat,Exfiltration
+CAM-0096,EVT-0096-02,2026-12-11T16:01:00,sam04,10.178.180.217,access-732.net,file_search,T1083,Discovery,74,3,insider_threat,Exfiltration
+CAM-0096,EVT-0096-03,2026-12-11T16:06:00,sam04,10.178.180.217,access-732.net,process_injection,T1055,Defense Evasion,76,5,insider_threat,Exfiltration
+CAM-0096,EVT-0096-04,2026-12-11T16:10:00,sam04,10.93.191.178,access-732.net,screen_capture,T1113,Collection,78,4,insider_threat,Exfiltration
+CAM-0096,EVT-0096-05,2026-12-11T16:15:00,sam04,10.93.191.178,access-732.net,dns_exfil,T1048.003,Exfiltration,94,5,insider_threat,Exfiltration
+CAM-0100,EVT-0100-01,2026-05-30T15:36:00,bob19,10.179.143.153,portal-272.org,phishing_email,T1566,Initial Access,62,0,data_theft,Exfiltration
+CAM-0100,EVT-0100-02,2026-05-30T15:40:00,bob19,10.179.143.153,portal-272.org,credential_login,T1110,Credential Access,66,4,data_theft,Exfiltration
+CAM-0100,EVT-0100-03,2026-05-30T15:54:00,bob19,10.179.143.153,portal-272.org,network_scan,T1046,Discovery,68,14,data_theft,Exfiltration
+CAM-0100,EVT-0100-04,2026-05-30T16:03:00,bob19,10.67.127.38,portal-272.org,data_staged,T1074,Collection,86,9,data_theft,Exfiltration
+CAM-0100,EVT-0100-05,2026-05-30T16:14:00,bob19,10.67.127.38,portal-272.org,exfil_https,T1041,Exfiltration,78,11,data_theft,Exfiltration
+CAM-0104,EVT-0104-01,2026-08-08T16:50:00,charlie29,10.51.71.193,login-703.io,phishing_email,T1566,Initial Access,51,0,malware_delivery,Command & Control
+CAM-0104,EVT-0104-02,2026-08-08T16:59:00,charlie29,10.51.71.193,login-703.io,attachment_download,T1204.002,Initial Access,59,9,malware_delivery,Command & Control
+CAM-0104,EVT-0104-03,2026-08-08T17:02:00,charlie29,10.51.71.193,login-703.io,macro_execution,T1204.002,Execution,59,3,malware_delivery,Command & Control
+CAM-0104,EVT-0104-04,2026-08-08T17:20:00,charlie29,10.51.71.193,login-703.io,powershell,T1059.001,Execution,72,18,malware_delivery,Command & Control
+CAM-0104,EVT-0104-05,2026-08-08T17:40:00,charlie29,10.51.71.193,login-703.io,scheduled_task,T1053.005,Persistence,71,20,malware_delivery,Command & Control
+CAM-0104,EVT-0104-06,2026-08-08T17:41:00,charlie29,10.51.71.193,login-703.io,dns_beacon,T1071.004,Command & Control,91,1,malware_delivery,Command & Control
+CAM-0105,EVT-0105-01,2026-07-17T09:15:00,quinn20,10.96.200.76,sync-155.net,phishing_email,T1566,Initial Access,55,0,ransomware,Impact
+CAM-0105,EVT-0105-02,2026-07-17T09:35:00,quinn20,10.96.200.76,sync-155.net,powershell,T1059.001,Execution,58,20,ransomware,Impact
+CAM-0105,EVT-0105-03,2026-07-17T09:52:00,quinn20,10.96.200.76,sync-155.net,privilege_escalation,T1068,Privilege Escalation,61,17,ransomware,Impact
+CAM-0105,EVT-0105-04,2026-07-17T10:04:00,quinn20,10.215.187.140,sync-155.net,process_injection,T1055,Defense Evasion,70,12,ransomware,Impact
+CAM-0105,EVT-0105-05,2026-07-17T10:10:00,quinn20,10.215.187.140,sync-155.net,lateral_rdp,T1021.001,Lateral Movement,79,6,ransomware,Impact
+CAM-0105,EVT-0105-06,2026-07-17T10:13:00,quinn20,10.215.187.140,sync-155.net,ransomware_encrypt,T1486,Impact,70,3,ransomware,Impact
+CAM-0113,EVT-0113-01,2026-05-08T17:25:00,julia27,10.20.110.214,auth-251.com,spear_phishing,T1566.001,Initial Access,62,0,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-02,2026-05-08T19:06:00,julia27,10.20.110.214,auth-251.com,url_visit,T1204.001,Initial Access,67,101,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-03,2026-05-08T19:54:00,julia27,10.20.110.214,auth-251.com,powershell,T1059.001,Execution,70,48,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-04,2026-05-08T20:12:00,julia27,10.20.110.214,auth-251.com,process_injection,T1055,Defense Evasion,80,18,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-05,2026-05-08T21:38:00,julia27,10.20.110.214,auth-251.com,scheduled_task,T1053.005,Persistence,94,86,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-06,2026-05-08T22:05:00,julia27,10.71.62.4,auth-251.com,dns_beacon,T1071.004,Command & Control,92,27,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-07,2026-05-08T22:27:00,julia27,10.205.190.176,auth-251.com,privilege_escalation,T1068,Privilege Escalation,86,22,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-08,2026-05-09T00:02:00,julia27,10.132.38.6,auth-251.com,network_scan,T1046,Discovery,100,95,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-09,2026-05-09T00:25:00,julia27,10.132.38.6,auth-251.com,lateral_rdp,T1021.001,Lateral Movement,94,23,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-10,2026-05-09T01:36:00,julia27,10.169.62.11,auth-251.com,data_staged,T1074,Collection,98,71,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-11,2026-05-09T02:50:00,julia27,10.221.202.128,auth-251.com,exfil_https,T1041,Exfiltration,92,74,apt_full_chain,Exfiltration
+CAM-0113,EVT-0113-12,2026-05-09T03:08:00,julia27,10.221.202.128,auth-251.com,service_stop,T1489,Impact,100,18,apt_full_chain,Exfiltration
+CAM-0115,EVT-0115-01,2026-09-06T17:58:00,helen21,10.9.195.201,cloud-467.io,phishing_email,T1566,Initial Access,57,0,credential_phishing,Lateral Movement
+CAM-0115,EVT-0115-02,2026-09-06T18:09:00,helen21,10.9.195.201,cloud-467.io,attachment_download,T1204.002,Initial Access,63,11,credential_phishing,Lateral Movement
+CAM-0115,EVT-0115-03,2026-09-06T18:18:00,helen21,10.9.195.201,cloud-467.io,credential_login,T1110,Credential Access,65,9,credential_phishing,Lateral Movement
+CAM-0115,EVT-0115-04,2026-09-06T18:19:00,helen21,10.9.195.201,cloud-467.io,suspicious_login,T1078,Credential Access,72,1,credential_phishing,Lateral Movement
+CAM-0115,EVT-0115-05,2026-09-06T18:20:00,helen21,10.241.183.197,cloud-467.io,lateral_wmi,T1021.006,Lateral Movement,77,1,credential_phishing,Lateral Movement
+CAM-0127,EVT-0127-01,2026-01-16T13:23:00,george09,10.188.237.130,verify-750.com,spear_phishing,T1566.001,Initial Access,61,0,credential_phishing,Lateral Movement
+CAM-0127,EVT-0127-02,2026-01-16T13:38:00,george09,10.188.237.130,verify-750.com,url_visit,T1204.001,Initial Access,65,15,credential_phishing,Lateral Movement
+CAM-0127,EVT-0127-03,2026-01-16T13:54:00,george09,10.188.237.130,verify-750.com,credential_login,T1110,Credential Access,75,16,credential_phishing,Lateral Movement
+CAM-0127,EVT-0127-04,2026-01-16T14:12:00,george09,10.132.46.73,verify-750.com,system_enum,T1082,Discovery,76,18,credential_phishing,Lateral Movement
+CAM-0127,EVT-0127-05,2026-01-16T14:13:00,george09,10.109.113.166,verify-750.com,lateral_smb,T1021.002,Lateral Movement,85,1,credential_phishing,Lateral Movement
+CAM-0128,EVT-0128-01,2026-03-09T11:38:00,george09,10.209.10.222,app-885.com,phishing_email,T1566,Initial Access,55,0,malware_delivery,Command & Control
+CAM-0128,EVT-0128-02,2026-03-09T11:47:00,george09,10.209.10.222,app-885.com,attachment_download,T1204.002,Initial Access,62,9,malware_delivery,Command & Control
+CAM-0128,EVT-0128-03,2026-03-09T11:57:00,george09,10.209.10.222,app-885.com,macro_execution,T1204.002,Execution,71,10,malware_delivery,Command & Control
+CAM-0128,EVT-0128-04,2026-03-09T12:06:00,george09,10.209.10.222,app-885.com,powershell,T1059.001,Execution,73,9,malware_delivery,Command & Control
+CAM-0128,EVT-0128-05,2026-03-09T12:18:00,george09,10.238.154.174,app-885.com,scheduled_task,T1053.005,Persistence,79,12,malware_delivery,Command & Control
+CAM-0128,EVT-0128-06,2026-03-09T12:35:00,george09,10.238.154.174,app-885.com,dns_beacon,T1071.004,Command & Control,90,17,malware_delivery,Command & Control
+CAM-0135,EVT-0135-01,2026-08-04T09:42:00,rosa09,10.242.78.53,cloud-802.com,phishing_email,T1566,Initial Access,49,0,ransomware,Impact
+CAM-0135,EVT-0135-02,2026-08-04T10:02:00,rosa09,10.242.78.53,cloud-802.com,powershell,T1059.001,Execution,56,20,ransomware,Impact
+CAM-0135,EVT-0135-03,2026-08-04T10:07:00,rosa09,10.242.78.53,cloud-802.com,privilege_escalation,T1068,Privilege Escalation,61,5,ransomware,Impact
+CAM-0135,EVT-0135-04,2026-08-04T10:11:00,rosa09,10.242.78.53,cloud-802.com,process_injection,T1055,Defense Evasion,70,4,ransomware,Impact
+CAM-0135,EVT-0135-05,2026-08-04T10:15:00,rosa09,10.54.254.51,cloud-802.com,lateral_rdp,T1021.001,Lateral Movement,69,4,ransomware,Impact
+CAM-0135,EVT-0135-06,2026-08-04T10:35:00,rosa09,10.54.254.51,cloud-802.com,ransomware_encrypt,T1486,Impact,69,20,ransomware,Impact
+CAM-0143,EVT-0143-01,2026-08-10T21:59:00,oscar15,10.68.255.2,portal-853.com,spear_phishing,T1566.001,Initial Access,57,0,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-02,2026-08-10T23:42:00,oscar15,10.68.255.2,portal-853.com,url_visit,T1204.001,Initial Access,64,103,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-03,2026-08-11T00:19:00,oscar15,10.68.255.2,portal-853.com,powershell,T1059.001,Execution,73,37,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-04,2026-08-11T02:18:00,oscar15,10.164.196.108,portal-853.com,process_injection,T1055,Defense Evasion,69,119,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-05,2026-08-11T03:50:00,oscar15,10.164.196.108,portal-853.com,scheduled_task,T1053.005,Persistence,89,92,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-06,2026-08-11T04:40:00,oscar15,10.164.196.108,portal-853.com,dns_beacon,T1071.004,Command & Control,87,50,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-07,2026-08-11T05:32:00,oscar15,10.164.196.108,portal-853.com,privilege_escalation,T1068,Privilege Escalation,93,52,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-08,2026-08-11T06:04:00,oscar15,10.164.196.108,portal-853.com,network_scan,T1046,Discovery,99,32,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-09,2026-08-11T07:54:00,oscar15,10.160.111.52,portal-853.com,lateral_rdp,T1021.001,Lateral Movement,100,110,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-10,2026-08-11T08:35:00,oscar15,10.160.111.52,portal-853.com,data_staged,T1074,Collection,100,41,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-11,2026-08-11T10:17:00,oscar15,10.160.111.52,portal-853.com,exfil_https,T1041,Exfiltration,100,102,apt_full_chain,Exfiltration
+CAM-0143,EVT-0143-12,2026-08-11T10:48:00,oscar15,10.160.111.52,portal-853.com,service_stop,T1489,Impact,100,31,apt_full_chain,Exfiltration
+CAM-0147,EVT-0147-01,2026-11-17T15:31:00,alice11,10.238.79.11,update-430.com,drive_by,T1189,Initial Access,64,0,ransomware,Impact
+CAM-0147,EVT-0147-02,2026-11-17T15:43:00,alice11,10.238.79.11,update-430.com,script_execution,T1059.005,Execution,67,12,ransomware,Impact
+CAM-0147,EVT-0147-03,2026-11-17T15:54:00,alice11,10.238.79.11,update-430.com,uac_bypass,T1548.002,Privilege Escalation,78,11,ransomware,Impact
+CAM-0147,EVT-0147-04,2026-11-17T16:02:00,alice11,10.238.79.11,update-430.com,log_clearing,T1070,Defense Evasion,76,8,ransomware,Impact
+CAM-0147,EVT-0147-05,2026-11-17T16:19:00,alice11,10.238.79.11,update-430.com,lateral_smb,T1021.002,Lateral Movement,80,17,ransomware,Impact
+CAM-0147,EVT-0147-06,2026-11-17T16:37:00,alice11,10.113.109.170,update-430.com,ransomware_encrypt,T1486,Impact,94,18,ransomware,Impact
+CAM-0160,EVT-0160-01,2026-09-29T19:14:00,rosa27,10.0.220.134,verify-479.com,drive_by,T1189,Initial Access,62,0,data_theft,Exfiltration
+CAM-0160,EVT-0160-02,2026-09-29T19:26:00,rosa27,10.0.220.134,verify-479.com,kerberoasting,T1558.003,Credential Access,69,12,data_theft,Exfiltration
+CAM-0160,EVT-0160-03,2026-09-29T19:45:00,rosa27,10.0.220.134,verify-479.com,file_search,T1083,Discovery,68,19,data_theft,Exfiltration
+CAM-0160,EVT-0160-04,2026-09-29T19:59:00,rosa27,10.119.42.73,verify-479.com,keylogger,T1056.001,Collection,74,14,data_theft,Exfiltration
+CAM-0160,EVT-0160-05,2026-09-29T20:19:00,rosa27,10.119.42.73,verify-479.com,dns_exfil,T1048.003,Exfiltration,90,20,data_theft,Exfiltration
+CAM-0164,EVT-0164-01,2026-07-26T06:16:00,charlie18,10.145.178.89,api-331.net,phishing_email,T1566,Initial Access,54,0,malware_delivery,Command & Control
+CAM-0164,EVT-0164-02,2026-07-26T06:33:00,charlie18,10.145.178.89,api-331.net,attachment_download,T1204.002,Initial Access,57,17,malware_delivery,Command & Control
+CAM-0164,EVT-0164-03,2026-07-26T06:51:00,charlie18,10.145.178.89,api-331.net,macro_execution,T1204.002,Execution,60,18,malware_delivery,Command & Control
+CAM-0164,EVT-0164-04,2026-07-26T07:08:00,charlie18,10.59.131.225,api-331.net,powershell,T1059.001,Execution,69,17,malware_delivery,Command & Control
+CAM-0164,EVT-0164-05,2026-07-26T07:26:00,charlie18,10.226.193.145,api-331.net,scheduled_task,T1053.005,Persistence,82,18,malware_delivery,Command & Control
+CAM-0164,EVT-0164-06,2026-07-26T07:42:00,charlie18,10.226.193.145,api-331.net,dns_beacon,T1071.004,Command & Control,74,16,malware_delivery,Command & Control
+CAM-0167,EVT-0167-01,2026-04-24T10:03:00,paula29,10.140.251.47,app-623.org,phishing_email,T1566,Initial Access,52,0,apt_full_chain,Exfiltration
+CAM-0167,EVT-0167-02,2026-04-24T11:19:00,paula29,10.140.251.47,app-623.org,attachment_download,T1204.002,Initial Access,59,76,apt_full_chain,Exfiltration
+CAM-0167,EVT-0167-03,2026-04-24T11:38:00,paula29,10.140.251.47,app-623.org,macro_execution,T1204.002,Execution,66,19,apt_full_chain,Exfiltration
+CAM-0167,EVT-0167-04,2026-04-24T12:37:00,paula29,10.140.251.47,app-623.org,log_clearing,T1070,Defense Evasion,70,59,apt_full_chain,Exfiltration
+CAM-0167,EVT-0167-05,2026-04-24T14:31:00,paula29,10.140.251.47,app-623.org,http_c2,T1071.001,Command & Control,68,114,apt_full_chain,Exfiltration
+CAM-0167,EVT-0167-06,2026-04-24T15:01:00,paula29,10.140.251.47,app-623.org,uac_bypass,T1548.002,Privilege Escalation,92,30,apt_full_chain,Exfiltration
+CAM-0167,EVT-0167-07,2026-04-24T15:56:00,paula29,10.107.194.149,app-623.org,system_enum,T1082,Discovery,100,55,apt_full_chain,Exfiltration
+CAM-0167,EVT-0167-08,2026-04-24T16:23:00,paula29,10.107.194.149,app-623.org,lateral_smb,T1021.002,Lateral Movement,87,27,apt_full_chain,Exfiltration
+CAM-0167,EVT-0167-09,2026-04-24T17:11:00,paula29,10.107.194.149,app-623.org,keylogger,T1056.001,Collection,84,48,apt_full_chain,Exfiltration
+CAM-0167,EVT-0167-10,2026-04-24T17:56:00,paula29,10.107.194.149,app-623.org,exfil_ftp,T1048,Exfiltration,97,45,apt_full_chain,Exfiltration
+CAM-0167,EVT-0167-11,2026-04-24T19:29:00,paula29,10.107.194.149,app-623.org,disk_wipe,T1561,Impact,100,93,apt_full_chain,Exfiltration
+CAM-0168,EVT-0168-01,2026-10-20T10:36:00,nancy07,10.214.190.94,verify-386.io,credential_login,T1110,Credential Access,45,0,insider_threat,Exfiltration
+CAM-0168,EVT-0168-02,2026-10-20T10:45:00,nancy07,10.214.190.94,verify-386.io,file_search,T1083,Discovery,49,9,insider_threat,Exfiltration
+CAM-0168,EVT-0168-03,2026-10-20T11:03:00,nancy07,10.214.190.94,verify-386.io,process_injection,T1055,Defense Evasion,57,18,insider_threat,Exfiltration
+CAM-0168,EVT-0168-04,2026-10-20T11:16:00,nancy07,10.76.242.207,verify-386.io,screen_capture,T1113,Collection,57,13,insider_threat,Exfiltration
+CAM-0168,EVT-0168-05,2026-10-20T11:17:00,nancy07,10.76.242.207,verify-386.io,dns_exfil,T1048.003,Exfiltration,61,1,insider_threat,Exfiltration
+CAM-0176,EVT-0176-01,2026-08-29T11:12:00,charlie27,10.74.28.69,app-501.com,spear_phishing,T1566.001,Initial Access,57,0,malware_delivery,Command & Control
+CAM-0176,EVT-0176-02,2026-08-29T11:13:00,charlie27,10.74.28.69,app-501.com,attachment_download,T1204.002,Initial Access,60,1,malware_delivery,Command & Control
+CAM-0176,EVT-0176-03,2026-08-29T11:21:00,charlie27,10.74.28.69,app-501.com,script_execution,T1059.005,Execution,69,8,malware_delivery,Command & Control
+CAM-0176,EVT-0176-04,2026-08-29T11:36:00,charlie27,10.74.28.69,app-501.com,registry_run_key,T1547.001,Persistence,69,15,malware_delivery,Command & Control
+CAM-0176,EVT-0176-05,2026-08-29T11:38:00,charlie27,10.74.28.69,app-501.com,http_c2,T1071.001,Command & Control,73,2,malware_delivery,Command & Control
+CAM-0186,EVT-0186-01,2026-03-09T16:05:00,tina19,10.46.113.111,api-905.io,credential_login,T1110,Credential Access,44,0,insider_threat,Exfiltration
+CAM-0186,EVT-0186-02,2026-03-09T16:07:00,tina19,10.46.113.111,api-905.io,file_search,T1083,Discovery,51,2,insider_threat,Exfiltration
+CAM-0186,EVT-0186-03,2026-03-09T16:20:00,tina19,10.46.113.111,api-905.io,process_injection,T1055,Defense Evasion,54,13,insider_threat,Exfiltration
+CAM-0186,EVT-0186-04,2026-03-09T16:23:00,tina19,10.46.113.111,api-905.io,screen_capture,T1113,Collection,62,3,insider_threat,Exfiltration
+CAM-0186,EVT-0186-05,2026-03-09T16:28:00,tina19,10.46.113.111,api-905.io,dns_exfil,T1048.003,Exfiltration,60,5,insider_threat,Exfiltration
+CAM-0196,EVT-0196-01,2026-10-30T12:56:00,rosa05,10.201.211.83,access-125.net,drive_by,T1189,Initial Access,54,0,data_theft,Exfiltration
+CAM-0196,EVT-0196-02,2026-10-30T13:05:00,rosa05,10.201.211.83,access-125.net,kerberoasting,T1558.003,Credential Access,59,9,data_theft,Exfiltration
+CAM-0196,EVT-0196-03,2026-10-30T13:11:00,rosa05,10.201.211.83,access-125.net,file_search,T1083,Discovery,70,6,data_theft,Exfiltration
+CAM-0196,EVT-0196-04,2026-10-30T13:15:00,rosa05,10.230.185.22,access-125.net,keylogger,T1056.001,Collection,63,4,data_theft,Exfiltration
+CAM-0196,EVT-0196-05,2026-10-30T13:32:00,rosa05,10.230.185.22,access-125.net,dns_exfil,T1048.003,Exfiltration,86,17,data_theft,Exfiltration
+CAM-0197,EVT-0197-01,2026-03-16T11:49:00,mike18,10.194.22.197,update-443.net,spear_phishing,T1566.001,Initial Access,45,0,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-02,2026-03-16T12:57:00,mike18,10.194.22.197,update-443.net,url_visit,T1204.001,Initial Access,50,68,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-03,2026-03-16T13:51:00,mike18,10.194.22.197,update-443.net,powershell,T1059.001,Execution,61,54,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-04,2026-03-16T15:44:00,mike18,10.92.60.231,update-443.net,process_injection,T1055,Defense Evasion,63,113,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-05,2026-03-16T16:15:00,mike18,10.129.6.118,update-443.net,scheduled_task,T1053.005,Persistence,61,31,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-06,2026-03-16T17:33:00,mike18,10.129.6.118,update-443.net,dns_beacon,T1071.004,Command & Control,75,78,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-07,2026-03-16T17:48:00,mike18,10.129.6.118,update-443.net,privilege_escalation,T1068,Privilege Escalation,87,15,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-08,2026-03-16T18:33:00,mike18,10.129.6.118,update-443.net,network_scan,T1046,Discovery,73,45,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-09,2026-03-16T19:48:00,mike18,10.129.6.118,update-443.net,lateral_rdp,T1021.001,Lateral Movement,93,75,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-10,2026-03-16T20:13:00,mike18,10.129.6.118,update-443.net,data_staged,T1074,Collection,100,25,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-11,2026-03-16T20:59:00,mike18,10.106.25.48,update-443.net,exfil_https,T1041,Exfiltration,100,46,apt_full_chain,Exfiltration
+CAM-0197,EVT-0197-12,2026-03-16T21:32:00,mike18,10.106.25.48,update-443.net,service_stop,T1489,Impact,78,33,apt_full_chain,Exfiltration
+CAM-0198,EVT-0198-01,2026-04-02T11:43:00,evan28,10.16.152.85,login-150.com,suspicious_login,T1078,Credential Access,53,0,insider_threat,Exfiltration
+CAM-0198,EVT-0198-02,2026-04-02T12:03:00,evan28,10.16.152.85,login-150.com,system_enum,T1082,Discovery,60,20,insider_threat,Exfiltration
+CAM-0198,EVT-0198-03,2026-04-02T12:21:00,evan28,10.16.152.85,login-150.com,masquerading,T1036,Defense Evasion,61,18,insider_threat,Exfiltration
+CAM-0198,EVT-0198-04,2026-04-02T12:36:00,evan28,10.16.152.85,login-150.com,data_staged,T1074,Collection,77,15,insider_threat,Exfiltration
+CAM-0198,EVT-0198-05,2026-04-02T12:38:00,evan28,10.16.152.85,login-150.com,exfil_ftp,T1048,Exfiltration,65,2,insider_threat,Exfiltration
+CAM-0204,EVT-0204-01,2026-08-28T07:06:00,bob15,10.198.59.2,api-145.com,suspicious_login,T1078,Credential Access,50,0,insider_threat,Exfiltration
+CAM-0204,EVT-0204-02,2026-08-28T07:16:00,bob15,10.198.59.2,api-145.com,system_enum,T1082,Discovery,53,10,insider_threat,Exfiltration
+CAM-0204,EVT-0204-03,2026-08-28T07:35:00,bob15,10.198.59.2,api-145.com,masquerading,T1036,Defense Evasion,60,19,insider_threat,Exfiltration
+CAM-0204,EVT-0204-04,2026-08-28T07:42:00,bob15,10.146.141.137,api-145.com,data_staged,T1074,Collection,65,7,insider_threat,Exfiltration
+CAM-0204,EVT-0204-05,2026-08-28T07:53:00,bob15,10.146.141.137,api-145.com,exfil_ftp,T1048,Exfiltration,74,11,insider_threat,Exfiltration
+CAM-0205,EVT-0205-01,2026-10-05T17:35:00,evan06,10.140.58.4,data-673.com,spear_phishing,T1566.001,Initial Access,46,0,credential_phishing,Lateral Movement
+CAM-0205,EVT-0205-02,2026-10-05T17:40:00,evan06,10.140.58.4,data-673.com,url_visit,T1204.001,Initial Access,54,5,credential_phishing,Lateral Movement
+CAM-0205,EVT-0205-03,2026-10-05T17:50:00,evan06,10.140.58.4,data-673.com,credential_login,T1110,Credential Access,60,10,credential_phishing,Lateral Movement
+CAM-0205,EVT-0205-04,2026-10-05T17:58:00,evan06,10.173.227.13,data-673.com,system_enum,T1082,Discovery,58,8,credential_phishing,Lateral Movement
+CAM-0205,EVT-0205-05,2026-10-05T18:03:00,evan06,10.173.227.13,data-673.com,lateral_smb,T1021.002,Lateral Movement,58,5,credential_phishing,Lateral Movement
+CAM-0215,EVT-0215-01,2026-08-17T17:51:00,alice24,10.57.89.233,data-856.net,phishing_email,T1566,Initial Access,61,0,apt_full_chain,Exfiltration
+CAM-0215,EVT-0215-02,2026-08-17T19:46:00,alice24,10.57.89.233,data-856.net,attachment_download,T1204.002,Initial Access,69,115,apt_full_chain,Exfiltration
+CAM-0215,EVT-0215-03,2026-08-17T20:31:00,alice24,10.57.89.233,data-856.net,macro_execution,T1204.002,Execution,73,45,apt_full_chain,Exfiltration
+CAM-0215,EVT-0215-04,2026-08-17T21:09:00,alice24,10.57.89.233,data-856.net,log_clearing,T1070,Defense Evasion,82,38,apt_full_chain,Exfiltration
+CAM-0215,EVT-0215-05,2026-08-17T22:07:00,alice24,10.57.89.233,data-856.net,http_c2,T1071.001,Command & Control,73,58,apt_full_chain,Exfiltration
+CAM-0215,EVT-0215-06,2026-08-17T23:38:00,alice24,10.57.89.233,data-856.net,uac_bypass,T1548.002,Privilege Escalation,81,91,apt_full_chain,Exfiltration
+CAM-0215,EVT-0215-07,2026-08-18T01:29:00,alice24,10.57.89.233,data-856.net,system_enum,T1082,Discovery,97,111,apt_full_chain,Exfiltration
+CAM-0215,EVT-0215-08,2026-08-18T02:14:00,alice24,10.57.89.233,data-856.net,lateral_smb,T1021.002,Lateral Movement,100,45,apt_full_chain,Exfiltration
+CAM-0215,EVT-0215-09,2026-08-18T03:50:00,alice24,10.176.27.165,data-856.net,keylogger,T1056.001,Collection,93,96,apt_full_chain,Exfiltration
+CAM-0215,EVT-0215-10,2026-08-18T04:38:00,alice24,10.237.204.122,data-856.net,exfil_ftp,T1048,Exfiltration,88,48,apt_full_chain,Exfiltration
+CAM-0215,EVT-0215-11,2026-08-18T05:31:00,alice24,10.237.204.122,data-856.net,disk_wipe,T1561,Impact,100,53,apt_full_chain,Exfiltration
+CAM-0217,EVT-0217-01,2026-10-08T06:43:00,mike15,10.123.99.134,auth-793.net,phishing_email,T1566,Initial Access,50,0,credential_phishing,Lateral Movement
+CAM-0217,EVT-0217-02,2026-10-08T06:44:00,mike15,10.123.99.134,auth-793.net,attachment_download,T1204.002,Initial Access,56,1,credential_phishing,Lateral Movement
+CAM-0217,EVT-0217-03,2026-10-08T06:48:00,mike15,10.123.99.134,auth-793.net,credential_login,T1110,Credential Access,64,4,credential_phishing,Lateral Movement
+CAM-0217,EVT-0217-04,2026-10-08T06:52:00,mike15,10.123.99.134,auth-793.net,suspicious_login,T1078,Credential Access,74,4,credential_phishing,Lateral Movement
+CAM-0217,EVT-0217-05,2026-10-08T07:00:00,mike15,10.98.17.7,auth-793.net,lateral_wmi,T1021.006,Lateral Movement,82,8,credential_phishing,Lateral Movement
+CAM-0218,EVT-0218-01,2026-12-03T11:57:00,charlie02,10.111.62.182,login-188.net,drive_by,T1189,Initial Access,52,0,malware_delivery,Command & Control
+CAM-0218,EVT-0218-02,2026-12-03T12:03:00,charlie02,10.111.62.182,login-188.net,script_execution,T1059.005,Execution,57,6,malware_delivery,Command & Control
+CAM-0218,EVT-0218-03,2026-12-03T12:13:00,charlie02,10.111.62.182,login-188.net,powershell,T1059.001,Execution,64,10,malware_delivery,Command & Control
+CAM-0218,EVT-0218-04,2026-12-03T12:16:00,charlie02,10.111.62.182,login-188.net,startup_folder,T1547.001,Persistence,76,3,malware_delivery,Command & Control
+CAM-0218,EVT-0218-05,2026-12-03T12:25:00,charlie02,10.111.62.182,login-188.net,icmp_tunnel,T1095,Command & Control,76,9,malware_delivery,Command & Control
+CAM-0220,EVT-0220-01,2026-07-19T14:09:00,alice29,10.254.76.168,sync-100.com,spear_phishing,T1566.001,Initial Access,61,0,data_theft,Exfiltration
+CAM-0220,EVT-0220-02,2026-07-19T14:28:00,alice29,10.254.76.168,sync-100.com,mimikatz,T1003.001,Credential Access,64,19,data_theft,Exfiltration
+CAM-0220,EVT-0220-03,2026-07-19T14:45:00,alice29,10.254.76.168,sync-100.com,system_enum,T1082,Discovery,77,17,data_theft,Exfiltration
+CAM-0220,EVT-0220-04,2026-07-19T15:01:00,alice29,10.254.76.168,sync-100.com,screen_capture,T1113,Collection,79,16,data_theft,Exfiltration
+CAM-0220,EVT-0220-05,2026-07-19T15:04:00,alice29,10.196.246.32,sync-100.com,exfil_ftp,T1048,Exfiltration,89,3,data_theft,Exfiltration
+CAM-0221,EVT-0221-01,2026-10-01T16:05:00,karl22,10.155.205.15,sync-762.com,phishing_email,T1566,Initial Access,51,0,apt_full_chain,Exfiltration
+CAM-0221,EVT-0221-02,2026-10-01T17:42:00,karl22,10.155.205.15,sync-762.com,attachment_download,T1204.002,Initial Access,55,97,apt_full_chain,Exfiltration
+CAM-0221,EVT-0221-03,2026-10-01T18:19:00,karl22,10.155.205.15,sync-762.com,macro_execution,T1204.002,Execution,65,37,apt_full_chain,Exfiltration
+CAM-0221,EVT-0221-04,2026-10-01T18:39:00,karl22,10.155.205.15,sync-762.com,log_clearing,T1070,Defense Evasion,69,20,apt_full_chain,Exfiltration
+CAM-0221,EVT-0221-05,2026-10-01T19:32:00,karl22,10.155.205.15,sync-762.com,http_c2,T1071.001,Command & Control,83,53,apt_full_chain,Exfiltration
+CAM-0221,EVT-0221-06,2026-10-01T20:00:00,karl22,10.155.205.15,sync-762.com,uac_bypass,T1548.002,Privilege Escalation,91,28,apt_full_chain,Exfiltration
+CAM-0221,EVT-0221-07,2026-10-01T21:17:00,karl22,10.155.205.15,sync-762.com,system_enum,T1082,Discovery,69,77,apt_full_chain,Exfiltration
+CAM-0221,EVT-0221-08,2026-10-01T22:28:00,karl22,10.18.98.7,sync-762.com,lateral_smb,T1021.002,Lateral Movement,100,71,apt_full_chain,Exfiltration
+CAM-0221,EVT-0221-09,2026-10-02T00:15:00,karl22,10.199.32.203,sync-762.com,keylogger,T1056.001,Collection,100,107,apt_full_chain,Exfiltration
+CAM-0221,EVT-0221-10,2026-10-02T01:39:00,karl22,10.230.8.10,sync-762.com,exfil_ftp,T1048,Exfiltration,100,84,apt_full_chain,Exfiltration
+CAM-0221,EVT-0221-11,2026-10-02T02:37:00,karl22,10.21.207.31,sync-762.com,disk_wipe,T1561,Impact,81,58,apt_full_chain,Exfiltration
+CAM-0224,EVT-0224-01,2026-04-02T08:45:00,tina13,10.80.8.226,access-182.com,phishing_email,T1566,Initial Access,40,0,malware_delivery,Command & Control
+CAM-0224,EVT-0224-02,2026-04-02T08:59:00,tina13,10.80.8.226,access-182.com,attachment_download,T1204.002,Initial Access,48,14,malware_delivery,Command & Control
+CAM-0224,EVT-0224-03,2026-04-02T09:15:00,tina13,10.80.8.226,access-182.com,macro_execution,T1204.002,Execution,56,16,malware_delivery,Command & Control
+CAM-0224,EVT-0224-04,2026-04-02T09:20:00,tina13,10.138.230.106,access-182.com,powershell,T1059.001,Execution,52,5,malware_delivery,Command & Control
+CAM-0224,EVT-0224-05,2026-04-02T09:28:00,tina13,10.138.230.106,access-182.com,scheduled_task,T1053.005,Persistence,56,8,malware_delivery,Command & Control
+CAM-0224,EVT-0224-06,2026-04-02T09:30:00,tina13,10.255.45.161,access-182.com,dns_beacon,T1071.004,Command & Control,75,2,malware_delivery,Command & Control
+CAM-0225,EVT-0225-01,2026-07-05T13:29:00,linda14,10.2.120.50,login-642.com,drive_by,T1189,Initial Access,59,0,ransomware,Impact
+CAM-0225,EVT-0225-02,2026-07-05T13:31:00,linda14,10.2.120.50,login-642.com,script_execution,T1059.005,Execution,63,2,ransomware,Impact
+CAM-0225,EVT-0225-03,2026-07-05T13:35:00,linda14,10.2.120.50,login-642.com,uac_bypass,T1548.002,Privilege Escalation,67,4,ransomware,Impact
+CAM-0225,EVT-0225-04,2026-07-05T13:51:00,linda14,10.22.27.166,login-642.com,log_clearing,T1070,Defense Evasion,77,16,ransomware,Impact
+CAM-0225,EVT-0225-05,2026-07-05T14:03:00,linda14,10.128.171.158,login-642.com,lateral_smb,T1021.002,Lateral Movement,79,12,ransomware,Impact
+CAM-0225,EVT-0225-06,2026-07-05T14:18:00,linda14,10.26.90.41,login-642.com,ransomware_encrypt,T1486,Impact,74,15,ransomware,Impact
+CAM-0226,EVT-0226-01,2026-10-24T16:26:00,paula17,10.59.36.230,cdn-838.io,phishing_email,T1566,Initial Access,58,0,data_theft,Exfiltration
+CAM-0226,EVT-0226-02,2026-10-24T16:37:00,paula17,10.59.36.230,cdn-838.io,credential_login,T1110,Credential Access,62,11,data_theft,Exfiltration
+CAM-0226,EVT-0226-03,2026-10-24T16:41:00,paula17,10.59.36.230,cdn-838.io,network_scan,T1046,Discovery,68,4,data_theft,Exfiltration
+CAM-0226,EVT-0226-04,2026-10-24T16:49:00,paula17,10.211.102.97,cdn-838.io,data_staged,T1074,Collection,67,8,data_theft,Exfiltration
+CAM-0226,EVT-0226-05,2026-10-24T16:57:00,paula17,10.211.102.97,cdn-838.io,exfil_https,T1041,Exfiltration,70,8,data_theft,Exfiltration
+CAM-0229,EVT-0229-01,2026-07-28T12:08:00,diana15,10.253.123.22,portal-871.com,phishing_email,T1566,Initial Access,62,0,credential_phishing,Lateral Movement
+CAM-0229,EVT-0229-02,2026-07-28T12:16:00,diana15,10.253.123.22,portal-871.com,attachment_download,T1204.002,Initial Access,70,8,credential_phishing,Lateral Movement
+CAM-0229,EVT-0229-03,2026-07-28T12:19:00,diana15,10.253.123.22,portal-871.com,credential_login,T1110,Credential Access,68,3,credential_phishing,Lateral Movement
+CAM-0229,EVT-0229-04,2026-07-28T12:35:00,diana15,10.235.12.250,portal-871.com,suspicious_login,T1078,Credential Access,86,16,credential_phishing,Lateral Movement
+CAM-0229,EVT-0229-05,2026-07-28T12:50:00,diana15,10.235.12.250,portal-871.com,lateral_wmi,T1021.006,Lateral Movement,86,15,credential_phishing,Lateral Movement
+CAM-0234,EVT-0234-01,2026-06-30T15:29:00,fiona26,10.133.116.124,auth-395.com,credential_login,T1110,Credential Access,44,0,insider_threat,Exfiltration
+CAM-0234,EVT-0234-02,2026-06-30T15:35:00,fiona26,10.133.116.124,auth-395.com,file_search,T1083,Discovery,52,6,insider_threat,Exfiltration
+CAM-0234,EVT-0234-03,2026-06-30T15:53:00,fiona26,10.133.116.124,auth-395.com,process_injection,T1055,Defense Evasion,54,18,insider_threat,Exfiltration
+CAM-0234,EVT-0234-04,2026-06-30T15:59:00,fiona26,10.133.116.124,auth-395.com,screen_capture,T1113,Collection,56,6,insider_threat,Exfiltration
+CAM-0234,EVT-0234-05,2026-06-30T16:04:00,fiona26,10.21.162.148,auth-395.com,dns_exfil,T1048.003,Exfiltration,60,5,insider_threat,Exfiltration
+CAM-0235,EVT-0235-01,2026-06-12T17:09:00,oscar09,10.189.94.53,portal-824.com,phishing_email,T1566,Initial Access,61,0,credential_phishing,Lateral Movement
+CAM-0235,EVT-0235-02,2026-06-12T17:27:00,oscar09,10.189.94.53,portal-824.com,url_visit,T1204.001,Initial Access,65,18,credential_phishing,Lateral Movement
+CAM-0235,EVT-0235-03,2026-06-12T17:45:00,oscar09,10.189.94.53,portal-824.com,suspicious_login,T1078,Credential Access,71,18,credential_phishing,Lateral Movement
+CAM-0235,EVT-0235-04,2026-06-12T17:49:00,oscar09,10.189.94.53,portal-824.com,credential_login,T1110,Credential Access,70,4,credential_phishing,Lateral Movement
+CAM-0235,EVT-0235-05,2026-06-12T18:05:00,oscar09,10.189.94.53,portal-824.com,network_scan,T1046,Discovery,77,16,credential_phishing,Lateral Movement
+CAM-0235,EVT-0235-06,2026-06-12T18:16:00,oscar09,10.169.151.122,portal-824.com,lateral_rdp,T1021.001,Lateral Movement,81,11,credential_phishing,Lateral Movement
+CAM-0239,EVT-0239-01,2026-04-06T18:18:00,ivan14,10.89.236.182,data-873.net,phishing_email,T1566,Initial Access,46,0,apt_full_chain,Exfiltration
+CAM-0239,EVT-0239-02,2026-04-06T18:38:00,ivan14,10.89.236.182,data-873.net,attachment_download,T1204.002,Initial Access,51,20,apt_full_chain,Exfiltration
+CAM-0239,EVT-0239-03,2026-04-06T20:07:00,ivan14,10.89.236.182,data-873.net,macro_execution,T1204.002,Execution,56,89,apt_full_chain,Exfiltration
+CAM-0239,EVT-0239-04,2026-04-06T21:25:00,ivan14,10.89.236.182,data-873.net,log_clearing,T1070,Defense Evasion,67,78,apt_full_chain,Exfiltration
+CAM-0239,EVT-0239-05,2026-04-06T22:08:00,ivan14,10.89.236.182,data-873.net,http_c2,T1071.001,Command & Control,58,43,apt_full_chain,Exfiltration
+CAM-0239,EVT-0239-06,2026-04-06T22:42:00,ivan14,10.241.63.168,data-873.net,uac_bypass,T1548.002,Privilege Escalation,71,34,apt_full_chain,Exfiltration
+CAM-0239,EVT-0239-07,2026-04-07T00:22:00,ivan14,10.241.63.168,data-873.net,system_enum,T1082,Discovery,76,100,apt_full_chain,Exfiltration
+CAM-0239,EVT-0239-08,2026-04-07T01:39:00,ivan14,10.241.63.168,data-873.net,lateral_smb,T1021.002,Lateral Movement,100,77,apt_full_chain,Exfiltration
+CAM-0239,EVT-0239-09,2026-04-07T01:57:00,ivan14,10.241.63.168,data-873.net,keylogger,T1056.001,Collection,70,18,apt_full_chain,Exfiltration
+CAM-0239,EVT-0239-10,2026-04-07T03:15:00,ivan14,10.241.63.168,data-873.net,exfil_ftp,T1048,Exfiltration,73,78,apt_full_chain,Exfiltration
+CAM-0239,EVT-0239-11,2026-04-07T04:16:00,ivan14,10.241.63.168,data-873.net,disk_wipe,T1561,Impact,100,61,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-01,2026-06-06T09:21:00,helen08,10.120.159.152,login-804.com,spear_phishing,T1566.001,Initial Access,67,0,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-02,2026-06-06T10:44:00,helen08,10.120.159.152,login-804.com,url_visit,T1204.001,Initial Access,72,83,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-03,2026-06-06T11:03:00,helen08,10.120.159.152,login-804.com,powershell,T1059.001,Execution,79,19,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-04,2026-06-06T12:42:00,helen08,10.120.159.152,login-804.com,process_injection,T1055,Defense Evasion,85,99,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-05,2026-06-06T13:50:00,helen08,10.240.11.253,login-804.com,scheduled_task,T1053.005,Persistence,87,68,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-06,2026-06-06T14:45:00,helen08,10.240.11.253,login-804.com,dns_beacon,T1071.004,Command & Control,97,55,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-07,2026-06-06T15:41:00,helen08,10.250.51.177,login-804.com,privilege_escalation,T1068,Privilege Escalation,100,56,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-08,2026-06-06T17:22:00,helen08,10.173.85.158,login-804.com,network_scan,T1046,Discovery,95,101,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-09,2026-06-06T18:15:00,helen08,10.173.85.158,login-804.com,lateral_rdp,T1021.001,Lateral Movement,100,53,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-10,2026-06-06T18:55:00,helen08,10.173.85.158,login-804.com,data_staged,T1074,Collection,100,40,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-11,2026-06-06T20:50:00,helen08,10.173.85.158,login-804.com,exfil_https,T1041,Exfiltration,97,115,apt_full_chain,Exfiltration
+CAM-0251,EVT-0251-12,2026-06-06T22:13:00,helen08,10.24.152.147,login-804.com,service_stop,T1489,Impact,100,83,apt_full_chain,Exfiltration
+CAM-0253,EVT-0253-01,2026-09-13T12:42:00,tina17,10.232.92.226,secure-742.net,spear_phishing,T1566.001,Initial Access,58,0,credential_phishing,Lateral Movement
+CAM-0253,EVT-0253-02,2026-09-13T13:00:00,tina17,10.232.92.226,secure-742.net,url_visit,T1204.001,Initial Access,65,18,credential_phishing,Lateral Movement
+CAM-0253,EVT-0253-03,2026-09-13T13:14:00,tina17,10.232.92.226,secure-742.net,credential_login,T1110,Credential Access,72,14,credential_phishing,Lateral Movement
+CAM-0253,EVT-0253-04,2026-09-13T13:16:00,tina17,10.236.75.62,secure-742.net,system_enum,T1082,Discovery,79,2,credential_phishing,Lateral Movement
+CAM-0253,EVT-0253-05,2026-09-13T13:21:00,tina17,10.236.75.62,secure-742.net,lateral_smb,T1021.002,Lateral Movement,90,5,credential_phishing,Lateral Movement
+CAM-0261,EVT-0261-01,2026-09-11T18:08:00,paula04,10.114.104.49,app-372.org,spear_phishing,T1566.001,Initial Access,63,0,ransomware,Impact
+CAM-0261,EVT-0261-02,2026-09-11T18:28:00,paula04,10.114.104.49,app-372.org,macro_execution,T1204.002,Execution,67,20,ransomware,Impact
+CAM-0261,EVT-0261-03,2026-09-11T18:38:00,paula04,10.114.104.49,app-372.org,token_impersonation,T1134,Privilege Escalation,79,10,ransomware,Impact
+CAM-0261,EVT-0261-04,2026-09-11T18:45:00,paula04,10.74.14.75,app-372.org,masquerading,T1036,Defense Evasion,81,7,ransomware,Impact
+CAM-0261,EVT-0261-05,2026-09-11T18:54:00,paula04,10.74.14.75,app-372.org,lateral_wmi,T1021.006,Lateral Movement,79,9,ransomware,Impact
+CAM-0261,EVT-0261-06,2026-09-11T19:02:00,paula04,10.74.14.75,app-372.org,disk_wipe,T1561,Impact,88,8,ransomware,Impact
+CAM-0271,EVT-0271-01,2026-08-19T13:12:00,diana06,10.78.227.247,access-582.com,phishing_email,T1566,Initial Access,67,0,credential_phishing,Lateral Movement
+CAM-0271,EVT-0271-02,2026-08-19T13:25:00,diana06,10.78.227.247,access-582.com,url_visit,T1204.001,Initial Access,70,13,credential_phishing,Lateral Movement
+CAM-0271,EVT-0271-03,2026-08-19T13:36:00,diana06,10.78.227.247,access-582.com,suspicious_login,T1078,Credential Access,73,11,credential_phishing,Lateral Movement
+CAM-0271,EVT-0271-04,2026-08-19T13:40:00,diana06,10.78.227.247,access-582.com,credential_login,T1110,Credential Access,91,4,credential_phishing,Lateral Movement
+CAM-0271,EVT-0271-05,2026-08-19T13:54:00,diana06,10.78.227.247,access-582.com,network_scan,T1046,Discovery,91,14,credential_phishing,Lateral Movement
+CAM-0271,EVT-0271-06,2026-08-19T14:13:00,diana06,10.78.227.247,access-582.com,lateral_rdp,T1021.001,Lateral Movement,100,19,credential_phishing,Lateral Movement
+CAM-0272,EVT-0272-01,2026-02-01T06:27:00,bob16,10.204.248.132,data-842.io,spear_phishing,T1566.001,Initial Access,47,0,malware_delivery,Command & Control
+CAM-0272,EVT-0272-02,2026-02-01T06:45:00,bob16,10.204.248.132,data-842.io,attachment_download,T1204.002,Initial Access,50,18,malware_delivery,Command & Control
+CAM-0272,EVT-0272-03,2026-02-01T06:54:00,bob16,10.204.248.132,data-842.io,script_execution,T1059.005,Execution,63,9,malware_delivery,Command & Control
+CAM-0272,EVT-0272-04,2026-02-01T07:08:00,bob16,10.177.229.179,data-842.io,registry_run_key,T1547.001,Persistence,65,14,malware_delivery,Command & Control
+CAM-0272,EVT-0272-05,2026-02-01T07:22:00,bob16,10.98.240.89,data-842.io,http_c2,T1071.001,Command & Control,59,14,malware_delivery,Command & Control
+CAM-0274,EVT-0274-01,2026-08-09T09:39:00,ivan12,10.81.89.212,portal-132.com,spear_phishing,T1566.001,Initial Access,50,0,data_theft,Exfiltration
+CAM-0274,EVT-0274-02,2026-08-09T09:57:00,ivan12,10.81.89.212,portal-132.com,mimikatz,T1003.001,Credential Access,54,18,data_theft,Exfiltration
+CAM-0274,EVT-0274-03,2026-08-09T10:13:00,ivan12,10.81.89.212,portal-132.com,system_enum,T1082,Discovery,60,16,data_theft,Exfiltration
+CAM-0274,EVT-0274-04,2026-08-09T10:24:00,ivan12,10.81.89.212,portal-132.com,screen_capture,T1113,Collection,65,11,data_theft,Exfiltration
+CAM-0274,EVT-0274-05,2026-08-09T10:42:00,ivan12,10.81.89.212,portal-132.com,exfil_ftp,T1048,Exfiltration,70,18,data_theft,Exfiltration
+CAM-0275,EVT-0275-01,2026-11-09T09:52:00,bob30,10.224.234.247,app-213.com,spear_phishing,T1566.001,Initial Access,65,0,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-02,2026-11-09T11:11:00,bob30,10.224.234.247,app-213.com,url_visit,T1204.001,Initial Access,68,79,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-03,2026-11-09T11:47:00,bob30,10.224.234.247,app-213.com,powershell,T1059.001,Execution,81,36,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-04,2026-11-09T12:17:00,bob30,10.224.234.247,app-213.com,process_injection,T1055,Defense Evasion,77,30,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-05,2026-11-09T12:52:00,bob30,10.226.255.188,app-213.com,scheduled_task,T1053.005,Persistence,97,35,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-06,2026-11-09T13:19:00,bob30,10.226.255.188,app-213.com,dns_beacon,T1071.004,Command & Control,85,27,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-07,2026-11-09T14:16:00,bob30,10.103.224.249,app-213.com,privilege_escalation,T1068,Privilege Escalation,89,57,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-08,2026-11-09T15:24:00,bob30,10.242.174.74,app-213.com,network_scan,T1046,Discovery,86,68,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-09,2026-11-09T16:43:00,bob30,10.190.212.93,app-213.com,lateral_rdp,T1021.001,Lateral Movement,97,79,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-10,2026-11-09T18:18:00,bob30,10.215.116.36,app-213.com,data_staged,T1074,Collection,100,95,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-11,2026-11-09T20:15:00,bob30,10.215.116.36,app-213.com,exfil_https,T1041,Exfiltration,100,117,apt_full_chain,Exfiltration
+CAM-0275,EVT-0275-12,2026-11-09T21:22:00,bob30,10.215.116.36,app-213.com,service_stop,T1489,Impact,100,67,apt_full_chain,Exfiltration
+CAM-0276,EVT-0276-01,2026-06-23T16:25:00,alice15,10.74.5.184,app-629.com,credential_login,T1110,Credential Access,42,0,insider_threat,Exfiltration
+CAM-0276,EVT-0276-02,2026-06-23T16:27:00,alice15,10.74.5.184,app-629.com,file_search,T1083,Discovery,48,2,insider_threat,Exfiltration
+CAM-0276,EVT-0276-03,2026-06-23T16:29:00,alice15,10.74.5.184,app-629.com,process_injection,T1055,Defense Evasion,58,2,insider_threat,Exfiltration
+CAM-0276,EVT-0276-04,2026-06-23T16:34:00,alice15,10.151.214.103,app-629.com,screen_capture,T1113,Collection,63,5,insider_threat,Exfiltration
+CAM-0276,EVT-0276-05,2026-06-23T16:52:00,alice15,10.151.214.103,app-629.com,dns_exfil,T1048.003,Exfiltration,62,18,insider_threat,Exfiltration
+CAM-0277,EVT-0277-01,2026-10-06T20:44:00,linda01,10.143.75.180,verify-556.net,spear_phishing,T1566.001,Initial Access,68,0,credential_phishing,Lateral Movement
+CAM-0277,EVT-0277-02,2026-10-06T20:57:00,linda01,10.143.75.180,verify-556.net,url_visit,T1204.001,Initial Access,72,13,credential_phishing,Lateral Movement
+CAM-0277,EVT-0277-03,2026-10-06T21:07:00,linda01,10.143.75.180,verify-556.net,credential_login,T1110,Credential Access,74,10,credential_phishing,Lateral Movement
+CAM-0277,EVT-0277-04,2026-10-06T21:09:00,linda01,10.64.145.55,verify-556.net,system_enum,T1082,Discovery,89,2,credential_phishing,Lateral Movement
+CAM-0277,EVT-0277-05,2026-10-06T21:12:00,linda01,10.64.145.55,verify-556.net,lateral_smb,T1021.002,Lateral Movement,96,3,credential_phishing,Lateral Movement
+CAM-0282,EVT-0282-01,2026-11-27T09:41:00,ivan21,10.45.84.182,secure-685.org,credential_login,T1110,Credential Access,57,0,insider_threat,Exfiltration
+CAM-0282,EVT-0282-02,2026-11-27T09:48:00,ivan21,10.45.84.182,secure-685.org,file_search,T1083,Discovery,64,7,insider_threat,Exfiltration
+CAM-0282,EVT-0282-03,2026-11-27T10:06:00,ivan21,10.45.84.182,secure-685.org,process_injection,T1055,Defense Evasion,71,18,insider_threat,Exfiltration
+CAM-0282,EVT-0282-04,2026-11-27T10:08:00,ivan21,10.45.84.182,secure-685.org,screen_capture,T1113,Collection,78,2,insider_threat,Exfiltration
+CAM-0282,EVT-0282-05,2026-11-27T10:24:00,ivan21,10.45.84.182,secure-685.org,dns_exfil,T1048.003,Exfiltration,85,16,insider_threat,Exfiltration
+CAM-0285,EVT-0285-01,2026-10-12T10:19:00,alice14,10.119.9.69,portal-700.com,drive_by,T1189,Initial Access,47,0,ransomware,Impact
+CAM-0285,EVT-0285-02,2026-10-12T10:34:00,alice14,10.119.9.69,portal-700.com,script_execution,T1059.005,Execution,50,15,ransomware,Impact
+CAM-0285,EVT-0285-03,2026-10-12T10:51:00,alice14,10.119.9.69,portal-700.com,uac_bypass,T1548.002,Privilege Escalation,55,17,ransomware,Impact
+CAM-0285,EVT-0285-04,2026-10-12T10:56:00,alice14,10.119.9.69,portal-700.com,log_clearing,T1070,Defense Evasion,62,5,ransomware,Impact
+CAM-0285,EVT-0285-05,2026-10-12T11:02:00,alice14,10.119.9.69,portal-700.com,lateral_smb,T1021.002,Lateral Movement,63,6,ransomware,Impact
+CAM-0285,EVT-0285-06,2026-10-12T11:16:00,alice14,10.119.9.69,portal-700.com,ransomware_encrypt,T1486,Impact,82,14,ransomware,Impact
+CAM-0288,EVT-0288-01,2026-08-25T17:59:00,tina12,10.198.90.215,app-931.com,credential_login,T1110,Credential Access,43,0,insider_threat,Exfiltration
+CAM-0288,EVT-0288-02,2026-08-25T18:00:00,tina12,10.198.90.215,app-931.com,file_search,T1083,Discovery,47,1,insider_threat,Exfiltration
+CAM-0288,EVT-0288-03,2026-08-25T18:01:00,tina12,10.198.90.215,app-931.com,process_injection,T1055,Defense Evasion,53,1,insider_threat,Exfiltration
+CAM-0288,EVT-0288-04,2026-08-25T18:13:00,tina12,10.155.113.60,app-931.com,screen_capture,T1113,Collection,55,12,insider_threat,Exfiltration
+CAM-0288,EVT-0288-05,2026-08-25T18:29:00,tina12,10.252.107.2,app-931.com,dns_exfil,T1048.003,Exfiltration,63,16,insider_threat,Exfiltration
+CAM-0297,EVT-0297-01,2026-03-29T19:56:00,karl30,10.107.156.117,cdn-478.org,phishing_email,T1566,Initial Access,61,0,ransomware,Impact
+CAM-0297,EVT-0297-02,2026-03-29T20:01:00,karl30,10.107.156.117,cdn-478.org,powershell,T1059.001,Execution,65,5,ransomware,Impact
+CAM-0297,EVT-0297-03,2026-03-29T20:08:00,karl30,10.107.156.117,cdn-478.org,privilege_escalation,T1068,Privilege Escalation,69,7,ransomware,Impact
+CAM-0297,EVT-0297-04,2026-03-29T20:26:00,karl30,10.107.156.117,cdn-478.org,process_injection,T1055,Defense Evasion,79,18,ransomware,Impact
+CAM-0297,EVT-0297-05,2026-03-29T20:37:00,karl30,10.107.156.117,cdn-478.org,lateral_rdp,T1021.001,Lateral Movement,89,11,ransomware,Impact
+CAM-0297,EVT-0297-06,2026-03-29T20:45:00,karl30,10.107.156.117,cdn-478.org,ransomware_encrypt,T1486,Impact,76,8,ransomware,Impact
+CAM-0299,EVT-0299-01,2026-07-25T07:13:00,karl23,10.191.247.184,access-585.org,spear_phishing,T1566.001,Initial Access,58,0,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-02,2026-07-25T08:25:00,karl23,10.191.247.184,access-585.org,url_visit,T1204.001,Initial Access,62,72,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-03,2026-07-25T09:30:00,karl23,10.191.247.184,access-585.org,powershell,T1059.001,Execution,66,65,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-04,2026-07-25T10:24:00,karl23,10.191.247.184,access-585.org,process_injection,T1055,Defense Evasion,76,54,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-05,2026-07-25T11:52:00,karl23,10.191.247.184,access-585.org,scheduled_task,T1053.005,Persistence,74,88,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-06,2026-07-25T12:54:00,karl23,10.191.247.184,access-585.org,dns_beacon,T1071.004,Command & Control,83,62,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-07,2026-07-25T13:26:00,karl23,10.180.117.150,access-585.org,privilege_escalation,T1068,Privilege Escalation,76,32,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-08,2026-07-25T13:46:00,karl23,10.180.117.150,access-585.org,network_scan,T1046,Discovery,100,20,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-09,2026-07-25T14:44:00,karl23,10.180.117.150,access-585.org,lateral_rdp,T1021.001,Lateral Movement,100,58,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-10,2026-07-25T15:54:00,karl23,10.180.117.150,access-585.org,data_staged,T1074,Collection,100,70,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-11,2026-07-25T17:12:00,karl23,10.12.91.114,access-585.org,exfil_https,T1041,Exfiltration,100,78,apt_full_chain,Exfiltration
+CAM-0299,EVT-0299-12,2026-07-25T17:56:00,karl23,10.12.91.114,access-585.org,service_stop,T1489,Impact,100,44,apt_full_chain,Exfiltration
+CAM-0300,EVT-0300-01,2026-07-04T07:34:00,charlie10,10.40.141.238,cdn-200.com,credential_login,T1110,Credential Access,42,0,insider_threat,Exfiltration
+CAM-0300,EVT-0300-02,2026-07-04T07:41:00,charlie10,10.40.141.238,cdn-200.com,file_search,T1083,Discovery,50,7,insider_threat,Exfiltration
+CAM-0300,EVT-0300-03,2026-07-04T07:52:00,charlie10,10.40.141.238,cdn-200.com,process_injection,T1055,Defense Evasion,52,11,insider_threat,Exfiltration
+CAM-0300,EVT-0300-04,2026-07-04T08:02:00,charlie10,10.40.141.238,cdn-200.com,screen_capture,T1113,Collection,66,10,insider_threat,Exfiltration
+CAM-0300,EVT-0300-05,2026-07-04T08:11:00,charlie10,10.40.141.238,cdn-200.com,dns_exfil,T1048.003,Exfiltration,58,9,insider_threat,Exfiltration
+CAM-0301,EVT-0301-01,2026-07-26T18:52:00,rosa30,10.133.4.198,api-388.org,phishing_email,T1566,Initial Access,65,0,credential_phishing,Lateral Movement
+CAM-0301,EVT-0301-02,2026-07-26T18:53:00,rosa30,10.133.4.198,api-388.org,url_visit,T1204.001,Initial Access,71,1,credential_phishing,Lateral Movement
+CAM-0301,EVT-0301-03,2026-07-26T19:10:00,rosa30,10.133.4.198,api-388.org,suspicious_login,T1078,Credential Access,73,17,credential_phishing,Lateral Movement
+CAM-0301,EVT-0301-04,2026-07-26T19:23:00,rosa30,10.107.242.60,api-388.org,credential_login,T1110,Credential Access,77,13,credential_phishing,Lateral Movement
+CAM-0301,EVT-0301-05,2026-07-26T19:40:00,rosa30,10.107.242.60,api-388.org,network_scan,T1046,Discovery,93,17,credential_phishing,Lateral Movement
+CAM-0301,EVT-0301-06,2026-07-26T19:55:00,rosa30,10.107.242.60,api-388.org,lateral_rdp,T1021.001,Lateral Movement,100,15,credential_phishing,Lateral Movement
+CAM-0306,EVT-0306-01,2026-08-19T11:16:00,paula14,10.62.188.20,app-207.org,suspicious_login,T1078,Credential Access,53,0,insider_threat,Exfiltration
+CAM-0306,EVT-0306-02,2026-08-19T11:18:00,paula14,10.62.188.20,app-207.org,system_enum,T1082,Discovery,59,2,insider_threat,Exfiltration
+CAM-0306,EVT-0306-03,2026-08-19T11:19:00,paula14,10.62.188.20,app-207.org,masquerading,T1036,Defense Evasion,59,1,insider_threat,Exfiltration
+CAM-0306,EVT-0306-04,2026-08-19T11:34:00,paula14,10.204.99.102,app-207.org,data_staged,T1074,Collection,71,15,insider_threat,Exfiltration
+CAM-0306,EVT-0306-05,2026-08-19T11:36:00,paula14,10.69.167.172,app-207.org,exfil_ftp,T1048,Exfiltration,65,2,insider_threat,Exfiltration
+CAM-0322,EVT-0322-01,2026-09-01T09:42:00,alice06,10.167.196.197,api-325.org,spear_phishing,T1566.001,Initial Access,61,0,data_theft,Exfiltration
+CAM-0322,EVT-0322-02,2026-09-01T09:58:00,alice06,10.167.196.197,api-325.org,mimikatz,T1003.001,Credential Access,64,16,data_theft,Exfiltration
+CAM-0322,EVT-0322-03,2026-09-01T10:09:00,alice06,10.167.196.197,api-325.org,system_enum,T1082,Discovery,69,11,data_theft,Exfiltration
+CAM-0322,EVT-0322-04,2026-09-01T10:28:00,alice06,10.175.193.234,api-325.org,screen_capture,T1113,Collection,82,19,data_theft,Exfiltration
+CAM-0322,EVT-0322-05,2026-09-01T10:41:00,alice06,10.175.193.234,api-325.org,exfil_ftp,T1048,Exfiltration,93,13,data_theft,Exfiltration
+CAM-0323,EVT-0323-01,2026-10-31T12:47:00,helen08,10.132.59.75,login-214.com,phishing_email,T1566,Initial Access,50,0,apt_full_chain,Exfiltration
+CAM-0323,EVT-0323-02,2026-10-31T13:49:00,helen08,10.132.59.75,login-214.com,attachment_download,T1204.002,Initial Access,54,62,apt_full_chain,Exfiltration
+CAM-0323,EVT-0323-03,2026-10-31T14:44:00,helen08,10.132.59.75,login-214.com,macro_execution,T1204.002,Execution,62,55,apt_full_chain,Exfiltration
+CAM-0323,EVT-0323-04,2026-10-31T16:12:00,helen08,10.31.97.217,login-214.com,log_clearing,T1070,Defense Evasion,74,88,apt_full_chain,Exfiltration
+CAM-0323,EVT-0323-05,2026-10-31T17:16:00,helen08,10.186.64.134,login-214.com,http_c2,T1071.001,Command & Control,74,64,apt_full_chain,Exfiltration
+CAM-0323,EVT-0323-06,2026-10-31T18:55:00,helen08,10.186.64.134,login-214.com,uac_bypass,T1548.002,Privilege Escalation,85,99,apt_full_chain,Exfiltration
+CAM-0323,EVT-0323-07,2026-10-31T19:23:00,helen08,10.235.161.38,login-214.com,system_enum,T1082,Discovery,86,28,apt_full_chain,Exfiltration
+CAM-0323,EVT-0323-08,2026-10-31T21:22:00,helen08,10.235.161.38,login-214.com,lateral_smb,T1021.002,Lateral Movement,85,119,apt_full_chain,Exfiltration
+CAM-0323,EVT-0323-09,2026-10-31T22:40:00,helen08,10.235.161.38,login-214.com,keylogger,T1056.001,Collection,100,78,apt_full_chain,Exfiltration
+CAM-0323,EVT-0323-10,2026-11-01T00:11:00,helen08,10.17.163.80,login-214.com,exfil_ftp,T1048,Exfiltration,95,91,apt_full_chain,Exfiltration
+CAM-0323,EVT-0323-11,2026-11-01T01:30:00,helen08,10.244.110.127,login-214.com,disk_wipe,T1561,Impact,100,79,apt_full_chain,Exfiltration
+CAM-0324,EVT-0324-01,2026-01-27T11:54:00,mike02,10.170.78.212,cloud-315.net,credential_login,T1110,Credential Access,62,0,insider_threat,Exfiltration
+CAM-0324,EVT-0324-02,2026-01-27T12:07:00,mike02,10.170.78.212,cloud-315.net,file_search,T1083,Discovery,67,13,insider_threat,Exfiltration
+CAM-0324,EVT-0324-03,2026-01-27T12:13:00,mike02,10.170.78.212,cloud-315.net,process_injection,T1055,Defense Evasion,68,6,insider_threat,Exfiltration
+CAM-0324,EVT-0324-04,2026-01-27T12:31:00,mike02,10.242.178.194,cloud-315.net,screen_capture,T1113,Collection,80,18,insider_threat,Exfiltration
+CAM-0324,EVT-0324-05,2026-01-27T12:44:00,mike02,10.144.144.179,cloud-315.net,dns_exfil,T1048.003,Exfiltration,86,13,insider_threat,Exfiltration
+CAM-0333,EVT-0333-01,2026-09-20T10:42:00,fiona12,10.206.244.152,update-365.com,drive_by,T1189,Initial Access,61,0,ransomware,Impact
+CAM-0333,EVT-0333-02,2026-09-20T10:55:00,fiona12,10.206.244.152,update-365.com,script_execution,T1059.005,Execution,68,13,ransomware,Impact
+CAM-0333,EVT-0333-03,2026-09-20T11:04:00,fiona12,10.206.244.152,update-365.com,uac_bypass,T1548.002,Privilege Escalation,67,9,ransomware,Impact
+CAM-0333,EVT-0333-04,2026-09-20T11:16:00,fiona12,10.206.244.152,update-365.com,log_clearing,T1070,Defense Evasion,85,12,ransomware,Impact
+CAM-0333,EVT-0333-05,2026-09-20T11:36:00,fiona12,10.206.244.152,update-365.com,lateral_smb,T1021.002,Lateral Movement,85,20,ransomware,Impact
+CAM-0333,EVT-0333-06,2026-09-20T11:42:00,fiona12,10.206.244.152,update-365.com,ransomware_encrypt,T1486,Impact,91,6,ransomware,Impact
+CAM-0345,EVT-0345-01,2026-11-29T17:40:00,ivan28,10.26.127.254,cdn-647.com,phishing_email,T1566,Initial Access,40,0,ransomware,Impact
+CAM-0345,EVT-0345-02,2026-11-29T17:51:00,ivan28,10.26.127.254,cdn-647.com,powershell,T1059.001,Execution,43,11,ransomware,Impact
+CAM-0345,EVT-0345-03,2026-11-29T18:09:00,ivan28,10.26.127.254,cdn-647.com,privilege_escalation,T1068,Privilege Escalation,50,18,ransomware,Impact
+CAM-0345,EVT-0345-04,2026-11-29T18:14:00,ivan28,10.26.127.254,cdn-647.com,process_injection,T1055,Defense Evasion,58,5,ransomware,Impact
+CAM-0345,EVT-0345-05,2026-11-29T18:24:00,ivan28,10.26.127.254,cdn-647.com,lateral_rdp,T1021.001,Lateral Movement,60,10,ransomware,Impact
+CAM-0345,EVT-0345-06,2026-11-29T18:25:00,ivan28,10.143.90.66,cdn-647.com,ransomware_encrypt,T1486,Impact,65,1,ransomware,Impact
+CAM-0349,EVT-0349-01,2026-06-20T09:23:00,paula06,10.56.114.27,api-465.com,phishing_email,T1566,Initial Access,59,0,credential_phishing,Lateral Movement
+CAM-0349,EVT-0349-02,2026-06-20T09:43:00,paula06,10.56.114.27,api-465.com,url_visit,T1204.001,Initial Access,63,20,credential_phishing,Lateral Movement
+CAM-0349,EVT-0349-03,2026-06-20T09:49:00,paula06,10.56.114.27,api-465.com,suspicious_login,T1078,Credential Access,71,6,credential_phishing,Lateral Movement
+CAM-0349,EVT-0349-04,2026-06-20T10:06:00,paula06,10.56.114.27,api-465.com,credential_login,T1110,Credential Access,74,17,credential_phishing,Lateral Movement
+CAM-0349,EVT-0349-05,2026-06-20T10:20:00,paula06,10.56.114.27,api-465.com,network_scan,T1046,Discovery,75,14,credential_phishing,Lateral Movement
+CAM-0349,EVT-0349-06,2026-06-20T10:30:00,paula06,10.56.114.27,api-465.com,lateral_rdp,T1021.001,Lateral Movement,94,10,credential_phishing,Lateral Movement
+CAM-0353,EVT-0353-01,2026-03-17T17:09:00,bob23,10.54.37.123,data-991.net,phishing_email,T1566,Initial Access,40,0,apt_full_chain,Exfiltration
+CAM-0353,EVT-0353-02,2026-03-17T17:33:00,bob23,10.54.37.123,data-991.net,attachment_download,T1204.002,Initial Access,43,24,apt_full_chain,Exfiltration
+CAM-0353,EVT-0353-03,2026-03-17T19:00:00,bob23,10.54.37.123,data-991.net,macro_execution,T1204.002,Execution,52,87,apt_full_chain,Exfiltration
+CAM-0353,EVT-0353-04,2026-03-17T19:34:00,bob23,10.54.37.123,data-991.net,log_clearing,T1070,Defense Evasion,52,34,apt_full_chain,Exfiltration
+CAM-0353,EVT-0353-05,2026-03-17T20:06:00,bob23,10.54.37.123,data-991.net,http_c2,T1071.001,Command & Control,72,32,apt_full_chain,Exfiltration
+CAM-0353,EVT-0353-06,2026-03-17T20:59:00,bob23,10.54.37.123,data-991.net,uac_bypass,T1548.002,Privilege Escalation,70,53,apt_full_chain,Exfiltration
+CAM-0353,EVT-0353-07,2026-03-17T21:57:00,bob23,10.54.37.123,data-991.net,system_enum,T1082,Discovery,76,58,apt_full_chain,Exfiltration
+CAM-0353,EVT-0353-08,2026-03-17T23:40:00,bob23,10.79.30.226,data-991.net,lateral_smb,T1021.002,Lateral Movement,61,103,apt_full_chain,Exfiltration
+CAM-0353,EVT-0353-09,2026-03-18T01:17:00,bob23,10.79.30.226,data-991.net,keylogger,T1056.001,Collection,64,97,apt_full_chain,Exfiltration
+CAM-0353,EVT-0353-10,2026-03-18T01:54:00,bob23,10.202.216.175,data-991.net,exfil_ftp,T1048,Exfiltration,100,37,apt_full_chain,Exfiltration
+CAM-0353,EVT-0353-11,2026-03-18T03:07:00,bob23,10.202.216.175,data-991.net,disk_wipe,T1561,Impact,100,73,apt_full_chain,Exfiltration
+CAM-0364,EVT-0364-01,2026-06-07T09:44:00,linda07,10.97.7.95,auth-116.org,phishing_email,T1566,Initial Access,68,0,data_theft,Exfiltration
+CAM-0364,EVT-0364-02,2026-06-07T09:59:00,linda07,10.97.7.95,auth-116.org,credential_login,T1110,Credential Access,74,15,data_theft,Exfiltration
+CAM-0364,EVT-0364-03,2026-06-07T10:13:00,linda07,10.97.7.95,auth-116.org,network_scan,T1046,Discovery,78,14,data_theft,Exfiltration
+CAM-0364,EVT-0364-04,2026-06-07T10:25:00,linda07,10.97.7.95,auth-116.org,data_staged,T1074,Collection,89,12,data_theft,Exfiltration
+CAM-0364,EVT-0364-05,2026-06-07T10:36:00,linda07,10.97.7.95,auth-116.org,exfil_https,T1041,Exfiltration,80,11,data_theft,Exfiltration
+CAM-0368,EVT-0368-01,2026-01-06T10:01:00,ivan27,10.81.165.53,login-195.com,drive_by,T1189,Initial Access,53,0,malware_delivery,Command & Control
+CAM-0368,EVT-0368-02,2026-01-06T10:19:00,ivan27,10.81.165.53,login-195.com,script_execution,T1059.005,Execution,56,18,malware_delivery,Command & Control
+CAM-0368,EVT-0368-03,2026-01-06T10:38:00,ivan27,10.81.165.53,login-195.com,powershell,T1059.001,Execution,65,19,malware_delivery,Command & Control
+CAM-0368,EVT-0368-04,2026-01-06T10:39:00,ivan27,10.81.165.53,login-195.com,startup_folder,T1547.001,Persistence,77,1,malware_delivery,Command & Control
+CAM-0368,EVT-0368-05,2026-01-06T10:54:00,ivan27,10.81.165.53,login-195.com,icmp_tunnel,T1095,Command & Control,85,15,malware_delivery,Command & Control
+CAM-0371,EVT-0371-01,2026-09-20T10:13:00,fiona17,10.130.62.50,data-130.com,spear_phishing,T1566.001,Initial Access,56,0,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-02,2026-09-20T10:55:00,fiona17,10.130.62.50,data-130.com,url_visit,T1204.001,Initial Access,59,42,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-03,2026-09-20T11:51:00,fiona17,10.130.62.50,data-130.com,powershell,T1059.001,Execution,64,56,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-04,2026-09-20T12:34:00,fiona17,10.130.62.50,data-130.com,process_injection,T1055,Defense Evasion,65,43,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-05,2026-09-20T13:05:00,fiona17,10.102.47.90,data-130.com,scheduled_task,T1053.005,Persistence,76,31,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-06,2026-09-20T14:50:00,fiona17,10.102.47.90,data-130.com,dns_beacon,T1071.004,Command & Control,91,105,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-07,2026-09-20T16:04:00,fiona17,10.102.47.90,data-130.com,privilege_escalation,T1068,Privilege Escalation,100,74,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-08,2026-09-20T17:14:00,fiona17,10.102.47.90,data-130.com,network_scan,T1046,Discovery,100,70,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-09,2026-09-20T17:53:00,fiona17,10.143.201.27,data-130.com,lateral_rdp,T1021.001,Lateral Movement,96,39,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-10,2026-09-20T19:22:00,fiona17,10.105.249.111,data-130.com,data_staged,T1074,Collection,100,89,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-11,2026-09-20T20:34:00,fiona17,10.105.249.111,data-130.com,exfil_https,T1041,Exfiltration,100,72,apt_full_chain,Exfiltration
+CAM-0371,EVT-0371-12,2026-09-20T21:23:00,fiona17,10.105.249.111,data-130.com,service_stop,T1489,Impact,100,49,apt_full_chain,Exfiltration
+CAM-0374,EVT-0374-01,2026-06-13T12:12:00,diana18,10.142.38.147,sync-531.io,phishing_email,T1566,Initial Access,50,0,malware_delivery,Command & Control
+CAM-0374,EVT-0374-02,2026-06-13T12:28:00,diana18,10.142.38.147,sync-531.io,attachment_download,T1204.002,Initial Access,53,16,malware_delivery,Command & Control
+CAM-0374,EVT-0374-03,2026-06-13T12:37:00,diana18,10.142.38.147,sync-531.io,macro_execution,T1204.002,Execution,62,9,malware_delivery,Command & Control
+CAM-0374,EVT-0374-04,2026-06-13T12:41:00,diana18,10.142.38.147,sync-531.io,powershell,T1059.001,Execution,59,4,malware_delivery,Command & Control
+CAM-0374,EVT-0374-05,2026-06-13T13:01:00,diana18,10.142.38.147,sync-531.io,scheduled_task,T1053.005,Persistence,70,20,malware_delivery,Command & Control
+CAM-0374,EVT-0374-06,2026-06-13T13:09:00,diana18,10.9.2.234,sync-531.io,dns_beacon,T1071.004,Command & Control,85,8,malware_delivery,Command & Control
+CAM-0380,EVT-0380-01,2026-07-15T19:12:00,quinn11,10.27.225.70,auth-200.com,spear_phishing,T1566.001,Initial Access,60,0,malware_delivery,Command & Control
+CAM-0380,EVT-0380-02,2026-07-15T19:25:00,quinn11,10.27.225.70,auth-200.com,attachment_download,T1204.002,Initial Access,64,13,malware_delivery,Command & Control
+CAM-0380,EVT-0380-03,2026-07-15T19:45:00,quinn11,10.27.225.70,auth-200.com,script_execution,T1059.005,Execution,70,20,malware_delivery,Command & Control
+CAM-0380,EVT-0380-04,2026-07-15T20:02:00,quinn11,10.27.225.70,auth-200.com,registry_run_key,T1547.001,Persistence,81,17,malware_delivery,Command & Control
+CAM-0380,EVT-0380-05,2026-07-15T20:16:00,quinn11,10.27.225.70,auth-200.com,http_c2,T1071.001,Command & Control,72,14,malware_delivery,Command & Control
+CAM-0382,EVT-0382-01,2026-06-11T08:10:00,alice04,10.94.244.190,api-973.net,drive_by,T1189,Initial Access,45,0,data_theft,Exfiltration
+CAM-0382,EVT-0382-02,2026-06-11T08:25:00,alice04,10.94.244.190,api-973.net,kerberoasting,T1558.003,Credential Access,49,15,data_theft,Exfiltration
+CAM-0382,EVT-0382-03,2026-06-11T08:26:00,alice04,10.94.244.190,api-973.net,file_search,T1083,Discovery,61,1,data_theft,Exfiltration
+CAM-0382,EVT-0382-04,2026-06-11T08:42:00,alice04,10.90.135.226,api-973.net,keylogger,T1056.001,Collection,63,16,data_theft,Exfiltration
+CAM-0382,EVT-0382-05,2026-06-11T08:45:00,alice04,10.90.135.226,api-973.net,dns_exfil,T1048.003,Exfiltration,61,3,data_theft,Exfiltration
+CAM-0383,EVT-0383-01,2026-01-09T15:53:00,tina12,10.242.0.126,cdn-583.com,spear_phishing,T1566.001,Initial Access,41,0,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-02,2026-01-09T17:12:00,tina12,10.242.0.126,cdn-583.com,url_visit,T1204.001,Initial Access,45,79,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-03,2026-01-09T19:03:00,tina12,10.242.0.126,cdn-583.com,powershell,T1059.001,Execution,49,111,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-04,2026-01-09T20:57:00,tina12,10.171.231.126,cdn-583.com,process_injection,T1055,Defense Evasion,50,114,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-05,2026-01-09T22:46:00,tina12,10.171.231.126,cdn-583.com,scheduled_task,T1053.005,Persistence,61,109,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-06,2026-01-09T23:33:00,tina12,10.171.231.126,cdn-583.com,dns_beacon,T1071.004,Command & Control,81,47,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-07,2026-01-10T00:34:00,tina12,10.180.154.182,cdn-583.com,privilege_escalation,T1068,Privilege Escalation,77,61,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-08,2026-01-10T01:31:00,tina12,10.180.154.182,cdn-583.com,network_scan,T1046,Discovery,90,57,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-09,2026-01-10T03:02:00,tina12,10.10.75.251,cdn-583.com,lateral_rdp,T1021.001,Lateral Movement,89,91,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-10,2026-01-10T04:09:00,tina12,10.10.75.251,cdn-583.com,data_staged,T1074,Collection,77,67,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-11,2026-01-10T04:42:00,tina12,10.10.75.251,cdn-583.com,exfil_https,T1041,Exfiltration,91,33,apt_full_chain,Exfiltration
+CAM-0383,EVT-0383-12,2026-01-10T05:28:00,tina12,10.10.75.251,cdn-583.com,service_stop,T1489,Impact,100,46,apt_full_chain,Exfiltration
+CAM-0387,EVT-0387-01,2026-10-24T10:43:00,ivan30,10.154.159.45,data-546.org,phishing_email,T1566,Initial Access,65,0,ransomware,Impact
+CAM-0387,EVT-0387-02,2026-10-24T10:48:00,ivan30,10.154.159.45,data-546.org,powershell,T1059.001,Execution,71,5,ransomware,Impact
+CAM-0387,EVT-0387-03,2026-10-24T11:06:00,ivan30,10.154.159.45,data-546.org,privilege_escalation,T1068,Privilege Escalation,73,18,ransomware,Impact
+CAM-0387,EVT-0387-04,2026-10-24T11:16:00,ivan30,10.236.93.97,data-546.org,process_injection,T1055,Defense Evasion,80,10,ransomware,Impact
+CAM-0387,EVT-0387-05,2026-10-24T11:30:00,ivan30,10.226.160.129,data-546.org,lateral_rdp,T1021.001,Lateral Movement,77,14,ransomware,Impact
+CAM-0387,EVT-0387-06,2026-10-24T11:42:00,ivan30,10.226.160.129,data-546.org,ransomware_encrypt,T1486,Impact,95,12,ransomware,Impact
+CAM-0388,EVT-0388-01,2026-03-13T15:50:00,nancy14,10.236.14.234,portal-127.io,spear_phishing,T1566.001,Initial Access,42,0,data_theft,Exfiltration
+CAM-0388,EVT-0388-02,2026-03-13T16:07:00,nancy14,10.236.14.234,portal-127.io,mimikatz,T1003.001,Credential Access,47,17,data_theft,Exfiltration
+CAM-0388,EVT-0388-03,2026-03-13T16:12:00,nancy14,10.236.14.234,portal-127.io,system_enum,T1082,Discovery,56,5,data_theft,Exfiltration
+CAM-0388,EVT-0388-04,2026-03-13T16:30:00,nancy14,10.236.14.234,portal-127.io,screen_capture,T1113,Collection,63,18,data_theft,Exfiltration
+CAM-0388,EVT-0388-05,2026-03-13T16:32:00,nancy14,10.3.236.207,portal-127.io,exfil_ftp,T1048,Exfiltration,66,2,data_theft,Exfiltration
+CAM-0389,EVT-0389-01,2026-02-19T15:36:00,bob03,10.28.138.213,sync-209.org,phishing_email,T1566,Initial Access,59,0,apt_full_chain,Exfiltration
+CAM-0389,EVT-0389-02,2026-02-19T16:33:00,bob03,10.28.138.213,sync-209.org,attachment_download,T1204.002,Initial Access,62,57,apt_full_chain,Exfiltration
+CAM-0389,EVT-0389-03,2026-02-19T17:03:00,bob03,10.28.138.213,sync-209.org,macro_execution,T1204.002,Execution,75,30,apt_full_chain,Exfiltration
+CAM-0389,EVT-0389-04,2026-02-19T18:32:00,bob03,10.28.138.213,sync-209.org,log_clearing,T1070,Defense Evasion,83,89,apt_full_chain,Exfiltration
+CAM-0389,EVT-0389-05,2026-02-19T20:18:00,bob03,10.28.138.213,sync-209.org,http_c2,T1071.001,Command & Control,71,106,apt_full_chain,Exfiltration
+CAM-0389,EVT-0389-06,2026-02-19T21:39:00,bob03,10.28.138.213,sync-209.org,uac_bypass,T1548.002,Privilege Escalation,79,81,apt_full_chain,Exfiltration
+CAM-0389,EVT-0389-07,2026-02-19T22:57:00,bob03,10.79.154.161,sync-209.org,system_enum,T1082,Discovery,83,78,apt_full_chain,Exfiltration
+CAM-0389,EVT-0389-08,2026-02-19T23:51:00,bob03,10.79.154.161,sync-209.org,lateral_smb,T1021.002,Lateral Movement,100,54,apt_full_chain,Exfiltration
+CAM-0389,EVT-0389-09,2026-02-20T00:06:00,bob03,10.79.154.161,sync-209.org,keylogger,T1056.001,Collection,100,15,apt_full_chain,Exfiltration
+CAM-0389,EVT-0389-10,2026-02-20T00:46:00,bob03,10.78.61.134,sync-209.org,exfil_ftp,T1048,Exfiltration,86,40,apt_full_chain,Exfiltration
+CAM-0389,EVT-0389-11,2026-02-20T01:13:00,bob03,10.242.12.214,sync-209.org,disk_wipe,T1561,Impact,99,27,apt_full_chain,Exfiltration
+CAM-0390,EVT-0390-01,2026-10-07T14:52:00,mike02,10.62.153.104,access-288.net,credential_login,T1110,Credential Access,66,0,insider_threat,Exfiltration
+CAM-0390,EVT-0390-02,2026-10-07T15:07:00,mike02,10.62.153.104,access-288.net,file_search,T1083,Discovery,74,15,insider_threat,Exfiltration
+CAM-0390,EVT-0390-03,2026-10-07T15:27:00,mike02,10.62.153.104,access-288.net,process_injection,T1055,Defense Evasion,72,20,insider_threat,Exfiltration
+CAM-0390,EVT-0390-04,2026-10-07T15:41:00,mike02,10.62.153.104,access-288.net,screen_capture,T1113,Collection,78,14,insider_threat,Exfiltration
+CAM-0390,EVT-0390-05,2026-10-07T15:47:00,mike02,10.62.153.104,access-288.net,dns_exfil,T1048.003,Exfiltration,82,6,insider_threat,Exfiltration
+CAM-0406,EVT-0406-01,2026-04-15T16:36:00,helen12,10.55.39.130,access-215.com,drive_by,T1189,Initial Access,47,0,data_theft,Exfiltration
+CAM-0406,EVT-0406-02,2026-04-15T16:50:00,helen12,10.55.39.130,access-215.com,kerberoasting,T1558.003,Credential Access,50,14,data_theft,Exfiltration
+CAM-0406,EVT-0406-03,2026-04-15T17:04:00,helen12,10.55.39.130,access-215.com,file_search,T1083,Discovery,57,14,data_theft,Exfiltration
+CAM-0406,EVT-0406-04,2026-04-15T17:09:00,helen12,10.184.171.250,access-215.com,keylogger,T1056.001,Collection,56,5,data_theft,Exfiltration
+CAM-0406,EVT-0406-05,2026-04-15T17:23:00,helen12,10.184.171.250,access-215.com,dns_exfil,T1048.003,Exfiltration,79,14,data_theft,Exfiltration
+CAM-0411,EVT-0411-01,2026-08-19T19:18:00,tina04,10.23.37.190,auth-559.io,spear_phishing,T1566.001,Initial Access,60,0,ransomware,Impact
+CAM-0411,EVT-0411-02,2026-08-19T19:23:00,tina04,10.23.37.190,auth-559.io,macro_execution,T1204.002,Execution,68,5,ransomware,Impact
+CAM-0411,EVT-0411-03,2026-08-19T19:29:00,tina04,10.23.37.190,auth-559.io,token_impersonation,T1134,Privilege Escalation,76,6,ransomware,Impact
+CAM-0411,EVT-0411-04,2026-08-19T19:48:00,tina04,10.3.189.173,auth-559.io,masquerading,T1036,Defense Evasion,81,19,ransomware,Impact
+CAM-0411,EVT-0411-05,2026-08-19T20:03:00,tina04,10.90.143.242,auth-559.io,lateral_wmi,T1021.006,Lateral Movement,84,15,ransomware,Impact
+CAM-0411,EVT-0411-06,2026-08-19T20:07:00,tina04,10.174.24.145,auth-559.io,disk_wipe,T1561,Impact,80,4,ransomware,Impact
+CAM-0430,EVT-0430-01,2026-04-01T10:05:00,fiona16,10.53.19.95,secure-727.net,spear_phishing,T1566.001,Initial Access,62,0,data_theft,Exfiltration
+CAM-0430,EVT-0430-02,2026-04-01T10:07:00,fiona16,10.53.19.95,secure-727.net,mimikatz,T1003.001,Credential Access,68,2,data_theft,Exfiltration
+CAM-0430,EVT-0430-03,2026-04-01T10:09:00,fiona16,10.53.19.95,secure-727.net,system_enum,T1082,Discovery,72,2,data_theft,Exfiltration
+CAM-0430,EVT-0430-04,2026-04-01T10:13:00,fiona16,10.99.8.86,secure-727.net,screen_capture,T1113,Collection,83,4,data_theft,Exfiltration
+CAM-0430,EVT-0430-05,2026-04-01T10:24:00,fiona16,10.187.7.241,secure-727.net,exfil_ftp,T1048,Exfiltration,94,11,data_theft,Exfiltration
+CAM-0433,EVT-0433-01,2026-10-19T12:44:00,oscar27,10.87.18.244,data-494.net,phishing_email,T1566,Initial Access,57,0,credential_phishing,Lateral Movement
+CAM-0433,EVT-0433-02,2026-10-19T12:54:00,oscar27,10.87.18.244,data-494.net,attachment_download,T1204.002,Initial Access,61,10,credential_phishing,Lateral Movement
+CAM-0433,EVT-0433-03,2026-10-19T13:05:00,oscar27,10.87.18.244,data-494.net,credential_login,T1110,Credential Access,73,11,credential_phishing,Lateral Movement
+CAM-0433,EVT-0433-04,2026-10-19T13:22:00,oscar27,10.87.18.244,data-494.net,suspicious_login,T1078,Credential Access,78,17,credential_phishing,Lateral Movement
+CAM-0433,EVT-0433-05,2026-10-19T13:31:00,oscar27,10.87.18.244,data-494.net,lateral_wmi,T1021.006,Lateral Movement,69,9,credential_phishing,Lateral Movement
+CAM-0441,EVT-0441-01,2026-07-22T13:11:00,oscar11,10.152.18.153,login-465.com,phishing_email,T1566,Initial Access,57,0,ransomware,Impact
+CAM-0441,EVT-0441-02,2026-07-22T13:15:00,oscar11,10.152.18.153,login-465.com,powershell,T1059.001,Execution,61,4,ransomware,Impact
+CAM-0441,EVT-0441-03,2026-07-22T13:20:00,oscar11,10.152.18.153,login-465.com,privilege_escalation,T1068,Privilege Escalation,73,5,ransomware,Impact
+CAM-0441,EVT-0441-04,2026-07-22T13:36:00,oscar11,10.152.18.153,login-465.com,process_injection,T1055,Defense Evasion,75,16,ransomware,Impact
+CAM-0441,EVT-0441-05,2026-07-22T13:48:00,oscar11,10.152.18.153,login-465.com,lateral_rdp,T1021.001,Lateral Movement,81,12,ransomware,Impact
+CAM-0441,EVT-0441-06,2026-07-22T13:56:00,oscar11,10.152.18.153,login-465.com,ransomware_encrypt,T1486,Impact,97,8,ransomware,Impact
+CAM-0460,EVT-0460-01,2026-11-07T18:03:00,sam16,10.23.199.177,cloud-598.net,spear_phishing,T1566.001,Initial Access,48,0,data_theft,Exfiltration
+CAM-0460,EVT-0460-02,2026-11-07T18:14:00,sam16,10.23.199.177,cloud-598.net,mimikatz,T1003.001,Credential Access,53,11,data_theft,Exfiltration
+CAM-0460,EVT-0460-03,2026-11-07T18:32:00,sam16,10.23.199.177,cloud-598.net,system_enum,T1082,Discovery,58,18,data_theft,Exfiltration
+CAM-0460,EVT-0460-04,2026-11-07T18:47:00,sam16,10.68.37.84,cloud-598.net,screen_capture,T1113,Collection,63,15,data_theft,Exfiltration
+CAM-0460,EVT-0460-05,2026-11-07T19:01:00,sam16,10.68.37.84,cloud-598.net,exfil_ftp,T1048,Exfiltration,64,14,data_theft,Exfiltration
+CAM-0465,EVT-0465-01,2026-03-12T20:07:00,julia06,10.217.138.60,cdn-890.org,phishing_email,T1566,Initial Access,40,0,ransomware,Impact
+CAM-0465,EVT-0465-02,2026-03-12T20:22:00,julia06,10.217.138.60,cdn-890.org,powershell,T1059.001,Execution,48,15,ransomware,Impact
+CAM-0465,EVT-0465-03,2026-03-12T20:29:00,julia06,10.217.138.60,cdn-890.org,privilege_escalation,T1068,Privilege Escalation,52,7,ransomware,Impact
+CAM-0465,EVT-0465-04,2026-03-12T20:31:00,julia06,10.217.138.60,cdn-890.org,process_injection,T1055,Defense Evasion,58,2,ransomware,Impact
+CAM-0465,EVT-0465-05,2026-03-12T20:38:00,julia06,10.217.138.60,cdn-890.org,lateral_rdp,T1021.001,Lateral Movement,56,7,ransomware,Impact
+CAM-0465,EVT-0465-06,2026-03-12T20:57:00,julia06,10.89.62.42,cdn-890.org,ransomware_encrypt,T1486,Impact,55,19,ransomware,Impact
+CAM-0470,EVT-0470-01,2026-01-18T18:40:00,oscar22,10.136.67.84,verify-483.net,drive_by,T1189,Initial Access,58,0,malware_delivery,Command & Control
+CAM-0470,EVT-0470-02,2026-01-18T18:46:00,oscar22,10.136.67.84,verify-483.net,script_execution,T1059.005,Execution,61,6,malware_delivery,Command & Control
+CAM-0470,EVT-0470-03,2026-01-18T18:51:00,oscar22,10.136.67.84,verify-483.net,powershell,T1059.001,Execution,74,5,malware_delivery,Command & Control
+CAM-0470,EVT-0470-04,2026-01-18T18:53:00,oscar22,10.165.5.147,verify-483.net,startup_folder,T1547.001,Persistence,70,2,malware_delivery,Command & Control
+CAM-0470,EVT-0470-05,2026-01-18T19:09:00,oscar22,10.165.5.147,verify-483.net,icmp_tunnel,T1095,Command & Control,82,16,malware_delivery,Command & Control
+CAM-0471,EVT-0471-01,2026-05-24T16:21:00,sam13,10.231.109.117,data-369.io,phishing_email,T1566,Initial Access,43,0,ransomware,Impact
+CAM-0471,EVT-0471-02,2026-05-24T16:32:00,sam13,10.231.109.117,data-369.io,powershell,T1059.001,Execution,49,11,ransomware,Impact
+CAM-0471,EVT-0471-03,2026-05-24T16:50:00,sam13,10.231.109.117,data-369.io,privilege_escalation,T1068,Privilege Escalation,55,18,ransomware,Impact
+CAM-0471,EVT-0471-04,2026-05-24T16:54:00,sam13,10.231.109.117,data-369.io,process_injection,T1055,Defense Evasion,67,4,ransomware,Impact
+CAM-0471,EVT-0471-05,2026-05-24T17:11:00,sam13,10.187.218.165,data-369.io,lateral_rdp,T1021.001,Lateral Movement,63,17,ransomware,Impact
+CAM-0471,EVT-0471-06,2026-05-24T17:12:00,sam13,10.116.234.213,data-369.io,ransomware_encrypt,T1486,Impact,78,1,ransomware,Impact
+CAM-0474,EVT-0474-01,2026-08-16T10:43:00,evan29,10.205.63.186,cloud-699.net,credential_login,T1110,Credential Access,46,0,insider_threat,Exfiltration
+CAM-0474,EVT-0474-02,2026-08-16T10:44:00,evan29,10.205.63.186,cloud-699.net,file_search,T1083,Discovery,54,1,insider_threat,Exfiltration
+CAM-0474,EVT-0474-03,2026-08-16T10:48:00,evan29,10.205.63.186,cloud-699.net,process_injection,T1055,Defense Evasion,60,4,insider_threat,Exfiltration
+CAM-0474,EVT-0474-04,2026-08-16T10:58:00,evan29,10.241.118.170,cloud-699.net,screen_capture,T1113,Collection,67,10,insider_threat,Exfiltration
+CAM-0474,EVT-0474-05,2026-08-16T11:13:00,evan29,10.241.118.170,cloud-699.net,dns_exfil,T1048.003,Exfiltration,66,15,insider_threat,Exfiltration
+CAM-0512,EVT-0512-01,2026-03-07T16:50:00,paula26,10.143.174.148,app-439.net,spear_phishing,T1566.001,Initial Access,68,0,malware_delivery,Command & Control
+CAM-0512,EVT-0512-02,2026-03-07T17:09:00,paula26,10.143.174.148,app-439.net,attachment_download,T1204.002,Initial Access,75,19,malware_delivery,Command & Control
+CAM-0512,EVT-0512-03,2026-03-07T17:17:00,paula26,10.143.174.148,app-439.net,script_execution,T1059.005,Execution,76,8,malware_delivery,Command & Control
+CAM-0512,EVT-0512-04,2026-03-07T17:33:00,paula26,10.143.174.148,app-439.net,registry_run_key,T1547.001,Persistence,89,16,malware_delivery,Command & Control
+CAM-0512,EVT-0512-05,2026-03-07T17:34:00,paula26,10.143.174.148,app-439.net,http_c2,T1071.001,Command & Control,88,1,malware_delivery,Command & Control
+CAM-0516,EVT-0516-01,2026-07-04T17:21:00,evan05,10.52.83.241,cloud-340.com,suspicious_login,T1078,Credential Access,64,0,insider_threat,Exfiltration
+CAM-0516,EVT-0516-02,2026-07-04T17:32:00,evan05,10.52.83.241,cloud-340.com,system_enum,T1082,Discovery,67,11,insider_threat,Exfiltration
+CAM-0516,EVT-0516-03,2026-07-04T17:48:00,evan05,10.52.83.241,cloud-340.com,masquerading,T1036,Defense Evasion,76,16,insider_threat,Exfiltration
+CAM-0516,EVT-0516-04,2026-07-04T18:06:00,evan05,10.52.83.241,cloud-340.com,data_staged,T1074,Collection,73,18,insider_threat,Exfiltration
+CAM-0516,EVT-0516-05,2026-07-04T18:19:00,evan05,10.45.106.115,cloud-340.com,exfil_ftp,T1048,Exfiltration,96,13,insider_threat,Exfiltration
+CAM-0518,EVT-0518-01,2026-11-18T15:17:00,charlie19,10.188.84.102,cdn-255.com,spear_phishing,T1566.001,Initial Access,69,0,malware_delivery,Command & Control
+CAM-0518,EVT-0518-02,2026-11-18T15:34:00,charlie19,10.188.84.102,cdn-255.com,attachment_download,T1204.002,Initial Access,75,17,malware_delivery,Command & Control
+CAM-0518,EVT-0518-03,2026-11-18T15:40:00,charlie19,10.188.84.102,cdn-255.com,script_execution,T1059.005,Execution,77,6,malware_delivery,Command & Control
+CAM-0518,EVT-0518-04,2026-11-18T16:00:00,charlie19,10.167.133.101,cdn-255.com,registry_run_key,T1547.001,Persistence,84,20,malware_delivery,Command & Control
+CAM-0518,EVT-0518-05,2026-11-18T16:04:00,charlie19,10.14.228.155,cdn-255.com,http_c2,T1071.001,Command & Control,100,4,malware_delivery,Command & Control
+CAM-0520,EVT-0520-01,2026-06-17T20:25:00,alice07,10.92.170.53,access-837.io,spear_phishing,T1566.001,Initial Access,63,0,data_theft,Exfiltration
+CAM-0520,EVT-0520-02,2026-06-17T20:41:00,alice07,10.92.170.53,access-837.io,mimikatz,T1003.001,Credential Access,69,16,data_theft,Exfiltration
+CAM-0520,EVT-0520-03,2026-06-17T20:59:00,alice07,10.92.170.53,access-837.io,system_enum,T1082,Discovery,77,18,data_theft,Exfiltration
+CAM-0520,EVT-0520-04,2026-06-17T21:09:00,alice07,10.92.170.53,access-837.io,screen_capture,T1113,Collection,87,10,data_theft,Exfiltration
+CAM-0520,EVT-0520-05,2026-06-17T21:17:00,alice07,10.92.170.53,access-837.io,exfil_ftp,T1048,Exfiltration,75,8,data_theft,Exfiltration
+CAM-0525,EVT-0525-01,2026-04-27T16:31:00,diana17,10.21.53.148,secure-360.net,drive_by,T1189,Initial Access,63,0,ransomware,Impact
+CAM-0525,EVT-0525-02,2026-04-27T16:43:00,diana17,10.21.53.148,secure-360.net,script_execution,T1059.005,Execution,70,12,ransomware,Impact
+CAM-0525,EVT-0525-03,2026-04-27T16:56:00,diana17,10.21.53.148,secure-360.net,uac_bypass,T1548.002,Privilege Escalation,77,13,ransomware,Impact
+CAM-0525,EVT-0525-04,2026-04-27T17:09:00,diana17,10.21.53.148,secure-360.net,log_clearing,T1070,Defense Evasion,75,13,ransomware,Impact
+CAM-0525,EVT-0525-05,2026-04-27T17:23:00,diana17,10.21.53.148,secure-360.net,lateral_smb,T1021.002,Lateral Movement,95,14,ransomware,Impact
+CAM-0525,EVT-0525-06,2026-04-27T17:27:00,diana17,10.21.53.148,secure-360.net,ransomware_encrypt,T1486,Impact,83,4,ransomware,Impact
+CAM-0548,EVT-0548-01,2026-11-03T15:22:00,linda02,10.179.238.233,verify-769.io,spear_phishing,T1566.001,Initial Access,42,0,malware_delivery,Command & Control
+CAM-0548,EVT-0548-02,2026-11-03T15:38:00,linda02,10.179.238.233,verify-769.io,attachment_download,T1204.002,Initial Access,45,16,malware_delivery,Command & Control
+CAM-0548,EVT-0548-03,2026-11-03T15:54:00,linda02,10.179.238.233,verify-769.io,script_execution,T1059.005,Execution,48,16,malware_delivery,Command & Control
+CAM-0548,EVT-0548-04,2026-11-03T16:06:00,linda02,10.84.5.254,verify-769.io,registry_run_key,T1547.001,Persistence,57,12,malware_delivery,Command & Control
+CAM-0548,EVT-0548-05,2026-11-03T16:10:00,linda02,10.84.5.254,verify-769.io,http_c2,T1071.001,Command & Control,58,4,malware_delivery,Command & Control
+CAM-0550,EVT-0550-01,2026-11-22T14:09:00,rosa24,10.34.78.239,verify-438.io,phishing_email,T1566,Initial Access,63,0,data_theft,Exfiltration
+CAM-0550,EVT-0550-02,2026-11-22T14:12:00,rosa24,10.34.78.239,verify-438.io,credential_login,T1110,Credential Access,70,3,data_theft,Exfiltration
+CAM-0550,EVT-0550-03,2026-11-22T14:25:00,rosa24,10.34.78.239,verify-438.io,network_scan,T1046,Discovery,73,13,data_theft,Exfiltration
+CAM-0550,EVT-0550-04,2026-11-22T14:38:00,rosa24,10.155.6.245,verify-438.io,data_staged,T1074,Collection,75,13,data_theft,Exfiltration
+CAM-0550,EVT-0550-05,2026-11-22T14:43:00,rosa24,10.155.6.245,verify-438.io,exfil_https,T1041,Exfiltration,79,5,data_theft,Exfiltration
+CAM-0551,EVT-0551-01,2026-02-03T11:54:00,nancy26,10.77.218.141,data-361.net,spear_phishing,T1566.001,Initial Access,40,0,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-02,2026-02-03T13:42:00,nancy26,10.77.218.141,data-361.net,url_visit,T1204.001,Initial Access,46,108,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-03,2026-02-03T15:37:00,nancy26,10.77.218.141,data-361.net,powershell,T1059.001,Execution,46,115,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-04,2026-02-03T16:20:00,nancy26,10.77.218.141,data-361.net,process_injection,T1055,Defense Evasion,58,43,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-05,2026-02-03T16:56:00,nancy26,10.77.218.141,data-361.net,scheduled_task,T1053.005,Persistence,72,36,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-06,2026-02-03T17:21:00,nancy26,10.77.218.141,data-361.net,dns_beacon,T1071.004,Command & Control,80,25,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-07,2026-02-03T18:19:00,nancy26,10.77.218.141,data-361.net,privilege_escalation,T1068,Privilege Escalation,82,58,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-08,2026-02-03T19:21:00,nancy26,10.77.218.141,data-361.net,network_scan,T1046,Discovery,82,62,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-09,2026-02-03T20:09:00,nancy26,10.77.218.141,data-361.net,lateral_rdp,T1021.001,Lateral Movement,96,48,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-10,2026-02-03T22:08:00,nancy26,10.167.79.171,data-361.net,data_staged,T1074,Collection,100,119,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-11,2026-02-03T23:50:00,nancy26,10.167.79.171,data-361.net,exfil_https,T1041,Exfiltration,100,102,apt_full_chain,Exfiltration
+CAM-0551,EVT-0551-12,2026-02-04T01:32:00,nancy26,10.167.79.171,data-361.net,service_stop,T1489,Impact,95,102,apt_full_chain,Exfiltration
+CAM-0559,EVT-0559-01,2026-07-04T16:51:00,paula09,10.103.92.107,secure-889.com,phishing_email,T1566,Initial Access,60,0,credential_phishing,Lateral Movement
+CAM-0559,EVT-0559-02,2026-07-04T17:02:00,paula09,10.103.92.107,secure-889.com,attachment_download,T1204.002,Initial Access,63,11,credential_phishing,Lateral Movement
+CAM-0559,EVT-0559-03,2026-07-04T17:06:00,paula09,10.103.92.107,secure-889.com,credential_login,T1110,Credential Access,72,4,credential_phishing,Lateral Movement
+CAM-0559,EVT-0559-04,2026-07-04T17:23:00,paula09,10.170.140.136,secure-889.com,suspicious_login,T1078,Credential Access,72,17,credential_phishing,Lateral Movement
+CAM-0559,EVT-0559-05,2026-07-04T17:36:00,paula09,10.170.140.136,secure-889.com,lateral_wmi,T1021.006,Lateral Movement,88,13,credential_phishing,Lateral Movement
+CAM-0566,EVT-0566-01,2026-06-03T10:44:00,karl08,10.159.217.76,secure-979.com,phishing_email,T1566,Initial Access,41,0,malware_delivery,Command & Control
+CAM-0566,EVT-0566-02,2026-06-03T10:49:00,karl08,10.159.217.76,secure-979.com,attachment_download,T1204.002,Initial Access,46,5,malware_delivery,Command & Control
+CAM-0566,EVT-0566-03,2026-06-03T11:00:00,karl08,10.159.217.76,secure-979.com,macro_execution,T1204.002,Execution,53,11,malware_delivery,Command & Control
+CAM-0566,EVT-0566-04,2026-06-03T11:03:00,karl08,10.159.217.76,secure-979.com,powershell,T1059.001,Execution,62,3,malware_delivery,Command & Control
+CAM-0566,EVT-0566-05,2026-06-03T11:19:00,karl08,10.159.217.76,secure-979.com,scheduled_task,T1053.005,Persistence,61,16,malware_delivery,Command & Control
+CAM-0566,EVT-0566-06,2026-06-03T11:33:00,karl08,10.145.167.48,secure-979.com,dns_beacon,T1071.004,Command & Control,56,14,malware_delivery,Command & Control
+CAM-0572,EVT-0572-01,2026-05-24T11:27:00,oscar17,10.148.104.106,login-394.net,phishing_email,T1566,Initial Access,49,0,malware_delivery,Command & Control
+CAM-0572,EVT-0572-02,2026-05-24T11:44:00,oscar17,10.148.104.106,login-394.net,attachment_download,T1204.002,Initial Access,52,17,malware_delivery,Command & Control
+CAM-0572,EVT-0572-03,2026-05-24T12:03:00,oscar17,10.148.104.106,login-394.net,macro_execution,T1204.002,Execution,61,19,malware_delivery,Command & Control
+CAM-0572,EVT-0572-04,2026-05-24T12:15:00,oscar17,10.148.104.106,login-394.net,powershell,T1059.001,Execution,64,12,malware_delivery,Command & Control
+CAM-0572,EVT-0572-05,2026-05-24T12:30:00,oscar17,10.148.104.106,login-394.net,scheduled_task,T1053.005,Persistence,65,15,malware_delivery,Command & Control
+CAM-0572,EVT-0572-06,2026-05-24T12:39:00,oscar17,10.148.104.106,login-394.net,dns_beacon,T1071.004,Command & Control,79,9,malware_delivery,Command & Control
+CAM-0573,EVT-0573-01,2026-09-06T18:14:00,fiona16,10.112.224.232,update-117.net,drive_by,T1189,Initial Access,60,0,ransomware,Impact
+CAM-0573,EVT-0573-02,2026-09-06T18:19:00,fiona16,10.112.224.232,update-117.net,script_execution,T1059.005,Execution,63,5,ransomware,Impact
+CAM-0573,EVT-0573-03,2026-09-06T18:28:00,fiona16,10.112.224.232,update-117.net,uac_bypass,T1548.002,Privilege Escalation,76,9,ransomware,Impact
+CAM-0573,EVT-0573-04,2026-09-06T18:40:00,fiona16,10.50.139.221,update-117.net,log_clearing,T1070,Defense Evasion,81,12,ransomware,Impact
+CAM-0573,EVT-0573-05,2026-09-06T18:57:00,fiona16,10.50.139.221,update-117.net,lateral_smb,T1021.002,Lateral Movement,80,17,ransomware,Impact
+CAM-0573,EVT-0573-06,2026-09-06T18:58:00,fiona16,10.50.139.221,update-117.net,ransomware_encrypt,T1486,Impact,75,1,ransomware,Impact
+CAM-0575,EVT-0575-01,2026-05-06T16:02:00,sam07,10.205.182.25,verify-583.net,phishing_email,T1566,Initial Access,68,0,apt_full_chain,Exfiltration
+CAM-0575,EVT-0575-02,2026-05-06T17:17:00,sam07,10.205.182.25,verify-583.net,attachment_download,T1204.002,Initial Access,72,75,apt_full_chain,Exfiltration
+CAM-0575,EVT-0575-03,2026-05-06T18:40:00,sam07,10.205.182.25,verify-583.net,macro_execution,T1204.002,Execution,78,83,apt_full_chain,Exfiltration
+CAM-0575,EVT-0575-04,2026-05-06T19:58:00,sam07,10.205.182.25,verify-583.net,log_clearing,T1070,Defense Evasion,80,78,apt_full_chain,Exfiltration
+CAM-0575,EVT-0575-05,2026-05-06T21:24:00,sam07,10.205.182.25,verify-583.net,http_c2,T1071.001,Command & Control,80,86,apt_full_chain,Exfiltration
+CAM-0575,EVT-0575-06,2026-05-06T21:52:00,sam07,10.205.182.25,verify-583.net,uac_bypass,T1548.002,Privilege Escalation,100,28,apt_full_chain,Exfiltration
+CAM-0575,EVT-0575-07,2026-05-06T22:36:00,sam07,10.205.182.25,verify-583.net,system_enum,T1082,Discovery,100,44,apt_full_chain,Exfiltration
+CAM-0575,EVT-0575-08,2026-05-06T23:17:00,sam07,10.205.182.25,verify-583.net,lateral_smb,T1021.002,Lateral Movement,100,41,apt_full_chain,Exfiltration
+CAM-0575,EVT-0575-09,2026-05-07T01:06:00,sam07,10.225.69.57,verify-583.net,keylogger,T1056.001,Collection,92,109,apt_full_chain,Exfiltration
+CAM-0575,EVT-0575-10,2026-05-07T02:55:00,sam07,10.49.18.66,verify-583.net,exfil_ftp,T1048,Exfiltration,100,109,apt_full_chain,Exfiltration
+CAM-0575,EVT-0575-11,2026-05-07T03:11:00,sam07,10.49.18.66,verify-583.net,disk_wipe,T1561,Impact,100,16,apt_full_chain,Exfiltration
+CAM-0577,EVT-0577-01,2026-07-02T20:35:00,charlie17,10.117.142.1,verify-813.org,phishing_email,T1566,Initial Access,69,0,credential_phishing,Lateral Movement
+CAM-0577,EVT-0577-02,2026-07-02T20:39:00,charlie17,10.117.142.1,verify-813.org,url_visit,T1204.001,Initial Access,77,4,credential_phishing,Lateral Movement
+CAM-0577,EVT-0577-03,2026-07-02T20:58:00,charlie17,10.117.142.1,verify-813.org,suspicious_login,T1078,Credential Access,75,19,credential_phishing,Lateral Movement
+CAM-0577,EVT-0577-04,2026-07-02T21:07:00,charlie17,10.80.119.189,verify-813.org,credential_login,T1110,Credential Access,81,9,credential_phishing,Lateral Movement
+CAM-0577,EVT-0577-05,2026-07-02T21:09:00,charlie17,10.107.101.34,verify-813.org,network_scan,T1046,Discovery,100,2,credential_phishing,Lateral Movement
+CAM-0577,EVT-0577-06,2026-07-02T21:19:00,charlie17,10.230.115.159,verify-813.org,lateral_rdp,T1021.001,Lateral Movement,99,10,credential_phishing,Lateral Movement
+CAM-0578,EVT-0578-01,2026-12-18T19:09:00,bob04,10.104.187.161,app-879.org,phishing_email,T1566,Initial Access,66,0,malware_delivery,Command & Control
+CAM-0578,EVT-0578-02,2026-12-18T19:25:00,bob04,10.104.187.161,app-879.org,attachment_download,T1204.002,Initial Access,72,16,malware_delivery,Command & Control
+CAM-0578,EVT-0578-03,2026-12-18T19:26:00,bob04,10.104.187.161,app-879.org,macro_execution,T1204.002,Execution,74,1,malware_delivery,Command & Control
+CAM-0578,EVT-0578-04,2026-12-18T19:38:00,bob04,10.104.187.161,app-879.org,powershell,T1059.001,Execution,75,12,malware_delivery,Command & Control
+CAM-0578,EVT-0578-05,2026-12-18T19:52:00,bob04,10.80.108.19,app-879.org,scheduled_task,T1053.005,Persistence,78,14,malware_delivery,Command & Control
+CAM-0578,EVT-0578-06,2026-12-18T19:57:00,bob04,10.117.85.69,app-879.org,dns_beacon,T1071.004,Command & Control,96,5,malware_delivery,Command & Control
+CAM-0586,EVT-0586-01,2026-05-18T13:09:00,helen17,10.99.193.184,app-292.com,spear_phishing,T1566.001,Initial Access,52,0,data_theft,Exfiltration
+CAM-0586,EVT-0586-02,2026-05-18T13:22:00,helen17,10.99.193.184,app-292.com,mimikatz,T1003.001,Credential Access,59,13,data_theft,Exfiltration
+CAM-0586,EVT-0586-03,2026-05-18T13:32:00,helen17,10.99.193.184,app-292.com,system_enum,T1082,Discovery,68,10,data_theft,Exfiltration
+CAM-0586,EVT-0586-04,2026-05-18T13:38:00,helen17,10.99.193.184,app-292.com,screen_capture,T1113,Collection,73,6,data_theft,Exfiltration
+CAM-0586,EVT-0586-05,2026-05-18T13:48:00,helen17,10.10.124.226,app-292.com,exfil_ftp,T1048,Exfiltration,76,10,data_theft,Exfiltration
+CAM-0590,EVT-0590-01,2026-02-09T08:58:00,mike21,10.165.115.11,verify-975.com,phishing_email,T1566,Initial Access,63,0,malware_delivery,Command & Control
+CAM-0590,EVT-0590-02,2026-02-09T09:14:00,mike21,10.165.115.11,verify-975.com,attachment_download,T1204.002,Initial Access,68,16,malware_delivery,Command & Control
+CAM-0590,EVT-0590-03,2026-02-09T09:27:00,mike21,10.165.115.11,verify-975.com,macro_execution,T1204.002,Execution,69,13,malware_delivery,Command & Control
+CAM-0590,EVT-0590-04,2026-02-09T09:42:00,mike21,10.165.115.11,verify-975.com,powershell,T1059.001,Execution,84,15,malware_delivery,Command & Control
+CAM-0590,EVT-0590-05,2026-02-09T10:00:00,mike21,10.165.115.11,verify-975.com,scheduled_task,T1053.005,Persistence,95,18,malware_delivery,Command & Control
+CAM-0590,EVT-0590-06,2026-02-09T10:01:00,mike21,10.165.115.11,verify-975.com,dns_beacon,T1071.004,Command & Control,78,1,malware_delivery,Command & Control
+CAM-0591,EVT-0591-01,2026-03-07T06:15:00,alice26,10.15.54.86,app-524.com,phishing_email,T1566,Initial Access,57,0,ransomware,Impact
+CAM-0591,EVT-0591-02,2026-03-07T06:31:00,alice26,10.15.54.86,app-524.com,powershell,T1059.001,Execution,65,16,ransomware,Impact
+CAM-0591,EVT-0591-03,2026-03-07T06:47:00,alice26,10.15.54.86,app-524.com,privilege_escalation,T1068,Privilege Escalation,67,16,ransomware,Impact
+CAM-0591,EVT-0591-04,2026-03-07T06:57:00,alice26,10.212.1.226,app-524.com,process_injection,T1055,Defense Evasion,78,10,ransomware,Impact
+CAM-0591,EVT-0591-05,2026-03-07T07:17:00,alice26,10.188.177.35,app-524.com,lateral_rdp,T1021.001,Lateral Movement,89,20,ransomware,Impact
+CAM-0591,EVT-0591-06,2026-03-07T07:19:00,alice26,10.36.63.223,app-524.com,ransomware_encrypt,T1486,Impact,72,2,ransomware,Impact
+CAM-0593,EVT-0593-01,2026-09-24T19:47:00,karl14,10.39.47.66,secure-812.org,phishing_email,T1566,Initial Access,44,0,apt_full_chain,Exfiltration
+CAM-0593,EVT-0593-02,2026-09-24T21:22:00,karl14,10.39.47.66,secure-812.org,attachment_download,T1204.002,Initial Access,47,95,apt_full_chain,Exfiltration
+CAM-0593,EVT-0593-03,2026-09-24T23:16:00,karl14,10.39.47.66,secure-812.org,macro_execution,T1204.002,Execution,54,114,apt_full_chain,Exfiltration
+CAM-0593,EVT-0593-04,2026-09-25T00:01:00,karl14,10.39.47.66,secure-812.org,log_clearing,T1070,Defense Evasion,62,45,apt_full_chain,Exfiltration
+CAM-0593,EVT-0593-05,2026-09-25T01:10:00,karl14,10.39.47.66,secure-812.org,http_c2,T1071.001,Command & Control,68,69,apt_full_chain,Exfiltration
+CAM-0593,EVT-0593-06,2026-09-25T03:00:00,karl14,10.39.47.66,secure-812.org,uac_bypass,T1548.002,Privilege Escalation,59,110,apt_full_chain,Exfiltration
+CAM-0593,EVT-0593-07,2026-09-25T03:27:00,karl14,10.39.47.66,secure-812.org,system_enum,T1082,Discovery,62,27,apt_full_chain,Exfiltration
+CAM-0593,EVT-0593-08,2026-09-25T04:36:00,karl14,10.39.47.66,secure-812.org,lateral_smb,T1021.002,Lateral Movement,65,69,apt_full_chain,Exfiltration
+CAM-0593,EVT-0593-09,2026-09-25T05:15:00,karl14,10.39.47.66,secure-812.org,keylogger,T1056.001,Collection,68,39,apt_full_chain,Exfiltration
+CAM-0593,EVT-0593-10,2026-09-25T05:56:00,karl14,10.39.47.66,secure-812.org,exfil_ftp,T1048,Exfiltration,89,41,apt_full_chain,Exfiltration
+CAM-0593,EVT-0593-11,2026-09-25T07:28:00,karl14,10.39.47.66,secure-812.org,disk_wipe,T1561,Impact,74,92,apt_full_chain,Exfiltration
+CAM-0594,EVT-0594-01,2026-03-31T12:16:00,mike05,10.233.37.83,cloud-317.com,suspicious_login,T1078,Credential Access,70,0,insider_threat,Exfiltration
+CAM-0594,EVT-0594-02,2026-03-31T12:18:00,mike05,10.233.37.83,cloud-317.com,system_enum,T1082,Discovery,76,2,insider_threat,Exfiltration
+CAM-0594,EVT-0594-03,2026-03-31T12:35:00,mike05,10.233.37.83,cloud-317.com,masquerading,T1036,Defense Evasion,84,17,insider_threat,Exfiltration
+CAM-0594,EVT-0594-04,2026-03-31T12:41:00,mike05,10.233.37.83,cloud-317.com,data_staged,T1074,Collection,88,6,insider_threat,Exfiltration
+CAM-0594,EVT-0594-05,2026-03-31T12:57:00,mike05,10.233.37.83,cloud-317.com,exfil_ftp,T1048,Exfiltration,100,16,insider_threat,Exfiltration
+CAM-0595,EVT-0595-01,2026-01-21T09:15:00,rosa21,10.73.107.252,portal-951.org,spear_phishing,T1566.001,Initial Access,49,0,credential_phishing,Lateral Movement
+CAM-0595,EVT-0595-02,2026-01-21T09:16:00,rosa21,10.73.107.252,portal-951.org,url_visit,T1204.001,Initial Access,56,1,credential_phishing,Lateral Movement
+CAM-0595,EVT-0595-03,2026-01-21T09:31:00,rosa21,10.73.107.252,portal-951.org,credential_login,T1110,Credential Access,57,15,credential_phishing,Lateral Movement
+CAM-0595,EVT-0595-04,2026-01-21T09:42:00,rosa21,10.69.208.12,portal-951.org,system_enum,T1082,Discovery,64,11,credential_phishing,Lateral Movement
+CAM-0595,EVT-0595-05,2026-01-21T09:49:00,rosa21,10.69.208.12,portal-951.org,lateral_smb,T1021.002,Lateral Movement,65,7,credential_phishing,Lateral Movement
+CAM-0597,EVT-0597-01,2026-10-10T20:05:00,mike25,10.215.192.223,app-772.org,phishing_email,T1566,Initial Access,66,0,ransomware,Impact
+CAM-0597,EVT-0597-02,2026-10-10T20:10:00,mike25,10.215.192.223,app-772.org,powershell,T1059.001,Execution,73,5,ransomware,Impact
+CAM-0597,EVT-0597-03,2026-10-10T20:22:00,mike25,10.215.192.223,app-772.org,privilege_escalation,T1068,Privilege Escalation,80,12,ransomware,Impact
+CAM-0597,EVT-0597-04,2026-10-10T20:35:00,mike25,10.215.192.223,app-772.org,process_injection,T1055,Defense Evasion,90,13,ransomware,Impact
+CAM-0597,EVT-0597-05,2026-10-10T20:43:00,mike25,10.52.150.6,app-772.org,lateral_rdp,T1021.001,Lateral Movement,82,8,ransomware,Impact
+CAM-0597,EVT-0597-06,2026-10-10T21:00:00,mike25,10.52.150.6,app-772.org,ransomware_encrypt,T1486,Impact,91,17,ransomware,Impact

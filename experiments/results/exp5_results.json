@@ -1,0 +1,74 @@
+{
+  "experiment": "exp5_twin_decision_quality",
+  "n_high_risk": 120,
+  "without_twin": {
+    "decision_accuracy": 0.6667,
+    "precision": 0.6667,
+    "recall": 1.0,
+    "f1": 0.8,
+    "fpr": 1.0,
+    "fnr": 0.0
+  },
+  "with_twin": {
+    "decision_accuracy": 0.6667,
+    "precision": 0.6897,
+    "recall": 1.0,
+    "f1": 0.8163,
+    "fpr": 0.9,
+    "fnr": 0.0,
+    "avg_twin_ms": 0.01
+  },
+  "type_breakdown_without": {
+    "credential_phishing": {
+      "n": 19,
+      "correct": 0
+    },
+    "malware_delivery": {
+      "n": 21,
+      "correct": 0
+    },
+    "data_theft": {
+      "n": 19,
+      "correct": 19
+    },
+    "ransomware": {
+      "n": 22,
+      "correct": 22
+    },
+    "apt_full_chain": {
+      "n": 21,
+      "correct": 21
+    },
+    "insider_threat": {
+      "n": 18,
+      "correct": 18
+    }
+  },
+  "type_breakdown_with": {
+    "credential_phishing": {
+      "n": 19,
+      "correct": 0
+    },
+    "malware_delivery": {
+      "n": 21,
+      "correct": 0
+    },
+    "data_theft": {
+      "n": 19,
+      "correct": 19
+    },
+    "ransomware": {
+      "n": 22,
+      "correct": 22
+    },
+    "apt_full_chain": {
+      "n": 21,
+      "correct": 21
+    },
+    "insider_threat": {
+      "n": 18,
+      "correct": 18
+    }
+  },
+  "timestamp": "2026-08-15T09:34:41.264314"
+}

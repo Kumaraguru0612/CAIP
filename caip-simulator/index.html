@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAIP Safe 5-Step Live Demonstration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom CAIP Dark Theme Colors */
+        body { background-color: #0B0F19; color: #E2E8F0; }
+        .caip-card { background-color: #111827; border: 1px solid #1F2937; }
+        .text-caip-purple { color: #A78BFA; }
+        .bg-caip-purple { background-color: #7C3AED; }
+        .bg-caip-purple:hover { background-color: #6D28D9; }
+        .hidden-step { opacity: 0.4; pointer-events: none; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-12 font-sans">
+
+    <!-- Main Container -->
+    <div class="w-full max-w-2xl caip-card rounded-xl p-8 shadow-2xl">
+        
+        <!-- Header -->
+        <div class="mb-8">
+            <div class="flex items-center justify-between flex-wrap gap-2 mb-3">
+                <span class="bg-purple-900 text-purple-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">CAIP Safe Simulation</span>
+                <div class="flex items-center gap-2 text-xs">
+                    <a href="/" class="text-cyan-400 hover:text-cyan-300 font-semibold transition-colors">← SOC Dashboard</a>
+                    <span class="text-gray-600">|</span>
+                    <a href="/docs" target="_blank" class="text-purple-400 hover:text-purple-300 font-semibold transition-colors">API Docs (Swagger) ↗</a>
+                </div>
+            </div>
+            <h1 class="text-3xl font-bold text-white mt-2 mb-2">5-Step Live Cybersecurity Demo</h1>
+            <p class="text-gray-400 text-sm">Defensive security research demonstration. Simulates a multi-stage attack sequence safely into the CAIP SOC Platform.</p>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="mb-8 bg-gray-900 p-4 rounded-lg border border-gray-800">
+            <div class="flex justify-between text-sm font-bold mb-2">
+                <span class="text-gray-300 tracking-wider">SIMULATION PROGRESS</span>
+                <span id="progress-text" class="text-cyan-400">0 / 5</span>
+            </div>
+            <div class="w-full bg-gray-800 rounded-full h-2">
+                <div id="progress-bar" class="bg-gradient-to-r from-cyan-400 to-purple-500 h-2 rounded-full transition-all duration-500" style="width: 0%"></div>
+            </div>
+        </div>
+
+        <!-- STEP 1 -->
+        <div id="step-1-card" class="caip-card rounded-lg p-6 mb-6">
+            <h2 class="text-cyan-400 text-xs font-bold uppercase tracking-wider mb-2">Step 1 — Initial Access</h2>
+            <h3 class="text-xl font-bold text-white mb-2">Corporate Portal Authentication</h3>
+            <p class="text-gray-400 text-sm mb-4">Simulates a user visiting a suspicious URL and submitting login credentials.</p>
+            
+            <div id="step-1-inputs" class="space-y-4 mb-4">
+                <div>
+                    <label for="demo-username" class="block text-sm font-medium text-gray-300 mb-1">Username or Email</label>
+                    <input id="demo-username" type="text" value="demo-user" placeholder="Username or Email" readonly class="w-full bg-gray-800 border border-gray-700 rounded p-2 text-gray-300 focus:outline-none">
+                </div>
+                <div>
+                    <label for="demo-password" class="block text-sm font-medium text-gray-300 mb-1">Password</label>
+                    <input id="demo-password" type="password" value="........" placeholder="Password" readonly class="w-full bg-gray-800 border border-gray-700 rounded p-2 text-gray-300 focus:outline-none">
+                </div>
+            </div>
+            
+            <button id="btn-step-1" onclick="runStep(1)" class="w-full bg-caip-purple text-white font-bold py-3 rounded hover:bg-purple-600 transition-colors">
+                Sign In & Ingest Step 1
+            </button>
+            <p id="msg-step-1" class="text-emerald-400 text-sm font-bold mt-3 hidden">✓ Initial Access Event Sent to CAIP</p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div id="step-2-card" class="caip-card rounded-lg p-6 mb-6 hidden-step">
+            <h2 class="text-cyan-400 text-xs font-bold uppercase tracking-wider mb-2">Step 2 — Suspicious File Download</h2>
+            <h3 class="text-xl font-bold text-white mb-2">File Download Simulation</h3>
+            <p class="text-gray-400 text-sm mb-4">A suspicious file was downloaded. Downloads a harmless text report and logs telemetry to CAIP.</p>
+            <button id="btn-step-2" onclick="runStep(2)" class="w-full bg-blue-600 text-white font-bold py-3 rounded hover:bg-blue-500 transition-colors">
+                📄 Download Demo Report
+            </button>
+            <p id="msg-step-2" class="text-emerald-400 text-sm font-bold mt-3 hidden">✓ Download Event Sent to CAIP</p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div id="step-3-card" class="caip-card rounded-lg p-6 mb-6 hidden-step">
+            <h2 class="text-cyan-400 text-xs font-bold uppercase tracking-wider mb-2">Step 3 — Execution Activity</h2>
+            <h3 class="text-xl font-bold text-white mb-2">Process Execution Simulation</h3>
+            <p class="text-gray-400 text-sm mb-4">A downloaded file appears to have executed. Sends synthetic execution telemetry to CAIP without running commands.</p>
+            <button id="btn-step-3" onclick="runStep(3)" class="w-full bg-yellow-600 text-white font-bold py-3 rounded hover:bg-yellow-500 transition-colors">
+                ⚙️ Simulate Process Execution
+            </button>
+            <p id="msg-step-3" class="text-emerald-400 text-sm font-bold mt-3 hidden">✓ Execution Event Sent to CAIP</p>
+        </div>
+
+        <!-- STEP 4 -->
+        <div id="step-4-card" class="caip-card rounded-lg p-6 mb-6 hidden-step">
+            <h2 class="text-cyan-400 text-xs font-bold uppercase tracking-wider mb-2">Step 4 — Credential Access Activity</h2>
+            <h3 class="text-xl font-bold text-white mb-2">Credential Access Simulation</h3>
+            <p class="text-gray-400 text-sm mb-4">Credential-access behavior detected. Sends synthetic credential access telemetry without accessing passwords or LSASS.</p>
+            <button id="btn-step-4" onclick="runStep(4)" class="w-full bg-red-600 text-white font-bold py-3 rounded hover:bg-red-500 transition-colors">
+                🔑 Simulate Credential Access
+            </button>
+            <p id="msg-step-4" class="text-emerald-400 text-sm font-bold mt-3 hidden">✓ Credential Access Simulation Sent to CAIP</p>
+        </div>
+
+        <!-- STEP 5 -->
+        <div id="step-5-card" class="caip-card rounded-lg p-6 mb-6 hidden-step">
+            <h2 class="text-cyan-400 text-xs font-bold uppercase tracking-wider mb-2">Step 5 — Command & Control Simulation</h2>
+            <h3 class="text-xl font-bold text-white mb-2">Command & Control Simulation</h3>
+            <p class="text-gray-400 text-sm mb-4">Suspicious DNS communication detected. Sends synthetic C2 telemetry without contacting external servers.</p>
+            <button id="btn-step-5" onclick="runStep(5)" class="w-full bg-emerald-600 text-white font-bold py-3 rounded hover:bg-emerald-500 transition-colors">
+                🌐 Simulate C2 / DNS
+            </button>
+            <p id="msg-step-5" class="text-emerald-400 text-sm font-bold mt-3 hidden">✓ C2/DNS Simulation Sent to CAIP</p>
+        </div>
+
+        <!-- Completion Message -->
+        <div id="completion-message" class="caip-card rounded-lg p-6 mb-6 border-emerald-500 hidden text-center">
+            <h3 class="text-2xl font-bold text-emerald-400 mb-2">✓ 5-Step Simulation Complete</h3>
+            <p class="text-gray-300 text-sm mb-6">All 5 synthetic attack stages have been ingested and correlated into CAIP. Open the CAIP SOC Dashboard to inspect the real-time campaign narrative, risk trend, and Digital Twin projections.</p>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="/" class="inline-block bg-emerald-500 text-gray-900 font-bold py-3 px-6 rounded hover:bg-emerald-400 transition-colors">
+                    Open CAIP SOC Dashboard →
+                </a>
+                <a href="/docs" target="_blank" class="inline-block bg-purple-600 text-white font-bold py-3 px-6 rounded hover:bg-purple-500 transition-colors">
+                    Explore API Docs (Swagger) →
+                </a>
+            </div>
+        </div>
+
+        <!-- Disclaimers -->
+        <div class="mt-8 border-t border-gray-800 pt-6 text-center">
+            <p class="text-gray-500 text-xs mb-1">🔒 <strong>Safe Educational Demo</strong> — No real credentials collected or transmitted.</p>
+            <p class="text-gray-500 text-xs">🛡️ <strong>All attack stages are simulated locally.</strong> Unified under CAIP Single-Port Platform.</p>
+        </div>
+
+    </div>
+
+    <!-- Logic Script -->
+    <script>
+        const CAIP_API_URL = "/api/v1/simulation/credential-theft/step";
+
+        async function runStep(stepNumber) {
+            const btn = document.getElementById(`btn-step-${stepNumber}`);
+            
+            // Visual loading state
+            const originalText = btn.innerHTML;
+            btn.innerHTML = "Sending Telemetry...";
+            btn.classList.add("opacity-75", "cursor-wait");
+
+            try {
+                const response = await fetch(CAIP_API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ step: stepNumber })
+                });
+
+                if(response.ok) {
+                    // Update UI on success
+                    btn.innerHTML = `✓ Step ${stepNumber} Complete`;
+                    btn.classList.replace(btn.classList[1], "bg-gray-700"); // Gray out button
+                    btn.disabled = true;
+                    document.getElementById(`msg-step-${stepNumber}`).classList.remove("hidden");
+
+                    // Update Progress Bar
+                    document.getElementById('progress-text').innerText = `${stepNumber} / 5`;
+                    document.getElementById('progress-bar').style.width = `${(stepNumber / 5) * 100}%`;
+
+                    // Unlock Next Step
+                    if(stepNumber < 5) {
+                        const nextStepCard = document.getElementById(`step-${stepNumber + 1}-card`);
+                        nextStepCard.classList.remove("hidden-step");
+                        // Smooth scroll to next step
+                        nextStepCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    } else {
+                        // Demo Complete
+                        document.getElementById('completion-message').classList.remove("hidden");
+                        document.getElementById('completion-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                } else {
+                    alert("Error: Could not connect to CAIP Backend. Is FastAPI running on port 8000?");
+                    btn.innerHTML = originalText;
+                    btn.classList.remove("opacity-75", "cursor-wait");
+                }
+            } catch (error) {
+                console.error("Simulation Error:", error);
+                alert("Error: Network connection failed. Please ensure your CAIP backend is running.");
+                btn.innerHTML = originalText;
+                btn.classList.remove("opacity-75", "cursor-wait");
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "caip-root",
+  "version": "4.0.0",
+  "description": "Collaborative Attack Intelligence Platform",
+  "scripts": {
+    "start": "python run.py",
+    "dev": "python run.py"
+  }
+}

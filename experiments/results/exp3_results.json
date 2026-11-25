@@ -1,0 +1,94 @@
+{
+  "experiment": "exp3_correlation_signals",
+  "validation_set": {
+    "User only": {
+      "grouping_precision": 0.8905,
+      "grouping_recall": 1.0,
+      "grouping_f1": 0.9421,
+      "correct_pairs": 2455,
+      "false_merges": 302,
+      "missed_links": 0,
+      "total_true_pairs": 2455,
+      "total_pred_pairs": 2757,
+      "time_ms": 1.08
+    },
+    "User + Device": {
+      "grouping_precision": 0.0952,
+      "grouping_recall": 0.9523,
+      "grouping_f1": 0.1732,
+      "correct_pairs": 2338,
+      "false_merges": 22210,
+      "missed_links": 117,
+      "total_true_pairs": 2455,
+      "total_pred_pairs": 24548,
+      "time_ms": 1.31
+    },
+    "User + Device + IP": {
+      "grouping_precision": 0.0952,
+      "grouping_recall": 0.9523,
+      "grouping_f1": 0.1732,
+      "correct_pairs": 2338,
+      "false_merges": 22210,
+      "missed_links": 117,
+      "total_true_pairs": 2455,
+      "total_pred_pairs": 24548,
+      "time_ms": 1.84
+    },
+    "All 4 Signals": {
+      "grouping_precision": 0.0952,
+      "grouping_recall": 0.9523,
+      "grouping_f1": 0.1732,
+      "correct_pairs": 2338,
+      "false_merges": 22210,
+      "missed_links": 117,
+      "total_true_pairs": 2455,
+      "total_pred_pairs": 24548,
+      "time_ms": 1.9
+    }
+  },
+  "cicids_set": {
+    "User only": {
+      "grouping_precision": 0.3422,
+      "grouping_recall": 1.0,
+      "grouping_f1": 0.5099,
+      "correct_pairs": 2121,
+      "false_merges": 4078,
+      "missed_links": 0,
+      "total_true_pairs": 2121,
+      "total_pred_pairs": 6199
+    },
+    "User + Device": {
+      "grouping_precision": 0.0113,
+      "grouping_recall": 0.9467,
+      "grouping_f1": 0.0223,
+      "correct_pairs": 2008,
+      "false_merges": 175620,
+      "missed_links": 113,
+      "total_true_pairs": 2121,
+      "total_pred_pairs": 177628
+    },
+    "User + Device + IP": {
+      "grouping_precision": 0.0106,
+      "grouping_recall": 0.9411,
+      "grouping_f1": 0.0211,
+      "correct_pairs": 1996,
+      "false_merges": 185424,
+      "missed_links": 125,
+      "total_true_pairs": 2121,
+      "total_pred_pairs": 187420
+    },
+    "All 4 Signals": {
+      "grouping_precision": 0.011,
+      "grouping_recall": 0.9415,
+      "grouping_f1": 0.0218,
+      "correct_pairs": 1997,
+      "false_merges": 179130,
+      "missed_links": 124,
+      "total_true_pairs": 2121,
+      "total_pred_pairs": 181127
+    }
+  },
+  "n_val_campaigns": 120,
+  "n_cicids": 400,
+  "timestamp": "2026-08-15T09:33:40.398176"
+}

@@ -1,0 +1,3648 @@
+{
+  "experiment": "exp2_ablation_study",
+  "configurations": {
+    "A: ML Only": {
+      "total_events": 1552,
+      "alerts_generated": 596,
+      "tp": 596,
+      "fp": 0,
+      "tn": 776,
+      "fn": 180,
+      "precision": 1.0,
+      "recall": 0.768,
+      "f1": 0.8688,
+      "fpr": 0.0,
+      "alerts": [
+        {
+          "event_id": "EVT-0007-03",
+          "event_type": "credential_login",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0007-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0025-01",
+          "event_type": "phishing_email",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0025-02",
+          "event_type": "url_visit",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0025-03",
+          "event_type": "suspicious_login",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0025-04",
+          "event_type": "credential_login",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0025-05",
+          "event_type": "network_scan",
+          "confidence": 0.83,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0025-06",
+          "event_type": "lateral_rdp",
+          "confidence": 0.98,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0026-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0028-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0031-02",
+          "event_type": "url_visit",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0031-03",
+          "event_type": "suspicious_login",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0031-04",
+          "event_type": "credential_login",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0031-05",
+          "event_type": "network_scan",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0031-06",
+          "event_type": "lateral_rdp",
+          "confidence": 0.97,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0033-02",
+          "event_type": "macro_execution",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0033-03",
+          "event_type": "token_impersonation",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0033-04",
+          "event_type": "masquerading",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0033-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0033-06",
+          "event_type": "disk_wipe",
+          "confidence": 0.92,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0045-01",
+          "event_type": "phishing_email",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0045-02",
+          "event_type": "powershell",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0045-03",
+          "event_type": "privilege_escalation",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0045-04",
+          "event_type": "process_injection",
+          "confidence": 0.91,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0045-05",
+          "event_type": "lateral_rdp",
+          "confidence": 0.87,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0045-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0047-04",
+          "event_type": "process_injection",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0047-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0047-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0047-07",
+          "event_type": "privilege_escalation",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0047-08",
+          "event_type": "network_scan",
+          "confidence": 0.93,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0047-09",
+          "event_type": "lateral_rdp",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0047-10",
+          "event_type": "data_staged",
+          "confidence": 0.87,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0047-11",
+          "event_type": "exfil_https",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0047-12",
+          "event_type": "service_stop",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0057-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0057-02",
+          "event_type": "macro_execution",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0057-03",
+          "event_type": "token_impersonation",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0057-04",
+          "event_type": "masquerading",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0057-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.88,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0057-06",
+          "event_type": "disk_wipe",
+          "confidence": 0.95,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0058-03",
+          "event_type": "file_search",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0058-04",
+          "event_type": "keylogger",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0058-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0068-02",
+          "event_type": "attachment_download",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0068-03",
+          "event_type": "script_execution",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0068-04",
+          "event_type": "registry_run_key",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0068-05",
+          "event_type": "http_c2",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0071-02",
+          "event_type": "attachment_download",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0071-03",
+          "event_type": "macro_execution",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0071-04",
+          "event_type": "log_clearing",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0071-05",
+          "event_type": "http_c2",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0071-06",
+          "event_type": "uac_bypass",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0071-07",
+          "event_type": "system_enum",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0071-08",
+          "event_type": "lateral_smb",
+          "confidence": 0.92,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0071-09",
+          "event_type": "keylogger",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0071-10",
+          "event_type": "exfil_ftp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0071-11",
+          "event_type": "disk_wipe",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0072-03",
+          "event_type": "process_injection",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0072-04",
+          "event_type": "screen_capture",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0072-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0074-01",
+          "event_type": "phishing_email",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0074-02",
+          "event_type": "attachment_download",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0074-03",
+          "event_type": "macro_execution",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0074-04",
+          "event_type": "powershell",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0074-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.96,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0074-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.83,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0079-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0079-02",
+          "event_type": "url_visit",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0079-03",
+          "event_type": "credential_login",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0079-04",
+          "event_type": "system_enum",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0079-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.84,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0081-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0081-02",
+          "event_type": "macro_execution",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0081-03",
+          "event_type": "token_impersonation",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0081-04",
+          "event_type": "masquerading",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0081-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0081-06",
+          "event_type": "disk_wipe",
+          "confidence": 0.86,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0082-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0082-02",
+          "event_type": "mimikatz",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0082-03",
+          "event_type": "system_enum",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0082-04",
+          "event_type": "screen_capture",
+          "confidence": 0.88,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0082-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.99,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0090-03",
+          "event_type": "masquerading",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0090-04",
+          "event_type": "data_staged",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0090-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0095-03",
+          "event_type": "macro_execution",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0095-04",
+          "event_type": "log_clearing",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0095-05",
+          "event_type": "http_c2",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0095-06",
+          "event_type": "uac_bypass",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0095-07",
+          "event_type": "system_enum",
+          "confidence": 0.98,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0095-08",
+          "event_type": "lateral_smb",
+          "confidence": 0.99,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0095-09",
+          "event_type": "keylogger",
+          "confidence": 0.9,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0095-10",
+          "event_type": "exfil_ftp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0095-11",
+          "event_type": "disk_wipe",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0096-01",
+          "event_type": "credential_login",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0096-02",
+          "event_type": "file_search",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0096-03",
+          "event_type": "process_injection",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0096-04",
+          "event_type": "screen_capture",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0096-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.94,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0100-01",
+          "event_type": "phishing_email",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0100-02",
+          "event_type": "credential_login",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0100-03",
+          "event_type": "network_scan",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0100-04",
+          "event_type": "data_staged",
+          "confidence": 0.86,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0100-05",
+          "event_type": "exfil_https",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0104-04",
+          "event_type": "powershell",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0104-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0104-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.91,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0105-03",
+          "event_type": "privilege_escalation",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0105-04",
+          "event_type": "process_injection",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0105-05",
+          "event_type": "lateral_rdp",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0105-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-02",
+          "event_type": "url_visit",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-03",
+          "event_type": "powershell",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-04",
+          "event_type": "process_injection",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.94,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.92,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-07",
+          "event_type": "privilege_escalation",
+          "confidence": 0.86,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-08",
+          "event_type": "network_scan",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-09",
+          "event_type": "lateral_rdp",
+          "confidence": 0.94,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-10",
+          "event_type": "data_staged",
+          "confidence": 0.98,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-11",
+          "event_type": "exfil_https",
+          "confidence": 0.92,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0113-12",
+          "event_type": "service_stop",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0115-02",
+          "event_type": "attachment_download",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0115-03",
+          "event_type": "credential_login",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0115-04",
+          "event_type": "suspicious_login",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0115-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0127-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0127-02",
+          "event_type": "url_visit",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0127-03",
+          "event_type": "credential_login",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0127-04",
+          "event_type": "system_enum",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0127-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0128-02",
+          "event_type": "attachment_download",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0128-03",
+          "event_type": "macro_execution",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0128-04",
+          "event_type": "powershell",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0128-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0128-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.9,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0135-03",
+          "event_type": "privilege_escalation",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0135-04",
+          "event_type": "process_injection",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0135-05",
+          "event_type": "lateral_rdp",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0135-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-02",
+          "event_type": "url_visit",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-03",
+          "event_type": "powershell",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-04",
+          "event_type": "process_injection",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.87,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-07",
+          "event_type": "privilege_escalation",
+          "confidence": 0.93,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-08",
+          "event_type": "network_scan",
+          "confidence": 0.99,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-09",
+          "event_type": "lateral_rdp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-10",
+          "event_type": "data_staged",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-11",
+          "event_type": "exfil_https",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0143-12",
+          "event_type": "service_stop",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0147-01",
+          "event_type": "drive_by",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0147-02",
+          "event_type": "script_execution",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0147-03",
+          "event_type": "uac_bypass",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0147-04",
+          "event_type": "log_clearing",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0147-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0147-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.94,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0160-01",
+          "event_type": "drive_by",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0160-02",
+          "event_type": "kerberoasting",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0160-03",
+          "event_type": "file_search",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0160-04",
+          "event_type": "keylogger",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0160-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.9,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0164-03",
+          "event_type": "macro_execution",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0164-04",
+          "event_type": "powershell",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0164-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0164-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0167-03",
+          "event_type": "macro_execution",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0167-04",
+          "event_type": "log_clearing",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0167-05",
+          "event_type": "http_c2",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0167-06",
+          "event_type": "uac_bypass",
+          "confidence": 0.92,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0167-07",
+          "event_type": "system_enum",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0167-08",
+          "event_type": "lateral_smb",
+          "confidence": 0.87,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0167-09",
+          "event_type": "keylogger",
+          "confidence": 0.84,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0167-10",
+          "event_type": "exfil_ftp",
+          "confidence": 0.97,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0167-11",
+          "event_type": "disk_wipe",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0168-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0176-02",
+          "event_type": "attachment_download",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0176-03",
+          "event_type": "script_execution",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0176-04",
+          "event_type": "registry_run_key",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0176-05",
+          "event_type": "http_c2",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0186-04",
+          "event_type": "screen_capture",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0186-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0196-03",
+          "event_type": "file_search",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0196-04",
+          "event_type": "keylogger",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0196-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.86,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0197-03",
+          "event_type": "powershell",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0197-04",
+          "event_type": "process_injection",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0197-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0197-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0197-07",
+          "event_type": "privilege_escalation",
+          "confidence": 0.87,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0197-08",
+          "event_type": "network_scan",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0197-09",
+          "event_type": "lateral_rdp",
+          "confidence": 0.93,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0197-10",
+          "event_type": "data_staged",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0197-11",
+          "event_type": "exfil_https",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0197-12",
+          "event_type": "service_stop",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0198-02",
+          "event_type": "system_enum",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0198-03",
+          "event_type": "masquerading",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0198-04",
+          "event_type": "data_staged",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0198-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0204-03",
+          "event_type": "masquerading",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0204-04",
+          "event_type": "data_staged",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0204-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0205-03",
+          "event_type": "credential_login",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-01",
+          "event_type": "phishing_email",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-02",
+          "event_type": "attachment_download",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-03",
+          "event_type": "macro_execution",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-04",
+          "event_type": "log_clearing",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-05",
+          "event_type": "http_c2",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-06",
+          "event_type": "uac_bypass",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-07",
+          "event_type": "system_enum",
+          "confidence": 0.97,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-08",
+          "event_type": "lateral_smb",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-09",
+          "event_type": "keylogger",
+          "confidence": 0.93,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-10",
+          "event_type": "exfil_ftp",
+          "confidence": 0.88,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0215-11",
+          "event_type": "disk_wipe",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0217-03",
+          "event_type": "credential_login",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0217-04",
+          "event_type": "suspicious_login",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0217-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0218-03",
+          "event_type": "powershell",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0218-04",
+          "event_type": "startup_folder",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0218-05",
+          "event_type": "icmp_tunnel",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0220-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0220-02",
+          "event_type": "mimikatz",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0220-03",
+          "event_type": "system_enum",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0220-04",
+          "event_type": "screen_capture",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0220-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0221-03",
+          "event_type": "macro_execution",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0221-04",
+          "event_type": "log_clearing",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0221-05",
+          "event_type": "http_c2",
+          "confidence": 0.83,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0221-06",
+          "event_type": "uac_bypass",
+          "confidence": 0.91,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0221-07",
+          "event_type": "system_enum",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0221-08",
+          "event_type": "lateral_smb",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0221-09",
+          "event_type": "keylogger",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0221-10",
+          "event_type": "exfil_ftp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0221-11",
+          "event_type": "disk_wipe",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0224-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0225-02",
+          "event_type": "script_execution",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0225-03",
+          "event_type": "uac_bypass",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0225-04",
+          "event_type": "log_clearing",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0225-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0225-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0226-02",
+          "event_type": "credential_login",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0226-03",
+          "event_type": "network_scan",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0226-04",
+          "event_type": "data_staged",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0226-05",
+          "event_type": "exfil_https",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0229-01",
+          "event_type": "phishing_email",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0229-02",
+          "event_type": "attachment_download",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0229-03",
+          "event_type": "credential_login",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0229-04",
+          "event_type": "suspicious_login",
+          "confidence": 0.86,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0229-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.86,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0234-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0235-01",
+          "event_type": "phishing_email",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0235-02",
+          "event_type": "url_visit",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0235-03",
+          "event_type": "suspicious_login",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0235-04",
+          "event_type": "credential_login",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0235-05",
+          "event_type": "network_scan",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0235-06",
+          "event_type": "lateral_rdp",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0239-04",
+          "event_type": "log_clearing",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0239-06",
+          "event_type": "uac_bypass",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0239-07",
+          "event_type": "system_enum",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0239-08",
+          "event_type": "lateral_smb",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0239-09",
+          "event_type": "keylogger",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0239-10",
+          "event_type": "exfil_ftp",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0239-11",
+          "event_type": "disk_wipe",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-02",
+          "event_type": "url_visit",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-03",
+          "event_type": "powershell",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-04",
+          "event_type": "process_injection",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.87,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.97,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-07",
+          "event_type": "privilege_escalation",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-08",
+          "event_type": "network_scan",
+          "confidence": 0.95,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-09",
+          "event_type": "lateral_rdp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-10",
+          "event_type": "data_staged",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-11",
+          "event_type": "exfil_https",
+          "confidence": 0.97,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0251-12",
+          "event_type": "service_stop",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0253-02",
+          "event_type": "url_visit",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0253-03",
+          "event_type": "credential_login",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0253-04",
+          "event_type": "system_enum",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0253-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.9,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0261-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0261-02",
+          "event_type": "macro_execution",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0261-03",
+          "event_type": "token_impersonation",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0261-04",
+          "event_type": "masquerading",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0261-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0261-06",
+          "event_type": "disk_wipe",
+          "confidence": 0.88,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0271-01",
+          "event_type": "phishing_email",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0271-02",
+          "event_type": "url_visit",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0271-03",
+          "event_type": "suspicious_login",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0271-04",
+          "event_type": "credential_login",
+          "confidence": 0.91,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0271-05",
+          "event_type": "network_scan",
+          "confidence": 0.91,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0271-06",
+          "event_type": "lateral_rdp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0272-03",
+          "event_type": "script_execution",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0272-04",
+          "event_type": "registry_run_key",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0274-03",
+          "event_type": "system_enum",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0274-04",
+          "event_type": "screen_capture",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0274-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-02",
+          "event_type": "url_visit",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-03",
+          "event_type": "powershell",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-04",
+          "event_type": "process_injection",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.97,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-07",
+          "event_type": "privilege_escalation",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-08",
+          "event_type": "network_scan",
+          "confidence": 0.86,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-09",
+          "event_type": "lateral_rdp",
+          "confidence": 0.97,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-10",
+          "event_type": "data_staged",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-11",
+          "event_type": "exfil_https",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0275-12",
+          "event_type": "service_stop",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0276-04",
+          "event_type": "screen_capture",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0276-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0277-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0277-02",
+          "event_type": "url_visit",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0277-03",
+          "event_type": "credential_login",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0277-04",
+          "event_type": "system_enum",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0277-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.96,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0282-02",
+          "event_type": "file_search",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0282-03",
+          "event_type": "process_injection",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0282-04",
+          "event_type": "screen_capture",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0282-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0285-04",
+          "event_type": "log_clearing",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0285-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0285-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0288-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0297-01",
+          "event_type": "phishing_email",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0297-02",
+          "event_type": "powershell",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0297-03",
+          "event_type": "privilege_escalation",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0297-04",
+          "event_type": "process_injection",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0297-05",
+          "event_type": "lateral_rdp",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0297-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-02",
+          "event_type": "url_visit",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-03",
+          "event_type": "powershell",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-04",
+          "event_type": "process_injection",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.83,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-07",
+          "event_type": "privilege_escalation",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-08",
+          "event_type": "network_scan",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-09",
+          "event_type": "lateral_rdp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-10",
+          "event_type": "data_staged",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-11",
+          "event_type": "exfil_https",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0299-12",
+          "event_type": "service_stop",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0300-04",
+          "event_type": "screen_capture",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0301-01",
+          "event_type": "phishing_email",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0301-02",
+          "event_type": "url_visit",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0301-03",
+          "event_type": "suspicious_login",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0301-04",
+          "event_type": "credential_login",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0301-05",
+          "event_type": "network_scan",
+          "confidence": 0.93,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0301-06",
+          "event_type": "lateral_rdp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0306-04",
+          "event_type": "data_staged",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0306-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0322-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0322-02",
+          "event_type": "mimikatz",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0322-03",
+          "event_type": "system_enum",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0322-04",
+          "event_type": "screen_capture",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0322-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.93,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0323-03",
+          "event_type": "macro_execution",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0323-04",
+          "event_type": "log_clearing",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0323-05",
+          "event_type": "http_c2",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0323-06",
+          "event_type": "uac_bypass",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0323-07",
+          "event_type": "system_enum",
+          "confidence": 0.86,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0323-08",
+          "event_type": "lateral_smb",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0323-09",
+          "event_type": "keylogger",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0323-10",
+          "event_type": "exfil_ftp",
+          "confidence": 0.95,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0323-11",
+          "event_type": "disk_wipe",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0324-01",
+          "event_type": "credential_login",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0324-02",
+          "event_type": "file_search",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0324-03",
+          "event_type": "process_injection",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0324-04",
+          "event_type": "screen_capture",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0324-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.86,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0333-01",
+          "event_type": "drive_by",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0333-02",
+          "event_type": "script_execution",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0333-03",
+          "event_type": "uac_bypass",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0333-04",
+          "event_type": "log_clearing",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0333-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0333-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.91,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0345-05",
+          "event_type": "lateral_rdp",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0345-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0349-02",
+          "event_type": "url_visit",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0349-03",
+          "event_type": "suspicious_login",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0349-04",
+          "event_type": "credential_login",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0349-05",
+          "event_type": "network_scan",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0349-06",
+          "event_type": "lateral_rdp",
+          "confidence": 0.94,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0353-05",
+          "event_type": "http_c2",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0353-06",
+          "event_type": "uac_bypass",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0353-07",
+          "event_type": "system_enum",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0353-08",
+          "event_type": "lateral_smb",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0353-09",
+          "event_type": "keylogger",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0353-10",
+          "event_type": "exfil_ftp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0353-11",
+          "event_type": "disk_wipe",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0364-01",
+          "event_type": "phishing_email",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0364-02",
+          "event_type": "credential_login",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0364-03",
+          "event_type": "network_scan",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0364-04",
+          "event_type": "data_staged",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0364-05",
+          "event_type": "exfil_https",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0368-03",
+          "event_type": "powershell",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0368-04",
+          "event_type": "startup_folder",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0368-05",
+          "event_type": "icmp_tunnel",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0371-03",
+          "event_type": "powershell",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0371-04",
+          "event_type": "process_injection",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0371-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0371-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.91,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0371-07",
+          "event_type": "privilege_escalation",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0371-08",
+          "event_type": "network_scan",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0371-09",
+          "event_type": "lateral_rdp",
+          "confidence": 0.96,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0371-10",
+          "event_type": "data_staged",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0371-11",
+          "event_type": "exfil_https",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0371-12",
+          "event_type": "service_stop",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0374-03",
+          "event_type": "macro_execution",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0374-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0374-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.85,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0380-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0380-02",
+          "event_type": "attachment_download",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0380-03",
+          "event_type": "script_execution",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0380-04",
+          "event_type": "registry_run_key",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0380-05",
+          "event_type": "http_c2",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0382-03",
+          "event_type": "file_search",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0382-04",
+          "event_type": "keylogger",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0382-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0383-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0383-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0383-07",
+          "event_type": "privilege_escalation",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0383-08",
+          "event_type": "network_scan",
+          "confidence": 0.9,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0383-09",
+          "event_type": "lateral_rdp",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0383-10",
+          "event_type": "data_staged",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0383-11",
+          "event_type": "exfil_https",
+          "confidence": 0.91,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0383-12",
+          "event_type": "service_stop",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0387-01",
+          "event_type": "phishing_email",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0387-02",
+          "event_type": "powershell",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0387-03",
+          "event_type": "privilege_escalation",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0387-04",
+          "event_type": "process_injection",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0387-05",
+          "event_type": "lateral_rdp",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0387-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.95,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0388-04",
+          "event_type": "screen_capture",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0388-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0389-02",
+          "event_type": "attachment_download",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0389-03",
+          "event_type": "macro_execution",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0389-04",
+          "event_type": "log_clearing",
+          "confidence": 0.83,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0389-05",
+          "event_type": "http_c2",
+          "confidence": 0.71,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0389-06",
+          "event_type": "uac_bypass",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0389-07",
+          "event_type": "system_enum",
+          "confidence": 0.83,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0389-08",
+          "event_type": "lateral_smb",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0389-09",
+          "event_type": "keylogger",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0389-10",
+          "event_type": "exfil_ftp",
+          "confidence": 0.86,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0389-11",
+          "event_type": "disk_wipe",
+          "confidence": 0.99,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0390-01",
+          "event_type": "credential_login",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0390-02",
+          "event_type": "file_search",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0390-03",
+          "event_type": "process_injection",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0390-04",
+          "event_type": "screen_capture",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0390-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0406-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0411-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0411-02",
+          "event_type": "macro_execution",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0411-03",
+          "event_type": "token_impersonation",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0411-04",
+          "event_type": "masquerading",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0411-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.84,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0411-06",
+          "event_type": "disk_wipe",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0430-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0430-02",
+          "event_type": "mimikatz",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0430-03",
+          "event_type": "system_enum",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0430-04",
+          "event_type": "screen_capture",
+          "confidence": 0.83,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0430-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.94,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0433-02",
+          "event_type": "attachment_download",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0433-03",
+          "event_type": "credential_login",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0433-04",
+          "event_type": "suspicious_login",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0433-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0441-02",
+          "event_type": "powershell",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0441-03",
+          "event_type": "privilege_escalation",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0441-04",
+          "event_type": "process_injection",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0441-05",
+          "event_type": "lateral_rdp",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0441-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.97,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0460-04",
+          "event_type": "screen_capture",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0460-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0470-02",
+          "event_type": "script_execution",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0470-03",
+          "event_type": "powershell",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0470-04",
+          "event_type": "startup_folder",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0470-05",
+          "event_type": "icmp_tunnel",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0471-04",
+          "event_type": "process_injection",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0471-05",
+          "event_type": "lateral_rdp",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0471-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0474-03",
+          "event_type": "process_injection",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0474-04",
+          "event_type": "screen_capture",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0474-05",
+          "event_type": "dns_exfil",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0512-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0512-02",
+          "event_type": "attachment_download",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0512-03",
+          "event_type": "script_execution",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0512-04",
+          "event_type": "registry_run_key",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0512-05",
+          "event_type": "http_c2",
+          "confidence": 0.88,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0516-01",
+          "event_type": "suspicious_login",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0516-02",
+          "event_type": "system_enum",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0516-03",
+          "event_type": "masquerading",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0516-04",
+          "event_type": "data_staged",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0516-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.96,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0518-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0518-02",
+          "event_type": "attachment_download",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0518-03",
+          "event_type": "script_execution",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0518-04",
+          "event_type": "registry_run_key",
+          "confidence": 0.84,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0518-05",
+          "event_type": "http_c2",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0520-01",
+          "event_type": "spear_phishing",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0520-02",
+          "event_type": "mimikatz",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0520-03",
+          "event_type": "system_enum",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0520-04",
+          "event_type": "screen_capture",
+          "confidence": 0.87,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0520-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0525-01",
+          "event_type": "drive_by",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0525-02",
+          "event_type": "script_execution",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0525-03",
+          "event_type": "uac_bypass",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0525-04",
+          "event_type": "log_clearing",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0525-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.95,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0525-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.83,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0550-01",
+          "event_type": "phishing_email",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0550-02",
+          "event_type": "credential_login",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0550-03",
+          "event_type": "network_scan",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0550-04",
+          "event_type": "data_staged",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0550-05",
+          "event_type": "exfil_https",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0551-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0551-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0551-07",
+          "event_type": "privilege_escalation",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0551-08",
+          "event_type": "network_scan",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0551-09",
+          "event_type": "lateral_rdp",
+          "confidence": 0.96,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0551-10",
+          "event_type": "data_staged",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0551-11",
+          "event_type": "exfil_https",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0551-12",
+          "event_type": "service_stop",
+          "confidence": 0.95,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0559-01",
+          "event_type": "phishing_email",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0559-02",
+          "event_type": "attachment_download",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0559-03",
+          "event_type": "credential_login",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0559-04",
+          "event_type": "suspicious_login",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0559-05",
+          "event_type": "lateral_wmi",
+          "confidence": 0.88,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0566-04",
+          "event_type": "powershell",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0566-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0572-03",
+          "event_type": "macro_execution",
+          "confidence": 0.61,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0572-04",
+          "event_type": "powershell",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0572-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0572-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.79,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0573-01",
+          "event_type": "drive_by",
+          "confidence": 0.6,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0573-02",
+          "event_type": "script_execution",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0573-03",
+          "event_type": "uac_bypass",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0573-04",
+          "event_type": "log_clearing",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0573-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0573-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-01",
+          "event_type": "phishing_email",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-02",
+          "event_type": "attachment_download",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-03",
+          "event_type": "macro_execution",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-04",
+          "event_type": "log_clearing",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-05",
+          "event_type": "http_c2",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-06",
+          "event_type": "uac_bypass",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-07",
+          "event_type": "system_enum",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-08",
+          "event_type": "lateral_smb",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-09",
+          "event_type": "keylogger",
+          "confidence": 0.92,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-10",
+          "event_type": "exfil_ftp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0575-11",
+          "event_type": "disk_wipe",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0577-01",
+          "event_type": "phishing_email",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0577-02",
+          "event_type": "url_visit",
+          "confidence": 0.77,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0577-03",
+          "event_type": "suspicious_login",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0577-04",
+          "event_type": "credential_login",
+          "confidence": 0.81,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0577-05",
+          "event_type": "network_scan",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0577-06",
+          "event_type": "lateral_rdp",
+          "confidence": 0.99,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0578-01",
+          "event_type": "phishing_email",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0578-02",
+          "event_type": "attachment_download",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0578-03",
+          "event_type": "macro_execution",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0578-04",
+          "event_type": "powershell",
+          "confidence": 0.75,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0578-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0578-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.96,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0586-03",
+          "event_type": "system_enum",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0586-04",
+          "event_type": "screen_capture",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0586-05",
+          "event_type": "exfil_ftp",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0590-01",
+          "event_type": "phishing_email",
+          "confidence": 0.63,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0590-02",
+          "event_type": "attachment_download",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0590-03",
+          "event_type": "macro_execution",
+          "confidence": 0.69,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0590-04",
+          "event_type": "powershell",
+          "confidence": 0.84,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0590-05",
+          "event_type": "scheduled_task",
+          "confidence": 0.95,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0590-06",
+          "event_type": "dns_beacon",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0591-02",
+          "event_type": "powershell",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0591-03",
+          "event_type": "privilege_escalation",
+          "confidence": 0.67,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0591-04",
+          "event_type": "process_injection",
+          "confidence": 0.78,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0591-05",
+          "event_type": "lateral_rdp",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0591-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.72,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0593-04",
+          "event_type": "log_clearing",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0593-05",
+          "event_type": "http_c2",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0593-07",
+          "event_type": "system_enum",
+          "confidence": 0.62,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0593-08",
+          "event_type": "lateral_smb",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0593-09",
+          "event_type": "keylogger",
+          "confidence": 0.68,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0593-10",
+          "event_type": "exfil_ftp",
+          "confidence": 0.89,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0593-11",
+          "event_type": "disk_wipe",
+          "confidence": 0.74,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0594-01",
+          "event_type": "suspicious_login",
+          "confidence": 0.7,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0594-02",
+          "event_type": "system_enum",
+          "confidence": 0.76,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0594-03",
+          "event_type": "masquerading",
+          "confidence": 0.84,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0594-04",
+          "event_type": "data_staged",
+          "confidence": 0.88,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0594-05",
+          "event_type": "exfil_ftp",
+          "confidence": 1.0,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0595-04",
+          "event_type": "system_enum",
+          "confidence": 0.64,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0595-05",
+          "event_type": "lateral_smb",
+          "confidence": 0.65,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0597-01",
+          "event_type": "phishing_email",
+          "confidence": 0.66,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0597-02",
+          "event_type": "powershell",
+          "confidence": 0.73,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0597-03",
+          "event_type": "privilege_escalation",
+          "confidence": 0.8,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0597-04",
+          "event_type": "process_injection",
+          "confidence": 0.9,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0597-05",
+          "event_type": "lateral_rdp",
+          "confidence": 0.82,
+          "true_label": 1
+        },
+        {
+          "event_id": "EVT-0597-06",
+          "event_type": "ransomware_encrypt",
+          "confidence": 0.91,
+          "true_label": 1
+        }
+      ]
+    },
+    "B: + Correlation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "accuracy": 1.0,
+      "tp": 776,
+      "tn": 776,
+      "fp": 0,
+      "fn": 0,
+      "alerts_generated": 120
+    },
+    "C: + Context Graph": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "accuracy": 1.0,
+      "tp": 776,
+      "tn": 776,
+      "fp": 0,
+      "fn": 0
+    },
+    "D: + Prediction": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "accuracy": 1.0,
+      "tp": 776,
+      "tn": 776,
+      "fp": 0,
+      "fn": 0
+    },
+    "E: Full CAIP": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "fnr": 0.0,
+      "accuracy": 1.0,
+      "tp": 776,
+      "tn": 776,
+      "fp": 0,
+      "fn": 0
+    }
+  },
+  "n_val_campaigns": 120,
+  "n_events": 776,
+  "n_benign": 776,
+  "timestamp": "2026-08-15T09:36:11.643016"
+}

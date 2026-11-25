@@ -1,0 +1,357 @@
+{
+  "experiment": "exp4_feature_audit",
+  "timestamp": "2026-08-15T14:53:02.561613",
+  "feature_leakage_audit": {
+    "n_features": 27,
+    "features": [
+      {
+        "feature": "num_events",
+        "description": "Count of observed events in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "unique_stages",
+        "description": "Count of unique MITRE stages in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "unique_techniques",
+        "description": "Count of unique MITRE techniques in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "unique_users",
+        "description": "Count of unique users in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "unique_ips",
+        "description": "Count of unique source IPs in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "unique_domains",
+        "description": "Count of unique domains in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "avg_severity",
+        "description": "Average severity of prefix events",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "max_severity",
+        "description": "Maximum severity among prefix events",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "avg_time_delta_min",
+        "description": "Average minutes between consecutive prefix events",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "min_time_delta_min",
+        "description": "Minimum minutes between consecutive prefix events",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "max_time_delta_min",
+        "description": "Maximum minutes between consecutive prefix events",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "total_span_min",
+        "description": "Time span in minutes from first to last prefix event",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "events_per_minute",
+        "description": "Event arrival rate within prefix span",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "avg_stage_transition_min",
+        "description": "Average minutes between stage transitions in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "longest_stage_gap_min",
+        "description": "Longest minute gap between stage transitions in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_initial_access",
+        "description": "Flag: Initial Access present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_execution",
+        "description": "Flag: Execution present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_persistence",
+        "description": "Flag: Persistence present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_privilege_esc",
+        "description": "Flag: Privilege Escalation present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_defense_evasion",
+        "description": "Flag: Defense Evasion present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_cred_access",
+        "description": "Flag: Credential Access present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_discovery",
+        "description": "Flag: Discovery present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_lateral",
+        "description": "Flag: Lateral Movement present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_collection",
+        "description": "Flag: Collection present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_c2",
+        "description": "Flag: Command & Control present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_exfiltration",
+        "description": "Flag: Exfiltration present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      },
+      {
+        "feature": "has_impact",
+        "description": "Flag: Impact present in prefix",
+        "source": "obs events E_1..E_k",
+        "leakage": false
+      }
+    ],
+    "explicit_verifications": {
+      "target_stage_present_in_features": false,
+      "future_stage_flags_present": false,
+      "future_severity_present": false,
+      "future_timestamps_present": false,
+      "future_techniques_present": false,
+      "future_event_counts_present": false
+    }
+  },
+  "campaign_split_audit": {
+    "n_train_campaigns": 480,
+    "n_val_campaigns": 120,
+    "intersection_count": 0,
+    "is_split_clean": true
+  },
+  "duplicate_audit": {
+    "total_val_samples": 571,
+    "exact_feature_vector_duplicates_in_val": 65,
+    "exact_feature_vector_duplicate_pct": 11.38,
+    "identical_stage_history_pattern_val_samples": 571,
+    "identical_stage_history_pattern_pct": 100.0
+  },
+  "sequence_memorization_audit": {
+    "Collection": {
+      "validation_samples": 58,
+      "unique_observed_patterns": 4,
+      "most_common_pattern": "initial_access + cred_access + discovery",
+      "most_common_pattern_count": 19,
+      "most_common_pattern_percentage": 32.76
+    },
+    "Command & Control": {
+      "validation_samples": 42,
+      "unique_observed_patterns": 3,
+      "most_common_pattern": "initial_access + execution + persistence",
+      "most_common_pattern_count": 21,
+      "most_common_pattern_percentage": 50.0
+    },
+    "Credential Access": {
+      "validation_samples": 38,
+      "unique_observed_patterns": 1,
+      "most_common_pattern": "initial_access",
+      "most_common_pattern_count": 38,
+      "most_common_pattern_percentage": 100.0
+    },
+    "Defense Evasion": {
+      "validation_samples": 61,
+      "unique_observed_patterns": 3,
+      "most_common_pattern": "initial_access + execution + privilege_esc",
+      "most_common_pattern_count": 22,
+      "most_common_pattern_percentage": 36.07
+    },
+    "Discovery": {
+      "validation_samples": 71,
+      "unique_observed_patterns": 4,
+      "most_common_pattern": "initial_access + cred_access",
+      "most_common_pattern_count": 32,
+      "most_common_pattern_percentage": 45.07
+    },
+    "Execution": {
+      "validation_samples": 64,
+      "unique_observed_patterns": 1,
+      "most_common_pattern": "initial_access",
+      "most_common_pattern_count": 64,
+      "most_common_pattern_percentage": 100.0
+    },
+    "Exfiltration": {
+      "validation_samples": 58,
+      "unique_observed_patterns": 4,
+      "most_common_pattern": "initial_access + cred_access + discovery + collection",
+      "most_common_pattern_count": 19,
+      "most_common_pattern_percentage": 32.76
+    },
+    "Impact": {
+      "validation_samples": 43,
+      "unique_observed_patterns": 3,
+      "most_common_pattern": "initial_access + execution + privilege_esc + defense_evasion + lateral",
+      "most_common_pattern_count": 22,
+      "most_common_pattern_percentage": 51.16
+    },
+    "Lateral Movement": {
+      "validation_samples": 62,
+      "unique_observed_patterns": 5,
+      "most_common_pattern": "initial_access + execution + privilege_esc + defense_evasion",
+      "most_common_pattern_count": 22,
+      "most_common_pattern_percentage": 35.48
+    },
+    "Persistence": {
+      "validation_samples": 31,
+      "unique_observed_patterns": 2,
+      "most_common_pattern": "initial_access + execution",
+      "most_common_pattern_count": 21,
+      "most_common_pattern_percentage": 67.74
+    },
+    "Privilege Escalation": {
+      "validation_samples": 43,
+      "unique_observed_patterns": 3,
+      "most_common_pattern": "initial_access + execution",
+      "most_common_pattern_count": 22,
+      "most_common_pattern_percentage": 51.16
+    }
+  },
+  "per_class_performance": {
+    "Collection": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 58
+    },
+    "Command & Control": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 42
+    },
+    "Credential Access": {
+      "precision": 0.4286,
+      "recall": 0.5526,
+      "f1": 0.4828,
+      "support": 38
+    },
+    "Defense Evasion": {
+      "precision": 0.9839,
+      "recall": 1.0,
+      "f1": 0.9919,
+      "support": 61
+    },
+    "Discovery": {
+      "precision": 0.9429,
+      "recall": 0.9296,
+      "f1": 0.9362,
+      "support": 71
+    },
+    "Execution": {
+      "precision": 0.6792,
+      "recall": 0.5625,
+      "f1": 0.6154,
+      "support": 64
+    },
+    "Exfiltration": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 58
+    },
+    "Impact": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 43
+    },
+    "Lateral Movement": {
+      "precision": 0.9206,
+      "recall": 0.9355,
+      "f1": 0.928,
+      "support": 62
+    },
+    "Persistence": {
+      "precision": 1.0,
+      "recall": 0.9677,
+      "f1": 0.9836,
+      "support": 31
+    },
+    "Privilege Escalation": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support": 43
+    }
+  },
+  "baseline_comparison": {
+    "n_ml_predictions": 571,
+    "n_rule_predictions": 571,
+    "identical_validation_sample_count": true
+  },
+  "confidence_analysis": {
+    "avg_confidence_correct": 0.9416,
+    "avg_confidence_wrong": 0.5985,
+    "pct_predictions_gt_90_pct_confidence": 83.54,
+    "pct_incorrect_predictions_gt_90_pct_confidence": 1.82
+  },
+  "generalization_check": {
+    "train_unique_campaign_sequence_structures": 8,
+    "validation_campaigns_with_seen_sequence_structure": 120,
+    "validation_campaigns_with_unseen_sequence_structure": 0,
+    "seen_percentage": 100.0,
+    "unseen_percentage": 0.0
+  }
+}

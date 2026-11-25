@@ -1,0 +1,4 @@
+CAIP SAFE DEMONSTRATION FILE
+
+This file contains no executable code.
+This is only a cybersecurity demonstration.

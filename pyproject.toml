@@ -1,0 +1,9 @@
+[tool.pytest.ini_options]
+pythonpath = ["backend", "."]
+testpaths = ["tests"]
+
+[tool.pyrefly]
+search_paths = ["backend", "."]
+
+[tool.pyright]
+extraPaths = ["backend", "."]

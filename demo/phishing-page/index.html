@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAIP Safe 5-Step Live Demonstration</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+        body { background: #0b0f19; color: #f8fafc; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 24px 16px; }
+        .container { width: 100%; max-width: 520px; display: flex; flex-col; gap: 20px; }
+        
+        .card { background: #151d30; border: 1px solid #2a3756; border-radius: 14px; padding: 32px; box-shadow: 0 20px 30px -10px rgba(0,0,0,0.6); }
+        .badge { background: #6d28d9; color: #f1f5f9; padding: 4px 14px; border-radius: 9999px; font-size: 11px; font-weight: 700; display: inline-block; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.8px; }
+        
+        h1 { font-size: 22px; font-weight: 800; margin-bottom: 6px; color: #ffffff; }
+        p.subtitle { color: #94a3b8; font-size: 13px; margin-bottom: 20px; line-height: 1.5; }
+
+        /* Progress Bar */
+        .progress-container { margin-bottom: 24px; background: #0b0f19; border: 1px solid #2a3756; border-radius: 10px; padding: 14px 18px; }
+        .progress-header { display: flex; justify-content: space-between; align-items: center; font-size: 12px; font-weight: 700; color: #cbd5e1; margin-bottom: 8px; font-mono; }
+        .progress-counter { color: #38bdf8; font-family: monospace; font-size: 14px; }
+        .progress-track { width: 100%; height: 8px; background: #1e293b; border-radius: 9999px; overflow: hidden; }
+        .progress-fill { height: 100%; width: 0%; background: linear-gradient(90deg, #6d28d9, #0284c7, #10b981); border-radius: 9999px; transition: width 0.4s ease; }
+
+        /* Steps */
+        .step-block { margin-top: 20px; padding: 18px; border-radius: 10px; background: #0b0f19; border: 1px solid #2a3756; transition: all 0.3s ease; }
+        .step-block.hidden { display: none; }
+        .step-block.completed { border-color: #10b981/40; opacity: 0.85; }
+        
+        .step-tag { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.6px; color: #38bdf8; margin-bottom: 6px; display: block; font-family: monospace; }
+        .step-title { font-size: 14px; font-weight: 700; color: #f8fafc; margin-bottom: 8px; }
+        .step-desc { font-size: 13px; color: #94a3b8; margin-bottom: 14px; line-height: 1.4; }
+
+        /* Forms & Buttons */
+        .field { margin-bottom: 14px; }
+        label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 4px; color: #cbd5e1; }
+        input { width: 100%; padding: 10px 12px; background: #151d30; border: 1px solid #334155; border-radius: 6px; color: white; font-size: 13px; outline: none; }
+        input:focus { border-color: #8b5cf6; }
+
+        .btn { width: 100%; padding: 11px 16px; border: none; border-radius: 6px; font-size: 13px; font-weight: 700; cursor: pointer; transition: background 0.2s; display: inline-flex; align-items: center; justify-content: center; gap: 8px; color: white; }
+        .btn-purple { background: #6d28d9; }
+        .btn-purple:hover { background: #5b21b6; }
+        .btn-blue { background: #0284c7; }
+        .btn-blue:hover { background: #0369a1; }
+        .btn-amber { background: #d97706; }
+        .btn-amber:hover { background: #b45309; }
+        .btn-rose { background: #e11d48; }
+        .btn-rose:hover { background: #be123c; }
+        .btn-emerald { background: #059669; }
+        .btn-emerald:hover { background: #047857; }
+        .btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        /* Success & Safety Notifications */
+        .success-banner { margin-top: 10px; color: #34d399; font-size: 12px; font-weight: 600; font-family: monospace; display: flex; align-items: center; gap: 6px; }
+        
+        .safety-box { margin-top: 24px; padding: 14px; border-radius: 8px; background: #0f172a; border: 1px dashed #334155; font-size: 11px; color: #94a3b8; line-height: 1.6; text-align: center; }
+        .safety-item { margin-bottom: 4px; }
+        .safety-item:last-child { margin-bottom: 0; }
+
+        .completion-card { background: #064e3b/30; border: 1px solid #10b981/40; padding: 20px; border-radius: 10px; margin-top: 20px; text-align: center; display: none; }
+        .completion-title { color: #34d399; font-size: 16px; font-weight: 800; margin-bottom: 6px; }
+        .completion-desc { color: #cbd5e1; font-size: 13px; margin-bottom: 14px; }
+        .soc-link { display: inline-block; background: #10b981; color: #042f2e; font-weight: 800; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-size: 13px; transition: background 0.2s; }
+        .soc-link:hover { background: #34d399; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <span class="badge">CAIP Safe Simulation</span>
+        <h1>5-Step Live Cybersecurity Demo</h1>
+        <p class="subtitle">Defensive security research demonstration. Simulates a multi-stage attack sequence safely into the CAIP SOC Platform.</p>
+
+        <!-- Progress Indicator -->
+        <div class="progress-container">
+            <div class="progress-header">
+                <span>SIMULATION PROGRESS</span>
+                <span class="progress-counter" id="progressCounter">0 / 5</span>
+            </div>
+            <div class="progress-track">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+        </div>
+
+        <!-- STEP 1: Initial Access -->
+        <div class="step-block" id="step1Block">
+            <span class="step-tag">STEP 1 — INITIAL ACCESS</span>
+            <div class="step-title">Corporate Portal Authentication</div>
+            <div class="step-desc">Simulates a user visiting a suspicious URL and submitting login credentials.</div>
+            
+            <form id="loginForm">
+                <div class="field">
+                    <label for="username">Username or Email</label>
+                    <input type="text" id="username" value="demo-user" required />
+                </div>
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" value="••••••••" required />
+                </div>
+                <button type="submit" id="step1Btn" class="btn btn-purple">
+                    Sign In & Ingest Step 1
+                </button>
+            </form>
+            <div id="step1Msg" class="success-banner" style="display:none;">
+                ✓ Initial Access Event Sent to CAIP
+            </div>
+        </div>
+
+        <!-- STEP 2: Safe Download Simulation -->
+        <div class="step-block hidden" id="step2Block">
+            <span class="step-tag">STEP 2 — SUSPICIOUS FILE DOWNLOAD</span>
+            <div class="step-title">File Download Simulation</div>
+            <div class="step-desc">A suspicious file was downloaded. Downloads a harmless text report and logs telemetry to CAIP.</div>
+            
+            <button id="step2Btn" class="btn btn-blue">
+                📄 Download Demo Report
+            </button>
+            <div id="step2Msg" class="success-banner" style="display:none;">
+                ✓ Download Event Sent to CAIP
+            </div>
+        </div>
+
+        <!-- STEP 3: Safe Execution Simulation -->
+        <div class="step-block hidden" id="step3Block">
+            <span class="step-tag">STEP 3 — EXECUTION ACTIVITY</span>
+            <div class="step-title">Process Execution Simulation</div>
+            <div class="step-desc">A downloaded file appears to have executed. Sends synthetic execution telemetry to CAIP without running commands.</div>
+            
+            <button id="step3Btn" class="btn btn-amber">
+                ⚡ Simulate Execution
+            </button>
+            <div id="step3Msg" class="success-banner" style="display:none;">
+                ✓ Execution Event Sent to CAIP
+            </div>
+        </div>
+
+        <!-- STEP 4: Safe Credential Access Simulation -->
+        <div class="step-block hidden" id="step4Block">
+            <span class="step-tag">STEP 4 — CREDENTIAL ACCESS ACTIVITY</span>
+            <div class="step-title">Credential Access Simulation</div>
+            <div class="step-desc">Credential-access behaviour detected. Sends synthetic credential access telemetry without accessing passwords or LSASS.</div>
+            
+            <button id="step4Btn" class="btn btn-rose">
+                🔑 Simulate Credential Access
+            </button>
+            <div id="step4Msg" class="success-banner" style="display:none;">
+                ✓ Credential Access Simulation Sent to CAIP
+            </div>
+        </div>
+
+        <!-- STEP 5: Safe C2 / DNS Simulation -->
+        <div class="step-block hidden" id="step5Block">
+            <span class="step-tag">STEP 5 — COMMAND & CONTROL SIMULATION</span>
+            <div class="step-title">Command & Control Simulation</div>
+            <div class="step-desc">Suspicious DNS communication detected. Sends synthetic C2 telemetry without contacting external servers.</div>
+            
+            <button id="step5Btn" class="btn btn-emerald">
+                🌐 Simulate C2 / DNS
+            </button>
+            <div id="step5Msg" class="success-banner" style="display:none;">
+                ✓ C2/DNS Simulation Sent to CAIP
+            </div>
+        </div>
+
+        <!-- Final Completion Section -->
+        <div class="completion-card" id="completionCard">
+            <div class="completion-title">✓ 5-Step Simulation Complete</div>
+            <div class="completion-desc">All 5 synthetic attack stages have been ingested and correlated into CAIP. Open the CAIP SOC Dashboard to inspect the real-time campaign narrative, risk trend, and Digital Twin projections.</div>
+            <a id="socLink" href="#" target="_blank" class="soc-link">
+                Open CAIP SOC Dashboard →
+            </a>
+        </div>
+
+        <!-- Safety Banners -->
+        <div class="safety-box">
+            <div class="safety-item">🔒 <strong>Safe Educational Demo</strong> — No real credentials collected or transmitted.</div>
+            <div class="safety-item">🛡️ <strong>All attack stages are simulated locally.</strong> No malware or external attack traffic is generated.</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const BACKEND_URL = (window.location.protocol.startsWith("http") && window.location.hostname) 
+        ? window.location.protocol + "//" + window.location.hostname + ":8001" 
+        : "http://localhost:8001";
+        
+    document.getElementById("socLink").href = (window.location.protocol.startsWith("http") && window.location.hostname) 
+        ? window.location.protocol + "//" + window.location.hostname + ":3000" 
+        : "http://localhost:3000";
+
+    const DEMO_USER = "demo-user";
+    const DEMO_DEVICE = "DEMO-PC";
+
+    let currentStep = 0;
+
+    function updateProgress(stepNum) {
+        currentStep = stepNum;
+        document.getElementById("progressCounter").textContent = `${stepNum} / 5`;
+        document.getElementById("progressFill").style.width = `${(stepNum / 5) * 100}%`;
+    }
+
+    async function sendIngestEvent(eventPayload, stepNumber) {
+        try {
+            // Send raw event to standard ingestion API
+            const response = await fetch(`${BACKEND_URL}/api/v1/events/ingest`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(eventPayload)
+            });
+
+            if (!response.ok) {
+                const errText = await response.text();
+                throw new Error(`Ingest HTTP ${response.status}: ${errText}`);
+            }
+
+            return await response.json();
+        } catch (err) {
+            console.error("Failed to connect to CAIP ingestion API:", err);
+            alert(`Error connecting to CAIP backend at ${BACKEND_URL}:\n${err.message || err}\n\nPlease verify FastAPI is running on port 8000.`);
+            return null;
+        }
+    }
+
+    // STEP 1: Initial Access
+    document.getElementById("loginForm").addEventListener("submit", async function(e) {
+        e.preventDefault();
+        const btn = document.getElementById("step1Btn");
+        const origText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = "Ingesting Step 1...";
+
+        const eventPayload = {
+            event_id: "EVT-STEP1-" + Math.floor(1000 + Math.random() * 9000),
+            timestamp: new Date().toISOString(),
+            source: "Local Safe Simulation",
+            event_type: "url_visit",
+            user: DEMO_USER,
+            device_id: DEMO_DEVICE,
+            domain: "phish-secure-login.xyz",
+            url: "http://phish-secure-login.xyz/login.php",
+            mitre_stage: "Initial Access",
+            mitre_technique: "T1566.002",
+            severity: 35,
+            data_source: "Local Safe Simulation",
+            description: "Safe simulated suspicious URL visit"
+        };
+
+        const res = await sendIngestEvent(eventPayload, 1);
+        if (!res) {
+            btn.disabled = false;
+            btn.textContent = origText;
+            return;
+        }
+
+        document.getElementById("step1Msg").style.display = "flex";
+        document.getElementById("step1Block").classList.add("completed");
+        btn.textContent = "✓ Step 1 Complete";
+        
+        updateProgress(1);
+        document.getElementById("step2Block").classList.remove("hidden");
+    });
+
+    // STEP 2: Safe File Download
+    document.getElementById("step2Btn").addEventListener("click", async function() {
+        const btn = document.getElementById("step2Btn");
+        const origText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = "Ingesting Step 2...";
+
+        // Download harmless plain text file
+        const fileContent = "CAIP SAFE DEMONSTRATION FILE\n\nThis file contains no executable code.\nThis is only a cybersecurity demonstration.\n";
+        const blob = new Blob([fileContent], { type: "text/plain" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = "CAIP_Demo_Report.txt";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        const eventPayload = {
+            event_id: "EVT-STEP2-" + Math.floor(1000 + Math.random() * 9000),
+            timestamp: new Date().toISOString(),
+            source: "Local Safe Simulation",
+            event_type: "attachment_download",
+            user: DEMO_USER,
+            device_id: DEMO_DEVICE,
+            domain: "phish-secure-login.xyz",
+            file_path: "CAIP_Demo_Report.txt",
+            mitre_stage: "Initial Access",
+            mitre_technique: "T1204.002",
+            severity: 55,
+            data_source: "Local Safe Simulation",
+            description: "Safe simulated file download (CAIP_Demo_Report.txt)"
+        };
+
+        const res = await sendIngestEvent(eventPayload, 2);
+        if (!res) {
+            btn.disabled = false;
+            btn.textContent = origText;
+            return;
+        }
+
+        document.getElementById("step2Msg").style.display = "flex";
+        document.getElementById("step2Block").classList.add("completed");
+        btn.textContent = "✓ Step 2 Complete";
+
+        updateProgress(2);
+        document.getElementById("step3Block").classList.remove("hidden");
+    });
+
+    // STEP 3: Safe Execution Simulation
+    document.getElementById("step3Btn").addEventListener("click", async function() {
+        const btn = document.getElementById("step3Btn");
+        const origText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = "Ingesting Step 3...";
+
+        const eventPayload = {
+            event_id: "EVT-STEP3-" + Math.floor(1000 + Math.random() * 9000),
+            timestamp: new Date().toISOString(),
+            source: "Local Safe Simulation",
+            event_type: "powershell",
+            user: DEMO_USER,
+            device_id: DEMO_DEVICE,
+            process_name: "powershell.exe",
+            parent_process: "browser",
+            mitre_stage: "Execution",
+            mitre_technique: "T1059.001",
+            severity: 78,
+            data_source: "Local Safe Simulation",
+            description: "Safe simulated process execution"
+        };
+
+        const res = await sendIngestEvent(eventPayload, 3);
+        if (!res) {
+            btn.disabled = false;
+            btn.textContent = origText;
+            return;
+        }
+
+        document.getElementById("step3Msg").style.display = "flex";
+        document.getElementById("step3Block").classList.add("completed");
+        btn.textContent = "✓ Step 3 Complete";
+
+        updateProgress(3);
+        document.getElementById("step4Block").classList.remove("hidden");
+    });
+
+    // STEP 4: Safe Credential Access Simulation
+    document.getElementById("step4Btn").addEventListener("click", async function() {
+        const btn = document.getElementById("step4Btn");
+        const origText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = "Ingesting Step 4...";
+
+        const eventPayload = {
+            event_id: "EVT-STEP4-" + Math.floor(1000 + Math.random() * 9000),
+            timestamp: new Date().toISOString(),
+            source: "Local Safe Simulation",
+            event_type: "credential_login",
+            user: DEMO_USER,
+            device_id: DEMO_DEVICE,
+            process_name: "mimikatz_dump",
+            mitre_stage: "Credential Access",
+            mitre_technique: "T1003.001",
+            severity: 92,
+            data_source: "Local Safe Simulation",
+            description: "Safe simulated credential access activity"
+        };
+
+        const res = await sendIngestEvent(eventPayload, 4);
+        if (!res) {
+            btn.disabled = false;
+            btn.textContent = origText;
+            return;
+        }
+
+        document.getElementById("step4Msg").style.display = "flex";
+        document.getElementById("step4Block").classList.add("completed");
+        btn.textContent = "✓ Step 4 Complete";
+
+        updateProgress(4);
+        document.getElementById("step5Block").classList.remove("hidden");
+    });
+
+    // STEP 5: Safe C2 / DNS Simulation
+    document.getElementById("step5Btn").addEventListener("click", async function() {
+        const btn = document.getElementById("step5Btn");
+        const origText = btn.textContent;
+        btn.disabled = true;
+        btn.textContent = "Ingesting Step 5...";
+
+        const eventPayload = {
+            event_id: "EVT-STEP5-" + Math.floor(1000 + Math.random() * 9000),
+            timestamp: new Date().toISOString(),
+            source: "Local Safe Simulation",
+            event_type: "suspicious_dns",
+            user: DEMO_USER,
+            device_id: DEMO_DEVICE,
+            domain: "c2-control.attacker.net",
+            mitre_stage: "Command and Control",
+            mitre_technique: "T1071.004",
+            severity: 95,
+            data_source: "Local Safe Simulation",
+            description: "Safe simulated DNS C2 beaconing"
+        };
+
+        const res = await sendIngestEvent(eventPayload, 5);
+        if (!res) {
+            btn.disabled = false;
+            btn.textContent = origText;
+            return;
+        }
+
+        document.getElementById("step5Msg").style.display = "flex";
+        document.getElementById("step5Block").classList.add("completed");
+        btn.textContent = "✓ Step 5 Complete";
+
+        updateProgress(5);
+        document.getElementById("completionCard").style.display = "block";
+    });
+</script>
+
+</body>
+</html>
